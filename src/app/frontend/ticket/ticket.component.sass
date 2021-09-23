@@ -1,23 +1,34 @@
+@use "../../../styles" as styles
+
 :host
-  border-radius: 20px   
-  box-shadow: 10px 5px 20px #d4d4d4
-  display: inline-block
-  width: 20%  
-  height: 30%
-  margin: auto  /* Perfectly center the item in both axes as margin set to auto in a flex container absorbs extra space. */
+  color: styles.$algore-white
 
-.ticket-upper 
-  background: #c4c4c4
-  border-radius: 20px 20px 0 0
-  display: block
-  padding: 1em
-  height: 25%
+.card
+    margin-top: styles.$algore-margin
+    margin-bottom: styles.$algore-margin
 
-.ticket-lower
-  background: #303544
-  border-radius: 0 0 20px 20px   
-  color: #eeeeee
-  display: block
-  padding: 1em
-  height: 75%
+.card-body
+  background: styles.$algore-dk-blue
 
+.ticket
+    position: relative
+    background: styles.$algore-lt-grey
+    display: inline-block
+    padding: 1em 2em
+
+.ticket:before
+    height:90px
+    width:45px
+    content: ''
+    position: absolute
+    top: 0.9em
+    top: calc(0.9em - 1px)
+    height: 1.2em
+    width: 0.6em
+    border: 0px solid white
+    background: white
+
+.ticket:before 
+    left: -2px
+    border-radius: 0 1em 1em 0
+    border-left-color: white
