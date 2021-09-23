@@ -14,6 +14,15 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
+## Deploy and host using GitHub Pages
+
+1. Run `ng add angular-cli-ghpages` from the root directory of your project to install angular-cli-ghpages
+2. Commit all changes to the remote branch
+3. Run `ng deploy --base-href=/algore/` to deploy your project to GitHub pages with all default settings. Your project will be automatically built in production mode. The built code will uploaded into separate branch called gh-pages.
+4. That's it, after 10-30 sec your site should be published at https://elenalenaelena.github.io/algore/.
+
+For detailed instructions, see:  https://efficientuser.com/2021/03/04/how-to-deploy-angular-app-on-github-pages-for-free/
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
