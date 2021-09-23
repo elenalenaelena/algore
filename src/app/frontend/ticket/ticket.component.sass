@@ -6,26 +6,26 @@
 .card
     margin-top: styles.$algore-margin
     margin-bottom: styles.$algore-margin
+    border: none
 
 .card-body
   background: styles.$algore-dk-blue
+  border-radius: 0 0 styles.$algore-border-radius styles.$algore-border-radius
 
 .ticket
     position: relative
     background: styles.$algore-lt-grey
+    border-radius: styles.$algore-border-radius styles.$algore-border-radius 0 0
     display: inline-block
-    padding: 1em 2em
+    padding: 1em
 
 .ticket:before
-    height:90px
-    width:45px
     content: ''
     position: absolute
     top: 0.9em
     top: calc(0.9em - 1px)
-    height: 1.2em
-    width: 0.6em
-    border: 0px solid white
+    height: 1.6em
+    width: 0.8em
     background: white
 
 .ticket:before 
