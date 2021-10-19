@@ -1,6 +1,14 @@
-<!-- layout test, should use *ngFor and data binding to create col-md-2 divs & app-ticket instances -->
+<nav class="navbar  sticky-top navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="../assets/inspector-logo.svg" alt="INspector logo" >
+    </a>
+  </div>
+</nav> 
 
 <div class="container">
+
+  <!-- layout test, should use *ngFor and data binding to create col-md-2 divs & app-ticket instances -->
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-6">
       <div class="col">
         <app-ticket></app-ticket>
@@ -66,6 +74,7 @@
         <app-ticket></app-ticket>
       </div>
   </div>
+
 </div>
 
 <router-outlet></router-outlet>
