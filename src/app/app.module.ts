@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TicketComponent } from './frontend/ticket/ticket.component';
 
+import { DataService } from './shared/data.service';
 import { LogService } from './shared/log.service';
 import { LogPublishersService } from "./shared/log-publishers.service";
 
@@ -20,6 +21,7 @@ import { LogPublishersService } from "./shared/log-publishers.service";
     HttpClientModule
   ],
   providers: [
+    DataService,
     LogService,
     LogPublishersService
   ],
