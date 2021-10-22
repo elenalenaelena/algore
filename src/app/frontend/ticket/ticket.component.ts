@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { throwIfEmpty } from 'rxjs/operators';
 import { Ticket } from 'src/app/shared/ticket.model';
 
 @Component({
@@ -6,13 +7,17 @@ import { Ticket } from 'src/app/shared/ticket.model';
   templateUrl: './ticket.component.html',
   styleUrls: ['./ticket.component.sass']
 })
-export class TicketComponent implements OnInit {
+export class TicketComponent {
 
-  tickets: Ticket[] = [];
+  front: boolean = true;
 
-  constructor() { }
+  @Input() ticket: any;
 
-  ngOnInit(): void {
+  constructor() { 
+  }
+
+  public flipSide() {
+    this.front = !this.front;
   }
 
 }

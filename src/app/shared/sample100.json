@@ -1,0 +1,699 @@
+[
+    {
+        "index": 9771,
+        "description": " \n ",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Kündigung des Vertrages"
+    },
+    {
+        "index": 4791,
+        "description": "Hier ist der Beweis das ich es überwiesen habe für die Monat er halten sie noch oder sie buchen es noch mal ab die eine Fahrkarte für sie Monat habe ich bezahlt und ich verde ihn bald die Überweisung schein schicken aber die anderen [Zahl] können sie von meinem Konto abbuchen oder ich überweise ihnen ---------- Forwarded message --------- Von: <[E-Mail]> Date: Mo., [Zahl]. Nov. [Zahl], [Zeit] Subject: Unzustellbar: To: <[E-Mail]> *Fehler bei der Nachrichtenzustellung an folgende Empfänger oder Gruppen:* [E-Mail] Das Postfach des Empfängers ist voll und kann zurzeit keine Nachrichten annehmen. Versuchen Sie zu einem späteren Zeitpunkt noch mal, Ihre Nachricht zu senden, oder wenden Sie sich direkt an den Empfänger. Die folgende Organisation hat Ihre Nachricht abgelehnt: LEIEX[Zahl].Leipziger.intern. *Diagnoseinformationen für Administratoren:* Generierender Server: LEIEX[Zahl].Leipziger.intern [E-Mail] LEIEX[Zahl].Leipziger.intern Remote Server returned '[Zahl] [Zahl].[Zahl].[Zahl] mailbox full; STOREDRV.Deliver.Exception:QuotaExceededException.MapiExceptionShutoffQuotaExceeded; Failed to process message due to a permanent exception with message Die ID kann nicht aus dem Namen abgerufen werden. [Zahl].[Zahl]:[Zahl]D[Zahl], [Zahl].[Zahl]:[Zahl][IBAN][Zahl], [Zahl].[Zahl]:[Zahl]F[Zahl]A[Zahl], [Zahl].[Zahl]:[Zahl]F[Zahl]A[Zahl], [Zahl].[Zahl]:[Zahl]F[Zahl]A[Zahl], [Zahl].[Zahl]:F[Zahl], [Zahl].[Zahl]:[Zahl], [Zahl].[Zahl]:B[Zahl], [Zahl].[Zahl]:DD[Zahl], [Zahl].[Zahl]:B[Zahl], [Zahl].[Zahl]:DD[Zahl], [Zahl].[Zahl]:FA[Zahl], [Zahl].[Zahl]:B[Zahl], [Zahl].[Zahl][Zeit][Zahl], [Zahl].[Zahl]:DD[Zahl], [Zahl].[Zahl]:[Zahl]D[Zahl], [Zahl].[Zahl]:DD[Zahl], [Zahl].[Zahl]:[Zahl], [Zahl].[Zahl]:DD[Zahl] [Stage: CreateMessage]' Ursprüngliche Nachrichtenköpfe: Received: from LEIEX[Zahl].Leipziger.intern ([Zahl].[Zahl].[Zahl].[Zahl]) by LEIEX[Zahl].Leipziger.intern ([Zahl].[Zahl].[Zahl].[Zahl]) with Microsoft SMTP Server (version=TLS[Zahl]_[Zahl], cipher=TLS_ECDHE_RSA_WITH_AES_[Zahl]_CBC_SHA[Zahl]_P[Zahl]) id [Datum][Zahl]; Mon, [Zahl] Nov [Zahl] [Zeit] +[Zahl] Received: from mail.lvb.de ([Zahl].[Zahl].[Zahl].[Zahl]) by LEIEX[Zahl].Leipziger.intern ([Zahl].[Zahl].[Zahl].[Zahl]) with Microsoft SMTP Server (version=TLS[Zahl]_[Zahl], cipher=TLS_ECDHE_RSA_WITH_AES_[Zahl]_CBC_SHA[Zahl]_P[Zahl]) id [Datum][Zahl] via Frontend Transport; Mon, [Zahl] Nov [Zahl] [Zeit] +[Zahl] Received: from mr[Zahl].l.de ([[Zahl].[Zahl].[Zahl].[Zahl]]:[Zahl]) \tby mail.lvb.de with esmtps (TLSv[Zahl].[Zahl]:DHE-RSA-AES[Zahl]-GCM-SHA[Zahl]:[Zahl]) \t(Exim [Zahl].[Zahl]_[Zahl]-[Zahl]b[Zahl]a[Zahl]c[Zahl]-XX) \t(envelope-from <[E-Mail]>) \tid [Zahl]kh[Zahl]tL-[Zahl]Sa-[Zahl]X \tfor [E-Mail]; Mon, [Zahl] Nov [Zahl] [Zeit] +[Zahl] Received: from mail-oi[Zahl]-f[Zahl].google.com (mail-oi[Zahl]-f[Zahl].google.com [[Zahl].[Zahl].[Zahl].[Zahl]]) \tby mr[Zahl].l.de (Postfix) with ESMTPS id [Zahl]D[Zahl]A[Zahl]E[Zahl] \tfor <[E-Mail]>; Mon, [Zahl] Nov [Zahl] [Zeit] [Telefonnr]CET) Received: by mail-oi[Zahl]-f[Zahl].google.com with SMTP id q[Zahl]so[Zahl]oif.[Zahl] for <[E-Mail]>; Mon, [Zahl] Nov [Zahl] [Zeit] -[Zahl] (PST) X-CTCH-RefID: str=[Zahl].[Zahl]A[Zahl]D.[Zahl]FBB[Zahl]BF[Zahl].[Zahl],ss=[Zahl],re=[Zahl].[Zahl],recu=[Zahl].[Zahl],reip=[Zahl].[Zahl],cl=[Zahl],cld=[Zahl],fgs=[Zahl] DKIM-Signature: v=[Zahl]; a=rsa-sha[Zahl]; c=relaxed\/relaxed; d=gmail.com; s=[Zahl]; h=mime-version:from:date:message-id:subject:to; bh=cZhM[Zahl]IeyXZmhvKWENI[Zahl]mxfPE+MPi[Zahl]uef[Zahl]ZrW[Zahl]bGpd[Zahl]E=; b=TJhus[Zahl]xhF[Zahl]aShXkD+[Zahl]dWU+xr[Zahl]p[Zahl]YzLyw[Zahl]ToXeoS[Zahl]ED[Zahl]xD[Zahl]zZUmIBjGhqU\/dBHt [Zahl]VEMGw[Zahl]Eg[Zahl]lsnrKH[Zahl]Ewkl[Zahl]D[Zahl]Ur[Zahl]JTYWzqVXmgzbA[Zahl]uCoJfDKXV[Zahl]XRsmCmv[Zahl]iZFSHCK[Zahl] dqMvkyeLt[Zahl]g[Zahl]M[Zahl]zLzTtk\/Zg[Zahl]uM+JwdAcAoll[Zahl]cWipfWzkv[Zahl]TFgCgDUVCXcuPe[Zahl]F MmudhPdqiO[Zahl]WyPG[Zahl]yRhSvHIH\/[Zahl]tJho[Zahl]LpUtbA[Zahl]Cp[Zahl]nGQpx[Zahl]EuSEgzGA[Zahl]mZlfY[Zahl]gn[Zahl]Y t[Zahl]SKc\/Ej\/zCqqYfB[Zahl]LMQn[Zahl]mE[Zahl]lvovfmknA[Zahl]SLdRoo[Zahl]rbnZtUtbeY[Zahl]F[Zahl]kNE[Zahl]dcNutv ++Eg== X-Google-DKIM-Signature: v=[Zahl]; a=rsa-sha[Zahl]; c=relaxed\/relaxed; d=[Zahl]e[Zahl].net; s=[Zahl]; h=x-gm-message-state:mime-version:from:date:message-id:subject:to; bh=cZhM[Zahl]IeyXZmhvKWENI[Zahl]mxfPE+MPi[Zahl]uef[Zahl]ZrW[Zahl]bGpd[Zahl]E=; b=iajQFA[Zahl]FT+[Zahl]FPcBSDUDfXm[Zahl]vvpcDhrd[Zahl]e+[Zahl]foiiRzaHFdrU[Zahl]VQEkholOJb[Zahl]LgBiZim [Zahl]vQzSUnIxqJkti[Zahl]PPqPwZ[Zahl]RBp[Zahl]vo[Zahl]adTIk[Zahl]e[Zahl]jylLfilboRYLEgcr[Zahl]mYvaDBL[Zahl]UIg CHLVBzWYxZs[Zahl]LoQD[Zahl]k[Zahl]clAeSOs[Zahl]GNbuSaCI[Zahl]v\/hMWPO[Zahl]xaFfwvokzCbn[Zahl]lQ[Zahl]gvyGC[Zahl]z Z[Zahl]j[Zahl]uYLnxEvi[Zahl]+\/DXF[Zahl]H[Zahl]ijVXCqa[Zahl]DlcxIwmGJLr[Zahl]X[Zahl]drV[Zahl]VvsL[Zahl]pBjsWmDWUOI[Zahl]+U+ K[Zahl]dVysDlPi\/kqGLxGai[Zahl]kQjfV[Zahl]qxX[Zahl]qujXpjzyXpxyPUh[Zahl]inHjlhROymLti[Zahl]LCWoKNLU yXNA== X-Gm-Message-State: AOAM[Zahl]GwfaAKjcfeSuAnFoe[Zahl]ZvhahLF[Zahl]hwx[Zahl]PxNxmbYuyYTf\/E[Zahl]UUYG \tKqzd[Zahl]PlnTLwVJyycjIYYkkMPMtPJJxCPefJi[Zahl]gfUpXS[Zahl] X-Google-Smtp-Source: ABdhPJwZ[Zahl]pNH[Zahl]ZzYRzLB[Zahl]iYV[Zahl]+s[Zahl]Zgwpnqd\/sK[Zahl]OySSSsnT[Zahl]W[Zahl]luUn[Zahl]k[Zahl]fYKAIWE[Zahl]y[Zahl]ymzJsUP[Zahl]gx[Zahl]HDBhWIfyVo= X-Received: by [Zahl]:aca:[Zahl]:: with SMTP id v[Zahl]mr[Zahl]oib.[Zahl].[Zahl]; Mon, [Zahl] Nov [Zahl] [Zeit] -[Zahl] (PST) MIME-Version: [Zahl].[Zahl] From: Max_i Mustermann <[E-Mail]> Date: Mon, [Zahl] Nov [Zahl] [Zeit] +[Zahl] Message-ID: <CAFt[Zahl]zq[Zahl]M[Zahl]y_GjKDpeE[Zahl]E[Zahl]dbhxL[Zahl]QZVJqoD=_wn=TVF[Zahl]KVHA+[E-Mail]> Subject: To: <[E-Mail]> Content-Type: multipart\/mixed; boundary=\"[Zahl]e[Zahl]b[Zahl]c[Zahl]bce\" Return-Path: [E-Mail] X-C[Zahl]ProcessedOrg: b[Zahl]-[Zahl]ea-[Zahl]-a[Zahl]b[Zahl]-[Zahl]dc[Zahl]ff[Zahl]f[Zahl] X-Auto-Response-Suppress: DR, OOF, AutoReply X-GBS-PROC: vc[Zahl]IFB[Zahl]iMiek+KA[Zahl]NS\/n\/TuOl[Zahl]nTJoaWS[Zahl]SqUtCL[Zahl]cQ= ---------- Forwarded message ---------- From: Max_i Mustermann <[E-Mail]> To: <[E-Mail]> Cc: Bcc: Date: Mon, [Zahl] Nov [Zahl] [Zeit] +[Zahl] Subject: Dies ist Beweis für das letzte Monat für diesen Monat erhalten Sie später weil diesen Monat ich nur eine Fahrkarte überwiesen hat das andere Geld dachte ich sie werden es buchen",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Fragen zu Kontoabbuchungen"
+    },
+    {
+        "index": 10418,
+        "description": "AF und MOVE",
+        "category": "Produkte & Angebote",
+        "topic": "LeipzigMOVE",
+        "subtopic": "Ticketkauf in LeipzigMOVE"
+    },
+    {
+        "index": 1730,
+        "description": "Sehr geehrte Mitarbeiter*innen der Leipziger Verkehrsbetriebe, Ihr stellt euch so gut hin, dass ihr echt nicht merkt, wie unbeliebt ihr seid. Der eigentliche Mustermann ist wie folgt: Ich weiß, wie dumm und sinnlos eure Vorgaben sind aber es geht nicht, dass Fahrgäste gefährdet werden können. Fahrzeug: Solaris Tramino Wagennummer: [Zahl] Linie: [Zahl] Richtung: Gohlis, Landsberger Mustermann Fahrer: bekannt als der jüngste Fahrer der LVB. Beschwerde: Lässt Betriebsfremde Person in Führerstand, quatscht während der Fahrt, ist vom Verkehr abgelenkt. Ich weiß, dass euch das nicht interessiert, was die Fahrgäste wirklich denken. Diese Kundenumfrage hat sich ja bisher nicht gemeldet, um die Befragung durchzuführen. Wir hatten einen Termin festgelegt, da ich bei der Parkeisenbahn als Fahrdienstleiter nicht einfach ans Telefon gehen kann, wenn es kein Notfall ist. Ihr seid meinen Freunden und mir nun wirklich nicht wichtig. Ich weiß, das ihr auch keinen Bock darauf habt, Leute einzustellen, die im Voraus Diabetes haben. Ich habe auch extra Bedienungsanleitungen der jeweiligen Straßenbahnen gelesen und gelernt, damit ich im Voraus viel Wissen habe. Der ein oder andere Fahrzeughersteller weiß auch bescheid, dass ihr nicht gerade sozial im Bereich der Anstellung seid. Naja. Der Punkt ist, geht weniger Streiken und seid sozial, belehrt die Jungen Fahrer oder entlasst sie. Das wäre das beste für alle. Selbstverständlich warte ich auf eine Antwort von euch. Viele Grüße *Max_i Mustermann* *Datum des Geschehens: [Datum]",
+        "category": "Hinweis zu unserem Personal",
+        "topic": "Fahrpersonal",
+        "subtopic": "Kritik"
+    },
+    {
+        "index": 7239,
+        "description": "Sehr geehrte Damen und Herren,   da ich leider nicht mehr in Leipzig wohne, möchte ich hiermit mein Abo zum nächstmöglichen Zeitpunkt kündigen. Bitte lassen Sie mir eine entsprechende Bestätigung per Mail zukommen.   Name: Nick Mustermann Kundennummer: [Zahl] Vertragsnummer: [Zahl] Personaldokument-Nr.:[Telefonnr]  Mit freundlichen Grüßen Nick Mustermann    ",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Kündigung des Vertrages"
+    },
+    {
+        "index": 14525,
+        "description": "Guten Tag,  Ich bin Abo-Flex-Kunde, aber kann seit einiger Zeit scheinbar schon keine Tickets mehr über die App Leipzig Move kaufen. Ich hatte es erst für eine vorübergehende Störung gehalten, aber der Fehler tritt immer noch auf. Bei Buchung erscheint \"Es ist ein Fehler beim Bearbeiten der Buchung aufgetreten\". Ungünstigerweise funktioniert meine Kundenkarte aber ebenso nicht in den Automaten der Straßenbahn. Sie funktioniert allerdings in Automaten an der Haltestelle, nur dort kann ich Tickets lösen. Können Sie mir weiterhelfen?  Vielen Dank und freundliche Grüße,  Max_i Mustermann  Mit Aqua Mail Android https:\/\/www.mobisystems.com\/aqua-mail",
+        "category": "Produkte & Angebote",
+        "topic": "LeipzigMOVE",
+        "subtopic": "Ticketkauf in LeipzigMOVE"
+    },
+    {
+        "index": 2222,
+        "description": "Status der Bearbeitung: Fw: Kü ndigung: \"ABO Senior Partner\" - Max_i Czichon - Kundennummer: [Zahl], Vertragsnummer [Zahl] Sehr geehrte Damen und Herren, jetzt ist es bereits über zwei Wochen her, dass Sie mir den Eingang meiner E-Mail-Nachricht (s.u.): \"Kündigung: \"ABO Senior Partner\" - Max_i Czichon - Kundennummer: [Zahl], Vertragsnummer [Zahl]\" bestätigt hatten. Daher frage ich freundlich nach, wie der Status der Bearbeitung ist. Vielen Dank für Ihre Hilfe und Unterstützung. Mit freundlichen Grüßen Mustermann Mustermann für meine Mutter Max_i Czichon als Bevollmächtigter meine Anschrift: Geranienweg [Zahl] b [Zahl] Leipzig Sie können mir gern auch per E-Mail antworten: E-Mail: [E-Mail] Tel.:[Telefonnr]Gesendet: Mustermann, [Zahl]. September [Zahl] um [Zeit] Uhr Von:\"Mustermann Mustermann\" <[E-Mail]> An:[E-Mail] Betreff:Kündigung: \"ABO Senior Partner\" - Max_i Czichon - Kundennummer: [Zahl], Vertragsnummer [Zahl]Sehr geehrte Damen und Herren,ich hatte mich telefonisch bei Ihnen erkundigt, auf welchem Weg ich für meine Mutter, Max_i Czichon, ihre LVB \"ABO Senior Partner\" Mustermann (Kundennummer: [Zahl]) mit sofortiger Wirkung bzw. zum nächst möglichen Zeitpunkt kündigen und die anteilige Rückerstattung auf ihr Konto veranlassen kann.Wie besprochen, in den Anlagen, die von Ihnen zum Zwecke der Kündigung eingescannten Unterlagen: * Bestätigung_Aufenthalt im Pflegeheim * Formular_LVB_Senior_Mustermann (mit aufgelegter Kartenrückseite) * Vollmacht_Mutti_zu_LVB__Scan[Zahl]-[Zahl]-[Zahl]_[Zahl] Bitte überweisen Sie den anteiligen Rückerstattungsbetrag auf das Konto meiner Mutter:Kontoinhaber: Max_i CzichonBankinsitut: Sparkasse LeipzigIBAN:[IBAN]Vielen Dank für Ihre Hilfe und Unterstützung.Mit freundlichen GrüßenMustermann Nagelfür meine Mutter (Bevollmächtigter)Max_i Czichon",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Kündigung des Vertrages"
+    },
+    {
+        "index": 10797,
+        "description": "Von E-Mail-Adresse: [E-Mail] Frage: Hallöchen. Mir ist gestern aufgefallen, dass die App noch keine Möglichkeit bietet eine Wochenkarte zu kaufen. Ist das noch geplant? Ich würde gern umsteigen von dem DB-navigator (der das kann). Danke für die Rückmeldungund Grüße Max_i -- Diese E-Mail wurde von einem Kontaktformular von Leipzig Move (https:\/\/leipzig-move.de) gesendet",
+        "category": "Produkte & Angebote",
+        "topic": "LeipzigMOVE",
+        "subtopic": "Ticketkauf in LeipzigMOVE"
+    },
+    {
+        "index": 10469,
+        "description": "Sehr geehrte Damen und Herren, im Anhang finden Sie eine neue Kundenresonanz. Diese können Sie ebenfalls im Web-Portal https:\/\/www.serviceaktion.de\/omnimessenger einsehen. Vorgangsnummer: [Zahl] Mit freundlichen Grüßen omniphon GmbH",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Meldung Verlust Chipkarte"
+    },
+    {
+        "index": 6290,
+        "description": "Sehr geehrte Damen und Herren, Ich Max_i Mustermann- Kundennummer [Zahl] möchte hiermit meinen Auftrag vom [Datum]meine ABO Mustermann zu sperren und mir eine neue zu kommen zu lassen rückgängig machen. Heute hat es einen ehrlichen Finder meiner Mustermann gegeben, ich habe sie somit zurück erhalten. Ich hoffe diese Nachricht erreicht sie noch vor der Bearbeitung, ich werde denke ich merken wie der Verlauf ausgeht. Vielen Dank für Ihr Verständnis mit freundlichen Grüßen Max_i Mustermann",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Meldung Verlust Chipkarte"
+    }, {
+        "index": 6117,
+        "description": "Sehr geehrte Damen und Herren, im Anhang finden Sie eine neue Kundenresonanz. Diese können Sie ebenfalls im Web-Portal https:\/\/www.serviceaktion.de\/omnimessenger einsehen. Vorgangsnummer: [Zahl] Mit freundlichen Grüßen omniphon GmbH Vorgang Datum [Datum]Uhrzeit [Zeit] Uhr Beschreibung - Vorfall Kd. beschwer sich das jeder Bus der Linie [Zahl] an der (H) Leopoldstr. ungefähr [Zahl] Minuten zu früh kommt. Sie verpasst deshalb jedes Mal den Bus, und der Fahrer reagiert auch nicht auf Zeichen wie z.B. winken. Verkehrsinformationen Linie [Zahl] Haltestelle Leopoldstr. Richtung Mockau-West Zielhaltestelle - Beschwerdekategorie Titel Leopoldstr. Li. [Zahl] Mustermann kommen zu früh Kategorie [Zahl] Pünktlichkeit Kategorie [Zahl] Verfrühung Kategorie [Zahl] keine Angabe Bankdaten Kontoinhaber IBAN BIC",
+        "category": "Hinweis zu unserem Personal",
+        "topic": "Fahrpersonal",
+        "subtopic": "Kritik"
+    },
+    {
+        "index": 1129,
+        "description": "Guten Morgen, Erneut habe ich versucht ein Ticket zu kaufen Am Automaten gab ich meine Mustermann ein und anstatt das Ticket zu drucken ist er direkt umgesprungen auf ..bitte entnehmen sie ihr Ticket. Ich musste mir erneut an einen anderen Automaten ein Ticket ziehen. Ich bitte das im meinen Konto zu korrigieren. LVB Kundenvertrag [Zahl] Mit freundlichen Grüßen Mustermann Mustermann",
+        "category": "Produkte & Angebote",
+        "topic": "Erstattungen & Reklamationen",
+        "subtopic": "Automatenreklamation"
+    },
+    {
+        "index": 13160,
+        "description": "Sehr geehrte Damen und Herren, Anbei erhalten Sie die Tickets die erstattet werden müssen. Bitte leiten Sie diese Mail an Frau Mustermann in der Aboabteilung weiter. Wie telefonisch mit ihr besprochen. Mit freundlichen Grüßen Mustermann-Raabe -- Diese Nachricht wurde von meinem Android Mobiltelefon mit GMX Mail gesendet.",
+        "category": "Produkte & Angebote",
+        "topic": "Erstattungen & Reklamationen",
+        "subtopic": "sonstiges Ticketerstattungen\/ Reklamationen"
+    },
+    {
+        "index": 13835,
+        "description": "Sehr geehrte Damen und Herren, anlässlich der Geburt unserer Tochter und aufgrund der Pandemie möchte gern auf diesem Weg kontaktlos die BabyCard für die Nutzung von Bus und Bahn beantragen. Anbei sende ich Ihnen die benötigten Dokumente (Geburtsurkunde, Personalausweis, ausgefüllter Gutschein). Ich hoffe, dass Sie aus Infektionsschutzgründen nicht auf eine persönliche Vorsprache bestehen. Bitte senden Sie die BabyCard an folgende Adresse: Max_i Gayosso Aguilera Oststr. [Zahl] [Zahl] Leipzig Bei Rückfragen oder falls Sie weitere Dokumente benötigen, erreichen Sie mich per E-Mail unter [E-Mail]. Vielen Dank! Mit freundlichen Grüßen Max_i Gayosso Aguilera",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Neuantrag ABO\/Babycard"
+    },
+    {
+        "index": 13164,
+        "description": "Sehr geehrte Damen und Herren, hiermit kündige ich mein LVB-ABO fristgerecht. Aufgrund der Kündigung meines Arbeitsverhälnisses in Engelsdorf und der damit verbundenen Arbeitslosigkeit ab dem [Datum]bitte ich Sie von Herzen, mich aus dem Vertragsverhältnis bereits ab dem [Datum]zu entlassen, da es für mich sonst eine große finanzielle Belastung darstellen würde. Ich hoffe sehr auf Ihr Verständnis. Mit freundlichen Grüßen Max_i Mustermann -- Diese Nachricht wurde von meinem Android Mobiltelefon mit GMX Mail gesendet.",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Kündigung des Vertrages"
+    },
+    {
+        "index": 2058,
+        "description": "Help Requested from User .font {font-family: Arial, Helvetica, Sans-Serif;} .title{font-size: [Zahl]%;} .dataCell { font-family: Arial, Helvetica, Sans-Serif; background-color: #E[Zahl]E[Zahl]F[Zahl] } .title[Zahl]{font-size: [Zahl]%;} .option{font-size: [Zahl]%;} Vom Benutzer angeforderte Hilfe Kundendetails: Name Max_i Mustermann Email [E-Mail] Telefon [Telefonnr]Vom Kunden gesendete Nachricht: Das Fahrrad hatte Platten reifen. Fahren war unmöglich. Bitte die Buchung zu annullieren und dieses Fahrrad für weitere Mieter sperren. Genaue Information: orderId [Zahl] orderStatus StatusTransfer(orderStatus=FINISHED, text=Versendet) paymentMethodCode lvblastschrift datePurchased [Zahl]-[Zahl]-[Zahl]T[Zeit].[Zahl]+[Zeit] NextBike-id [Zahl] NextBike-bike [Zahl] NextBike-bikeTypeName [Zahl] NextBike-finished false",
+        "category": "Produkte & Angebote",
+        "topic": "LeipzigMOVE",
+        "subtopic": "Fragen zum Bikesharing"
+    },
+    {
+        "index": 6446,
+        "description": "Sehr geehrtes Team der Verkehrsbetriebe, hiermit möchte ich mein Abo mit der Kundennummer [Zahl] zum nächstmöglichen Zeitpunkt kündigen. Mit freundlichen Grüßen Max_i Mustermann",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Kündigung des Vertrages"
+    },
+    {
+        "index": 13093,
+        "description": "Sehr geehrte Damen und Herren, wie gestern telefonisch mit einer Ihrer sehr netten Mitarbeiterinnen besprochen, sende ich hiermit die Unterlagen für die BabyCard digital zu. (ausgefüllter Gutschein sowie Geburtsanzeige aus dem Geburtshaus; die Urkunde ist beantragt, noch in Bearbeitung) Ich freue mich über das Angebot [Zahl] Jahr kostenfrei mit der LVB unterwegs zu sein! Hier in kurzer Übersicht meine Daten: Max_i Mustermann (geb. [Datum] Engelmannstr. [Zahl] in [Zahl] Leipzig und Max_i Max_i Mustermann (geb. [Datum] Bei Rückfragen oder noch fehlenden Unterlagen rufen Sie mich gern an unter[Telefonnr]Vielen Dank! Mit freundlichen Grüßen, Max_i Mustermann",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Neuantrag ABO\/Babycard"
+    },
+    {
+        "index": 10373,
+        "description": "Sehr geehrte Damen und Herren., In meiner MoveApp kann ich meine Buchungen nicht mehr ansehen. Auch ein gebuchtes Ticket war heute früh plötzlich nicht mehr sichtbar! Da scheint die App eine Fehlfunktion zu haben! Meine Kundennummer ist [Zahl]. Beste Grüße - Max_i Mustermann",
+        "category": "Produkte & Angebote",
+        "topic": "LeipzigMOVE",
+        "subtopic": "Ticketkauf in LeipzigMOVE"
+    },
+    {
+        "index": 5724,
+        "description": "Sehr geehrte Damen und Herren, ab [Zahl]. Dezember wurde mein Abo offiziell pausiert, da ich diese Baby-Card bekommen habe. Jedoch wurde die monatlich Gebühr wie immer abgebucht. Meine Vertragsnummer lautet [Zahl]. Vielleicht liegt es daran, dass die Änderung erst am [Zahl]. November vorgenommen wurde. Würde Sie bitte dann die Gebührt eventuell zurück überweisen? Mit freundlichen Grüßen Max_i Mustermann",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Fragen zu Kontoabbuchungen"
+    },
+    {
+        "index": 14476,
+        "description": "  Sehr geehrte Damen und Herren,   ab [Zahl]. April [Zahl] lautet meine Adresse   Hans-Poeche-Str. [Zahl], [Zahl] Leipzig.   Ich bitte um Kenntnisnahme und Beachtung.   Mit freundichen G+üßen   Jörg Mustermann",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Änderung Kundendaten"
+    },
+    {
+        "index": 637,
+        "description": "Sehr geehrte Damen und Herren, Da ich ab September Rentner bin , möchte ich meinen Vertrag , dahin ändern. Freundliche Grüße Max_i Koch Mandats-Nr. : [Zahl]",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Änderung Produkt"
+    },
+    {
+        "index": 12113,
+        "description": " Bitte denken Sie an die Umwelt, bevor Sie diese Seite(n) drucken. Von: Max_i Vogt  Gesendet: Mittwoch, [Zahl]. Januar [Zahl] [Zeit] An: ABRECHNUNG.VERKEHRSBETRIEBE Betreff: (EXTERN) Re: Mustermann [Zahl] zum LVB Kundenvertrag [Zahl] Sehr geehrte Damen und Herren, ich habe heute bei Ihnen telefonisch über Ihre Hotline gemeldet, dass mir meine ABO Flex Kundenkarte seit ca. Heiligabend [Zahl] abhanden gekommen oder entwendet wurden ist. Die Mustermann wird jetzt durch Sie gesperrt. Es ist ja leider möglich, dass die Mustermann in der Zwischenzeit durch Dritte für Abbuchungen benutzt wurden ist. Könnten Sie mir für den Monat Dezember und Januar die Abrechnungsdaten meiner Kundenkarte zukommen lassen, da es ja leider nicht möglich ist mir meine Abbuchungen vorher anschauen zu können. Dies würde mich ungemein beruhigen zu wissen, dass keine Buchungen erfolgt sind. Ganz vielen Dank vorab für Ihre Unterstützung. Für eventuelle Rückfragen stehe ich Ihnen gerne auch telefonisch unter der[Telefonnr]zur Verfügung. Mit freundlichen Grüßen Max_i Vogt Am Donnerstag, [Zahl]. Dezember [Zahl], [Zeit] MEZ hat < [E-Mail] > Folgendes geschrieben: Sehr geehrter Herr Vogt, anbei erhalten Sie Ihre aktuelle Mustermann. Mit freundlichen Grüßen Ihre Leipziger Verkehrsbetriebe (LVB) GmbH www.L.de Facebook, Twitter, Youtube: www.L.de\/social Wir sind Leipziger. Leipziger Verkehrsbetriebe (LVB) GmbH * Postfach [Zahl] * [Zahl] Leipzig Aufsichtsratsvorsitzender: Max_i Bonew Geschäftsführung: Ulf Middelberg (Sprecher), Max_i Juhrs Amtsgericht Leipzig * HRB-Nr. [Zahl] * Sitz der Gesellschaft: Leipzig Bitte denken Sie an die Umwelt, bevor Sie diese Nachricht ausdrucken",
+        "category": "Produkte & Angebote",
+        "topic": "Erstattungen & Reklamationen",
+        "subtopic": "Rg.reklamation ABO Flex\/ LeipzigMOVE"
+    },
+    {
+        "index": 6413,
+        "description": "Seniorenabo Vertragnummer [Zahl] Hans-Mustermann Mustermann [Zahl] Leipzig Rückertstr. [Zahl]     Sehr geehrte Damen und Herren,   da das angebotenen Lastschriftverfahren laut Ihrem Schreiben von November dieses Jahres leider nur bis zum [Datum]möglich war, möchte ich fragen, welche Möglichkeiten es zur einer noch rechtzeitigen Verlängerung meines Abos bis zum [Zahl]. Januar [Zahl] gibt. Leider kann ich derzeit nicht - wie zuvor - bei Ihren in den entsprechenden Zentren zum Aufladen und Bezahlen vorbeikommen. Wäre ein Lastschriftverfahren eventuell noch möglich? Könnten Sie einen reibunglosen Ablauf anderweitig ermöglichen bzw. einen anderen Modus vorschlagen?   Mit Dank und besten Grüßen,   Hans-Mustermann Mustermann   P.S. Dieser Kontakt wurde mir von Ihrem Servicetelefon empfohlen.",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Änderung Produkt"
+    },
+    {
+        "index": 4293,
+        "description": "Max_i [Zahl]  Hallo zusammen, Meine Tochter hat ihre Schülerabocard verloren. Bitte senden Sie zeitnah eine neue zu. Vielen Dank Mit freundlichen Grüßen B. Mustermann Gesendet mit der GMX iPhone App",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Meldung Verlust Chipkarte"
+    },
+    {
+        "index": 7702,
+        "description": "  Liebes Kundenservice-Team,   mit der Bitte um Beantwortung und Kopie der Antwort für den Fahrgastbeirat an mich.   Vielen Dank und freundliche Grüße von Max_i Morenz     Bitte denken Sie an die Umwelt, bevor Sie diese Seite(n) drucken. Von: [E-Mail] [mailto:[E-Mail]] Gesendet: Dienstag, [Zahl]. Januar [Zahl] [Zeit] Betreff: (EXTERN) Dank an Busfahrer   Sehr geehrte Damen und Herren,   ich möchte Ihnen gern meinen herzlichen Dank an einen Busfahrer der LVB übersenden.   Es betrifft den Fahrer des Busses [Zahl] mit dem Kennzeichen L-DE [Zahl] auf der Linie [Zahl] bei der Fahrt von Thekla nach Connewitz am [Zahl]. Januar [Zahl].   Bei der Abfahrt um [Zahl].[Zahl] Uhr an der Haltestelle Heiterblickstraße hat mich der Busfahrer während seiner Fahrt rennen und winken gesehen und noch angehalten, damit ich mitfahren konnte. Dafür möchte ich herzlich danken.   Denn sonst hätte ich [Zahl] Minuten bis zur nächsten Abfahrt warten müssen.   Mit freundlichen Grüßen   Mustermann Mustermann  ",
+        "category": "Hinweis zu unserem Personal",
+        "topic": "Fahrpersonal",
+        "subtopic": "Lob"
+    },
+    {
+        "index": 9709,
+        "description": "Sehr geehrte Damen und Herren, im Moment besitze ich eine Babycard ([Zahl]), die noch bis zum [Datum]gültig ist. Zuvor hatte ich ein Jobticket, welches momentan ruhen sollte!? Gern möchte ich ab dem [Datum]wieder über dieses Jobticket mobil sein. Kartennummer ist folgende: [Zahl].[Zahl]-[Zahl].[Zahl].[Zahl]-[Zahl] Können Sie mir bitte sagen, was ich noch veranlassen muss um wieder an mein altes Jobticket zu kommen? Vielen Dank und herzliche Grüße, Max_i Mustermann[Telefonnr]",
+        "category": "Produkte & Angebote",
+        "topic": "Mein JOB Ticket",
+        "subtopic": "sonstiges Anliegen zum JOB Ticket"
+    }, {
+        "index": 8009,
+        "description": "Sehr geehrte Damen und Herren, ich bin Nutzerin einer ABO Flex - Mustermann mit der Kundennummer [Zahl]. Auf diesem Weg möchte ich Ihnen mitteilen, dass ich eine neue Anschrift habe: Max_i Mustermann, Ludwigstraße [Zahl]a in [Zahl] Leipzig. Ich bitte Sie dies in Ihren Unterlagen zu ändern. Des Weiteren möchte ich Sie bitten, mir eine Jahresabrechnung von [Zahl] für die Steuererklärung per Mail zukommen zu lassen. Für Rückfragen stehe ich Ihnen gern zur Verfügung. Mit freundlichen Grüßen Max_i Mustermann",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "sonstiges Anliegen zum ABO"
+    },
+    {
+        "index": 7607,
+        "description": "Mustermann Than Mustermann Südstraße [Zahl] [Zahl] Leipzig. Geburtsdatum: [Datum]Leipziger Verkehrsbetriebe (LVB) GmbH Mobilitätszentrum Max_i-Mustermann-Mustermann [Zahl] [Zahl] Leipzig Kündigung [Datum]Gewünschter ABO-Tarif : ABO Leipzig-Pass_MobilCard ( Monatlich) Vertragsnummer : [Zahl] Kundennummer : [Zahl] Sehr geehrte Damen und Herren, Hiermit Kündigung ich meinen ABO Vertrag vom [Datum]fristgerecht, hilfsweise zum nächstmöglichen Zeitpunkt. Bitte senden mir eine schriftliche Bestätigung der Kündigung unter Angabe des Beendigungszeitpunktes zu. Meine für diesen Vertrag möglicherweise bestehende Einzugsermächtigung, widerrufe ich zum Ablauf des Vertrages. Mit freundlichen Grüßen, Mustermann Than Mustermann",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Kündigung des Vertrages"
+    },
+    {
+        "index": 7654,
+        "description": "Sehr geehrte Damen und Herren, nach dem überprüfen meines Bankkontos musste ich feststellen, dass [Zahl] mal ein Betrag in Höhe von [Zahl],[Zahl]€ (insg. [Zahl],[Zahl]€) von meinem Konto abgebucht wurde. Ich bitte um eine Rückerstattung des Gesamtbetrages auf die Bankverbindung: Deutsche Bank [IBAN] Max_i Mustermann Die Person, auf die das Abo in Ihrem Unternehmen läuft, wurde am Schalter falsch informiert, sodass sie auf eine Information Ihrerseits nach dem Ablauf der Babycard auf dem postalischem Weg gewartet hat. Weder eine Information noch ein Schreiben mit gewisser Anpassung des Abonnements hat sie erreicht, obwohl das versprochen wurde. Heute am Telefon wurde uns gesagt, dass so eine Anpassung oder Rückmeldung per Post nicht üblich ist. Leider können wir für diese falsche Information am Schalter nichts und bitten freundlich um Rückerstattung der beiden Beträge, da die betroffene Person, seit der Corona Pandemie aufgrund Ihrer Sicherheit weder die Bahn, noch den Bus nutzt. Diese Person hat bereits ebenfalls ein Schreiben getätigt mit der Bitte, dieses Abo zu kündigen. Ich bitte ebenfalls um keine weiteren Abbuchungen aus meinem Konto diesbezüglich. Mit freundlichen Grüßen Mustermann AB[Zahl]-[Zahl]   B[Zahl]",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Fragen zu Kontoabbuchungen"
+    },
+    {
+        "index": 1172,
+        "description": "Sehr geehrte Damen und Herren, Cabrera Brito, Gissel Max_i, geboren am [Datum]wechselt ab [Datum]von der Helios Herzzentrum Leipzig GmbH zur Helios Park-Klinikum Leipzig GmbH. Gern stehe ich Ihnen für Rückfragen zur Verfügung. Freundliche Grüße Helios Verwaltung Ost GmbH Max_i Mustermann Personalabteilung Herzzentrum Leipzig GmbH \/ Helios Park-Klinikum Leipzig GmbH Tel.: [Telefonnr]Fax: [Telefonnr]E-Mail: [E-Mail]<mailto:[E-Mail]> Betriebsstätte: Strümpellstraße [Zahl], [Zahl] Leipzig Träger: Helios Verwaltung Ost GmbH Geschäftsführung: Prof. Dr. Max_i Heumüller Sitz der Gesellschaft: Bad Mustermann Handelsregister: AG Frankfurt (Oder), HRB [Zahl] FF www.helios-gesundheit.de<http:\/\/www.helios-gesundheit.de>",
+        "category": "Produkte & Angebote",
+        "topic": "Mein JOB Ticket",
+        "subtopic": "Änderung Kundendaten"
+    }, {
+        "index": 3379,
+        "description": "Sehr geehrte Damen und Herren,   leider muss ich mein ABO der LVB kündigen, siehe PDF anbei.   Bitte senden Sie mir eine Kündigungsbestätigung zu.    In diesem Zusammenhang widerrufe ich das SEPA Lastschriftenmandat.   Vielen Dank! Mit freundlichen Grüßen, Max_i Mustermann   Mustermann-Külz-Str. [Zahl] [Zahl] Böhlen",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Kündigung des Vertrages"
+    },
+    {
+        "index": 642,
+        "description": "Von: Mustermann <[E-Mail]> Vorname: Max_i Nachname: Mustermann Strasse: Dr.-Mustermann-Duncker-Str., [Zahl] Ort: LEIPZIG Telefon:[Telefonnr]E-Mail: [E-Mail] DSGVO: Zugestimmt: Ich habe die Regelungen zum Datenschutz zur Kenntnis genommen und bin mit der Speicherung und Verarbeitung meiner Daten durch die Leipziger Verkehrsbetriebe (LVB) GmbH einverstanden. Nachrichtentext: Hallo ich hab eine Frage. Ich hab den l-login für die Move-App heut fertig gestellt. Damit soll ich auch in mein Abo bei der LVB schauen können. Dort heißt es aber immer, dasa die Daten falsch wären... Außerdem möchte ich wissen, wie Mustermann die Freischaltung dauert? Um die Mustermann nutzen zu können musste ich meine Bankverbindung angeben, hab ich gemacht. Aber jetzt kann ich über die App keine Fahrkarten mehr kaufen... ich hätte keine Berechtigung... auf paypal wie heut früh kann ich aber auch nicht wechseln... bitte helft mir, bin drauf angewiesen, da mein Auto kaputt gegangen ist Mustermann Grüße Max_i Mustermann",
+        "category": "Produkte & Angebote",
+        "topic": "LeipzigMOVE",
+        "subtopic": "Ticketkauf in LeipzigMOVE"
+    },
+    {
+        "index": 6453,
+        "description": "Sehr geehrte Damen und Herren, auf meine Anfrage vom Mustermann hat mir der mdv nun mitgeteilt, ich möge mich damit an Sie wenden: Ich habe ein Monatsticket [Zahl],[Zahl]€ für den Dezember [Zahl], welches seit dem Lockdown diese Woche keinen Nutzen mehr hat. Ist eine Rückerstattung der Hälfte des Geldes möglich (was für mich schon ziemlich viel wäre)? Mit freundlichen Grüßen Mustermann Mustermann -- Diese E-Mail wurde von Avast Antivirus-Software auf Viren geprüft. https:\/\/www.avast.com\/antivirus",
+        "category": "Produkte & Angebote",
+        "topic": "Erstattungen & Reklamationen",
+        "subtopic": "sonstiges Ticketerstattungen\/ Reklamationen"
+    },
+    {
+        "index": 6926,
+        "description": "Sehr geehrter Herr Mustermann, es wird immer lustiger. Bei Ihnen weiß offensichtlich die rechte nicht was die linke Hand macht. Heute habe ich nun auf Rat einer Ihrer Kollegen [Zahl] Euro für die Marke [Zahl] an die Commerzbank überwiesen. Sie können jetzt selbst entscheiden, ob Sie mir ausnahmsweise nun doch meine Marke nach Hause schicken, was mir natürlich lieber und auch kundenfreundlich wäre oder mir mein Geld zurücküberweisen und ich meine Marke selbst im Mobilcenter abhole. Könnte auch unter den beiden Kollegen ausgeknobelt werden.... Corona kann manchmal auch für Spaß sorgen. Bleiben Sie gesund und rutschen Sie gut ins neue Jahr. Das wünscht Ihnen Ihr ehemaliger Kollege Max_i Mustermann.",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "sonstiges Anliegen zum ABO"
+    },
+    {
+        "index": 1157,
+        "description": "Guten Tag,ich möchte zum [Datum]mein Abo ändern.Bisher nutze ich ein Jobticket, ab November möchte ich das Aboflex nutzen.Meine Kartennummer lautet: [Zahl]Freundliche Grüße,Mustermann Mustermann",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Änderung Produkt"
+    },
+    {
+        "index": 12434,
+        "description": "Sehr geehrte Damen und Herren, im Anhang finden Sie eine neue Kundenresonanz. Diese können Sie ebenfalls im Web-Portal https:\/\/www.serviceaktion.de\/omnimessenger einsehen. Vorgangsnummer: [Zahl] Mit freundlichen Grüßen omniphon GmbH",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Meldung Verlust Chipkarte"
+    },
+    {
+        "index": 12058,
+        "description": " Bitte denken Sie an die Umwelt, bevor Sie diese Seite(n) drucken. Von: Max_i Mustermann [mailto:[E-Mail]] Gesendet: Mustermann, [Zahl]. Februar [Zahl] [Zeit] An: INFO.VERKEHRSBETRIEBE Betreff: Fw: Kündigung Vertrags-Nr. [Zahl] Sehr geehrte Damen und Herren, am [Zahl].[Zahl]. habe ich u.s. Kündigung verschickt, aber leider bisher noch nichts von Ihnen gehört. Bitte bestätigen Sie mir die fristgerechte Kündigung. Mit freundlichen Grüßen Max_i Mustermann ----- Weitergeleitete Nachricht ----- Von: Max_i Mustermann < [E-Mail] > An: [E-Mail] < [E-Mail] > Gesendet: Mustermann, [Zahl]. Februar [Zahl], [Zeit] MEZ Betreff: Kündigung Vertrags-Nr. [Zahl] Sehr geehrte Damen und Herren, im Anhang sende ich Ihnen meine Kündigung des o.g. Abovertrags fristgerecht zum [Datum] Bitte bestätigen Sie mir diese Kündigung. Mit freundlichen Grüßen Max_i Mustermann",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Kündigung des Vertrages"
+    },
+    {
+        "index": 10718,
+        "description": "Sehr geehrte Damen und Herren, ich möchte zum [Zahl]. März [Zahl] meinen Abo-Tarif ändern. Es geht um eine Verringerung und Änderung der Zonen. Den Mustermann sende ich anbei. Wenn Sie Fragen haben, können SIe mich gern unter der angegebenen Telefonnummer erreichen. Mit freundlichen Grüßen Lena Mustermann",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Änderung Produkt"
+    },
+    {
+        "index": 8683,
+        "description": "Sehr geehrte Damen und Herren, ich bin als Vollzeitstudierende an der Fernuniversität Max_i eingeschrieben. Da ich im März nach Leipzig ziehe, aber weiterhin meinen Semesterbeitrag in Max_i zahle, weiß ich nun nicht, welches Abo ich bei Ihnen abschließen muss, denn das \"normale\" Studententicket scheint nur für die Unis zu greifen, die ihren Standort in Leipzig haben. Ich freue mich auf Ihre Antwort, bleiben Sie gesund! Max_i Mustermann",
+        "category": "Produkte & Angebote",
+        "topic": "Tarife, Fahrpläne und Liniennetz",
+        "subtopic": "Fragen und Auskünfte"
+    },
+    {
+        "index": 13849,
+        "description": "Sehr geehrte Damen und Herren, ich möchte mein Abo zum nächstmöglichen Zeitpunkt kündigen, da ich aufgrund von homeoffice mit Kindern keine Möglichkeit habe, die LVB zu nutzen. So gern ich mit den LVB jeden Tag meinen Arbeitsweg gemacht habe, so sehr freue ich mich, das Abo wieder aufzunehmen, wenn die Pandemie vorbei ist. Da ich aber nunmehr seit [Zahl] Jahr wesentlich weniger und nun gar nicht mehr mit den Öffentlichen fahre, möchte ich nun das Abo aussetzen bis Ende diesen Jahres (wenn das möglich ist?) oder ansonsten ganz kündigen. Meine Kundenreferenz ist AB[Zahl]-[Zahl] B[Zahl] Ich bitte um eine kurze Bestätigung zur Aussetzung meines Abo's, oder, wenn keine Aussetzung möglich ist, zu meiner Kündigung um nächstmöglichen Zeitpunkt. Mit freundlichen Grüßen, Max_i Horn Dr. rer. nat. Max_i Horn Mustermann-Schönheimer-Institut für Biochemie Medizinische Fakultät der Universität Leipzig Johannisallee [Zahl] – Haus J - Raum [Zahl] [Zahl] Leipzig E-Mail: [E-Mail]",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Kündigung des Vertrages"
+    },
+    {
+        "index": 551,
+        "description": "Sehr geehrte Damen und Herrn, Mein Name ist (Max_i Mustermann) und ich habe für meinen Kinder: [Zahl]- Ayatullah Mustermann [Zahl]- Abdu Allah Mustermann [Zahl]- Abdu Alrahman Mustermann Einen Jahresbeitrag für Fahrausweise zur Schule schon mal bei euch abgeschlossen und möchte nur eine kleine Änderung machen, Ich möchte, dass die Auszahlung für den monatlichen Betrag des Abo erst ab dem [Zahl] (Zehnten)Tag von jedem Monat erfolgt. Und nicht der erste Tag, weil manchmal das Geld auf mein Konto zu spät überwiesen wird und daher einer Verspätung mit der Auszahlung kann folgen. Wenn die Auszahlung zu spät erfolgt, bekomme ich Geldstrafe und die möchte ich vermeiden, weil es nicht mein Schuld ist, dass das Geld manchmal auf mein Konto zu spät kommt. Vielen Dank im Voraus.",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Änderung Datum Bankeinzug"
+    },
+    {
+        "index": 197,
+        "description": "Sehr geehrte Damen und Herren, &nbsp; vielen Dank f&uuml;r Ihre R&uuml;ckmeldung. Leider komme ich in der n&auml;chsten Zeit nicht in die Innenstadt und bitte Sie daher um eine R&uuml;ckerstattung per &Uuml;berweisung. Anbei sende ich Ihnen ein Ausweisdokument und die f&uuml;r Sie erforderlichen Informationen. &nbsp; - Ihre vollst&auml;ndige Wohnanschrift Mustermann Mustermann, C&ouml;thnerstr. [Zahl], [Zahl] Leipzig - Ihre vollst&auml;ndige Bankverbindung (IBAN BIC SWIFT) IBAN [IBAN] BIC WELADE[Zahl]LXXX - Nummer des Verkaufsger&auml;tes (bei mobilen Automaten alternativ Linie, Fahrtrichtung, Zustiegshaltestelle, Wagennummer) Automatennummer [Zahl] (Line [Zahl] Richung Messegel&auml;nde, Zustieg am Triftweg, Wagennummer [Zahl]) - Tag Ihres Kaufes [Datum]- Uhrzeit Ihres Kaufes zwischen [Zeit] und [Zeit] - Angaben zur Fahrkarte Einzelfahrkarte Erwachsener ([Zahl] St&uuml;ck) - einbehaltener Geldbetrag [Zahl],[Zahl]&euro; - Angaben zur St&ouml;rung Der Kaufvorgang wurde abgebrochen, mit dem Hinweis den genauen Geldbetrag einzuwerfen, obwohl ich noch nicht alles einwerfen konnte. &nbsp; Mit freundlichen Gr&uuml;&szlig;en &nbsp; Mustermann Mustermann &nbsp; Gesendet:&nbsp;Mittwoch, [Zahl]. September [Zahl] um [Zeit] Uhr Von:&nbsp;[E-Mail] An:&nbsp;[E-Mail] Betreff:&nbsp;Ihre Zuschrift (AZ: [Zahl]) - Anfrage Automatenreklamation Sehr geehrte Frau Mustermann, wir bedauern, dass es beim Kauf Ihres Fahrscheines ein Automatenproblem gegeben hat. Gern m&ouml;chten die Reklamation schnellstm&ouml;glich mit Ihnen kl&auml;ren. Es besteht f&uuml;r Sie die M&ouml;glichkeit, sich das Geld schnell und unproblematisch in einer unserer unternehmenseigenen Gesch&auml;ftsstellen, (Mobilit&auml;tszentrum am Hauptbahnhof oder dem Service-Zentrum in der Markgrafenstra&szlig;e [Zahl]) unter Angabe des Automaten und Vorlage eines amtlichen Lichtbildausweises sofort auszahlen zu lassen. Wenn es sich f&uuml;r Sie nicht mit einem Weg in die Stadt verbinden l&auml;sst, erstatten wir den Betrag nat&uuml;rlich auch zugunsten Ihrer Bankverbindung. In diesem Fall ben&ouml;tigen wir aber immer nachfolgende Angaben, damit wir Ihr Anliegen abschlie&szlig;end bearbeiten k&ouml;nnen: - Ihre vollst&auml;ndige Wohnanschrift - Ihre vollst&auml;ndige Bankverbindung (IBAN BIC SWIFT) - Nummer des Verkaufsger&auml;tes (bei mobilen Automaten alternativ Linie, Fahrtrichtung, Zustiegshaltestelle, Wagennummer) - Tag Ihres Kaufes - Uhrzeit Ihres Kaufes - Angaben zur Fahrkarte - einbehaltener Geldbetrag - Angaben zur St&ouml;rung Wir weisen in diesem Zusammenhang darauf hin, dass eine Kontoauszahlung deutlich mehr Zeit ben&ouml;tigt, da wir &Uuml;berweisungen im Sammelverfahren durchf&uuml;hren. Freundliche Gr&uuml;&szlig;e i. A. J&ouml;rg Mustermann Team Kundendialog Leipziger Verkehrsbetriebe (LVB) GmbH Georgiring [Zahl], [Zahl] Leipzig Telefon:[Telefonnr]Fax:[Telefonnr][E-Mail] www.L.de Facebook, Twitter, Youtube: www.L.de\/social Wir sind Leipziger. Leipziger Verkehrsbetriebe (LVB) GmbH &middot; Postfach [Zahl] [Zahl] [Zahl] &middot; [Zahl] Leipzig Aufsichtsratsvorsitzender: Max_i Bonew Gesch&auml;ftsf&uuml;hrung: Ulf Middelberg (Sprecher), Max_i Juhrs Amtsgericht Leipzig &middot; HRB-Nr. [Zahl] &middot; Sitz der Gesellschaft: Leipzig Bitte denken Sie an die Umwelt, bevor Sie diese Seite(n) drucken. &nbsp;",
+        "category": "Produkte & Angebote",
+        "topic": "Erstattungen & Reklamationen",
+        "subtopic": "Automatenreklamation"
+    },
+    {
+        "index": 5433,
+        "description": "Sehr geehrte Damen und Herren, eben, am Donnerstag, [Datum]um [Zahl].[Zahl] Uhr habe ich am Ticketautomaten am Waldplatz, stadteinwärts ein [Zahl]-Fahrten-Ticket im Wert von [Zahl],[Zahl]€ bezahlt, das Ticket jedoch nicht erhalten, der Automat hat mir nach Zahlung kein Ticket ausgegeben. Bitte erstatten Sie die Zahlung bis zum [Datum]zurück auf mein Konto: Mustermann Mustermann Sparkasse Leipzig IBAN:[IBAN] BIC: WELADE[Zahl]LXXX Mit freundlichen Grüßen Mustermann Mustermann",
+        "category": "Produkte & Angebote",
+        "topic": "Erstattungen & Reklamationen",
+        "subtopic": "Automatenreklamation"
+    },
+    {
+        "index": 4328,
+        "description": "Sehr geehrte Damen und Herren, im Anhang finden Sie eine neue Kundenresonanz. Diese können Sie ebenfalls im Web-Portal https:\/\/www.serviceaktion.de\/omnimessenger einsehen. Vorgangsnummer: [Zahl] Mit freundlichen Grüßen omniphon GmbH Vorgang Datum [Datum]Uhrzeit [Zeit] Uhr Beschreibung - Vorfall Kundin hat Knopf für Haltewunsch bestätigt, der vom Fahrer ignoriert wurde. Nachdem Kundin den Fahrer angesprochen hat, wurde dieser sehr unfreundlich. Hat die Kundin dann erst eine Station später rausgelassen. Verkehrsinformationen Linie [Zahl] Haltestelle Theresienstraße Richtung Paunsdorf Zielhaltestelle Beschwerdekategorie Titel Busfahrer hat Haltewunsch ignoriert Kategorie [Zahl] Verhalten Kategorie [Zahl] Fahrer",
+        "category": "Hinweis zu unserem Personal",
+        "topic": "Fahrpersonal",
+        "subtopic": "Kritik"
+    },
+    {
+        "index": 6778,
+        "description": "Hallo, seit eineinhalb Wochen kann ich über die move-App keine Nextbikes ausleihen. Am [Zahl].[Zahl]. hat es noch funktioniert, seit dem [Zahl].[Zahl]. nicht mehr. Was funktioniert: App öffnen. Fahrrad als Transportmittel auswählen. QR-Code am Rad scannen. Ausleihe bestätigen. Was nicht mehr funktioniert: Nach der Bestätigung der Ausleihe tritt die Fehlermeldung im Anhang auf und die Ausleihe wird abgebrochen. Werden noch weitere Informationen benötigt? Mit freundlichen Grüßen Mustermann Mustermann -- Diese Nachricht wurde von meinem Android-Gerät mit K-[Zahl] Mail gesendet.",
+        "category": "Produkte & Angebote",
+        "topic": "LeipzigMOVE",
+        "subtopic": "Fragen zum Bikesharing"
+    },
+    {
+        "index": 3737,
+        "description": "Betreffzeile:  Ein Nachweis vom Arzt liegt vor. Ausgestellt am [Datum] -- Diese Nachricht wurde von meinem Android Mobiltelefon mit WEB.DE Mail gesendet.",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Änderung Produkt"
+    },
+    {
+        "index": 12920,
+        "description": "Sehr geehrte Damen und Herren, im Anhang finden Sie eine neue Kundenresonanz. Diese können Sie ebenfalls im Web-Portal https:\/\/www.serviceaktion.de\/omnimessenger einsehen. Vorgangsnummer: [Zahl] Mit freundlichen Grüßen omniphon GmbH",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Meldung Verlust Chipkarte"
+    },
+    {
+        "index": 13254,
+        "description": "Sehr geehrte Damen und Herren, entsprechend Ihrer Vorgaben habe ich meinen bestehenden Vertrag ABOFlex, KD-Vertragsnummer [Zahl], in Ihren neuen Vertrag Mustermann+, KD-Vertragsnummer [Zahl] integriert. Einen anderen Weg der Integration haben Sie nicht vorgegeben! Jedoch befürchte ich nun den Abschluss eines Doppelvertrages und damit eine Doppelberechnung!!! Meine persönlichen Daten haben sich in keinem Punkt geändert! Unklar ist außerdem, ob meine ABOFlex-Mustermann Nr. [Zahl].[Zahl]-[Zahl].[Zahl].[Zahl]-[Zahl] weiterhin gültig ist??? Ich bitte um dringende Prüfung und Mitteilung an: [E-Mail] oder Rückruf unter:[Telefonnr]! Mit freundlichen Grüßen Mustermann Mustermann Max_i-von-Mustermann-Str. [Zahl] [Zahl] Leipzig-Gohlis Von meinem iPhone gesendet - sent from my iPhone!",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "doppelter Vertrag LeipzigMOVE"
+    }, 
+    {
+        "index": 399,
+        "description": "Sehr geehrte Damen und Herren,trotz Bestätigung der von Ihnen durchgeführten Änderungen, landen Briefe etc. noch bei der alten Adresse.Würden Sie bitte die systemische Anpassung noch einmal checken.Die neue Adresse gilt für beide Vertragsnummern.Ich danke Ihnen.Mit freundlichen GrüßenMax_i HübnerGesendet: Donnerstag, [Zahl]. März [Zahl] um [Zeit] Uhr Von:[E-Mail] An:[E-Mail] Betreff:AdressänderungVertragsnummern: [Zahl] und [Zahl]Max_i Mustermann Max_i WegnerSehr geehrte Damen und Herren, hiermit informiere ich Sie zu folgender Adressänderung: ALT: Magnusstr. [Zahl] \/ [Zahl] Leipzig NEU: Mosenthinstr. [Zahl] \/ [Zahl] Leipzig Freundliche Grüße Max_i Mustermann",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Änderung Kundendaten"
+    }, 
+    {
+        "index": 9103,
+        "description": "Sehr geehrte Damen und Herren, hiermit kündige ich zum nächstmöglichen Zeitpunkt (sofort) mein monatliches ABO Light. Die erteilte Einzugsermächtigung wird hiermit zur Wirksamkeit der Kündigung entzogen. . Ich bitte Sie, mir den Eingang meiner Kündigung schriftlich zu bestätigen. Vielen Dank ! Max_i Mustermann Müntzerweg [Zahl] A OT Abtsdorf [Zahl] Lutherstadt Mustermann LVB-ABO Vertragsnr. : [Zahl] Kundennr.:[Telefonnr]Mit freundlichen Grüßen Max_i Mustermann",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Kündigung des Vertrages"
+    }, 
+    {
+        "index": 8294,
+        "description": "Von E-Mail-Adresse: [E-Mail] Frage: Vor etwa zwei Wochen habe ich versucht mein Konto freizuschalten und erhalte seitdem immer wieder die gleiche Fehlermeldung. \"Ihr Account wurde bisher noch nicht freigeschaltet\" Ich bitte um Bearbeitung. ich bitte um eine kurze Rückmeldung. -- Diese E-Mail wurde von einem Kontaktformular von Leipzig Move (https:\/\/leipzig-move.de) gesendet",
+        "category": "Produkte & Angebote",
+        "topic": "LeipzigMOVE",
+        "subtopic": "Profil vervollständigen"
+    }, 
+    {
+        "index": 6274,
+        "description": "Sehr geehrte Damen und Herren, im Anhang finden Sie eine neue Kundenresonanz. Diese können Sie ebenfalls im Web-Portal https:\/\/www.serviceaktion.de\/omnimessenger einsehen. Vorgangsnummer: [Zahl] Mit freundlichen Grüßen omniphon GmbH",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Fragen zu Kontoabbuchungen"
+    }, 
+    {
+        "index": 6771,
+        "description": "Sehr geehrte Damen und Herren,   mein Name ist Max_i Mustermann, ich wohne in [Zahl] Leipzig, Schinkelstr. [Zahl] und ich bin Nutzer einer ABO Card\/Basis. Die Vertragsnummer dazu ist [Zahl]. Hiermit kündige ich diesen Vertrag zum nächstmöglichen Zeitpunkt, also zum [Datum]?. Ich bitte um Bestätigung der Kündigung und Mitteilung des Wirksamkeit selbiger. Die mit dem Vertrag verbundene Einzugsermächtigung wird widerrufen.   Mit freundlichen Grüßen, Max_i Mustermann",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Kündigung des Vertrages"
+    }, 
+    {
+        "index": 11721,
+        "description": " Bitte diese Mail an Herrn Jens Scheinpflug weiterleiten. Danke Sehr geehrter Herr Scheinpflug, vielen Dank für Ihre ausführliche Antwort, die ich jetzt so zur Kenntnis genommen habe. Ein bißchen schlechter wird das schon für uns – aber die LVB muß ja sparen. Wir werden uns darauf einrichten müssen. Spaß: jetzt können wir von der Wohnung Dunckerstraße auch zum Hafenviertel fahren…… Eine Frage zur aktuellen Situation im Zusammenhang mit der Bauerei Saalfelder Mustermann haben wir aber noch. Jetzt fahren wir zum Bushof Lindenau über Plautstraße (Endstelle Dunckerstraße wird Abfahrtsstelle nach Wendezeit). Am Bushof stehen die üblichen Linien zur Verfügung. Wenn jetzt der [Zahl]er zum Hafenviertel fährt, entsteht eine Weiterfahrmöglichkeit zum Bushof nur durch Mitfahrt bis neue Endstelle, dann zurück und über Plautstraße zum Bushof. Das ist verständlicherweise sehr umständlich und insofern gibt es doch einen Zusammenhang zwischen den genannten Ereignissen. Wir finden, es ist doch eine erhebliche Einschränkung und für uns und andere, uns bekannte,Fahrgäste, die mobilitätseingeschränkt sind, doch recht heftig. Besonders kompliziert wird das bei Terminplanungen für Arzt-, Behörden- oder Therapietermine. Und das weiterhin für uns beide für rund [Zahl] € im Jahr. Natürlich machen wird damit auch andere Mustermann. Bitte bestätigen Sie uns, daß wir das richtig sehen. Mit freundlichen Grüßen Max_i und Dr. Mustermann Mustermann Dr. Mustermann-Duncker-Str. [Zahl] [Zahl] Leipzig [E-Mail] Virenfrei. www.avast.com",
+        "category": "Produkte & Angebote",
+        "topic": "Tarife, Fahrpläne und Liniennetz",
+        "subtopic": "Verbesserungshinweis Fahrplan & Linien"
+    }, 
+    {
+        "index": 12175,
+        "description": "Sehr geehrte Damen und Herren. Mein Mustermann ungültig, und ich brauche eine neue Mustermann. Mein alte Adresse ist Ring Mustermann [Zahl] und ich habe umgezogen . Mein Name Adresse ist Schützenhausstraße [Zahl] [Zahl]Leipzig. Die Mustermann Nummer. [Zahl].[Zahl]-[Zahl].[Zahl].[Zahl]-[Zahl] Mit freundlichen Grüßen. Mustermann Max_i.",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Meldung Verlust Chipkarte"
+    }, 
+    {
+        "index": 2708,
+        "description": "Bitte denken Sie an die Umwelt, bevor Sie diese Seite(n) drucken.",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Neue Bankverbindung"
+    },
+    {
+        "index": 5371,
+        "description": "Sehr geehrte Damen und Herren, trotz Kündigungsbestätigung zum [Datum]wird immer noch vom Konto meines verstorbenen Vaters eine Lastschrift von [Zahl],[Zahl] € abgezogen. ([Datum] Die Monatskarte wurde mit dem Schreiben vom [Datum]genau wie die Sterbeurkunde beigefügt. Bitte teilen Sie mir umgehend mit, warum Sie noch immer Geld abbuchen. Mit freundlichen Grüßen Max_i Koch",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Kündigung des Vertrages"
+    },
+    {
+        "index": 7249,
+        "description": "Sehr geehrter Herr Tim, wie  ich Ihnen bereits mitteilte, habe ich bei meiner telefonischen Anfrage Ihrem Kollegen eindeutig mitgeteilt, daß ich für das Jahr [Zahl] eine Marke zu [Zahl] Euro für eine Seniorenkarte für ehemalige Mitarbeiter der LVB benötige. Da wegen der aktuellen Lage die Mobilitätscenter der LVB geschlossen sind, bitte ich um Auskunft, wie ich zu dieser Marke komme. Darauf übermittelte mir Ihr Kollege eine IBAN der LVB bei der Commerzbank, wohin ich die [Zahl] Euro überweisen soll, was ich dann auch getan habe. Er sagte mir auch, daß ich noch zusätzlich eine E-Mail an die LVB schreiben soll, in der ich darum bitten soll, mir die Marke auf dem Postweg zuzustellen, was ich auch getan habe. Haben Sie immer noch Fragen? Wenn jetzt nicht endlich von Ihnen eine endgültige Klärung dieser leidigen Angelegenheit  herbeigeführt wird, werde ich mich an Ihren Vorgesetzten wenden. Mit gar nicht mehr freundlichen Grüßen Max_i Mustermann",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "sonstiges Anliegen zum ABO"
+    },
+    {
+        "index": 13579,
+        "description": "Ich kündige mein Abo. Viele Grüße, Timo Daum marschnerstr. [Zahl] [Zahl] Leipzig",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Kündigung des Vertrages"
+    },
+    {
+        "index": 1420,
+        "description": "Vertragsnr. [Zahl] Karten-Nr. [Zahl].[Zahl]-[Zahl].[Zahl].[Zahl]-[Zahl] Sehr geehrte Damen und Herren, beiliegend schicke ich Ihnen die Kündigung des Monates-Abo. meiner Mutter, Frau Max_i Kopsch. Meine Mutter liegt im Krankenhaus und wird zum [Datum]in eine Pflegeeinrichtung in Brandenburg umziehen. Aus diesem Mustermann bitte ich Sie, die Kündigung des Abonnements zum [Datum]zu akzeptieren und zu bestätigen. Mit freundlichen Grüßen Max_i Mustermann (Tochter und Bevollmächtigte)",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Kündigung des Vertrages"
+    },
+    {
+        "index": 173,
+        "description": "Sehr geehrte Damen und Herren, Bezug nehmend auf unten stehende Mail, möchte ich um die Rückzahlung doppelter LVB-Abos für eine Schülercard bitten. Anscheinend ist statt einer Änderung eine zusätzliche Buchung erfolgt, was so nie beantragt wurde. Die Abbuchungsdetails: [Zahl]: [Zahl]€ von [IBAN]: Mandatsreferenz [Zahl]-[Zahl] Mandatsdatum [Datum]End-To-End-Referenz AB[Zahl]-[Zahl] B[Zahl] [Zahl]€ von [IBAN]: MREF:[Telefonnr]-[Zahl] EREF: AB[Zahl]-[Zahl] B[Zahl] [Zahl]€ von [IBAN]: MREF:[Telefonnr]-[Zahl] EREF: AB[Zahl]-[Zahl] B[Zahl] [Zahl]: [Zahl]€ von [IBAN]: Mandats-Ref.:[Telefonnr]-[Zahl] Ende-zu-Ende-ID: AB[Zahl]-[Zahl] B[Zahl] [Zahl]€ von [IBAN]: Mandats-Ref.:[Telefonnr]-[Zahl] Ende-zu-Ende-ID: AB[Zahl]-[Zahl] B[Zahl] [Zahl]€ von [IBAN]: Mandatsreferenz [Zahl]-[Zahl] End-To-End-Referenz AB[Zahl]-[Zahl] B[Zahl] [Zahl]€ von [IBAN]: Mandatsreferenz [Zahl]-[Zahl] End-To-End-Referenz AB[Zahl]-[Zahl] B[Zahl] Anbei finden Sie auch noch einmal die damaligen Änderungsverträge. Wenn ich das richtig interpretiere, wurde eine der Schülercards (Mandatsreferenz [Zahl]-[Zahl]) nicht auf das andere Konto umgestellt bzw. mit Beantragung der SchülerMobilCard nicht beendet. Insgesamt würden wir gern die [Zahl]x[Zahl]€ erstattet bekommen. Für Fragen stehe ich gern per Mail oder unter[Telefonnr]zur Verfügung. Mit freundlichen Grüßen, Max_i Mustermann On Mon, [Zahl]-[Zahl]-[Zahl] at [Zeit] +[Zahl], Max_i Mustermann wrote: > Sehr geehrte Damen und Herren, > > für unsere Töchter, Max_i Sim und Max_i Sim, möchten wir die > Kontoverbindungen entsprechend der angehängten Änderungs- > \/Kaufverträge > ändern und zusätzlich für Max_i Sim von der SchülerCard auf die > SchülerMobilCard umstellen. Ich hoffe, dass wir noch nicht zu spät > für > die Änderungswünsche sind und danke schon einmal im Voraus! > > Für Fragen stehe ich gern per Mail oder unter[Telefonnr]zur > Verfügung. >",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Fragen zu Kontoabbuchungen"
+    },
+    {
+        "index": 14164,
+        "description": "Abo-Vertragsnummer: [Zahl]   Sehr geehrte Damen und Herren,   aufgrund der Kündigung meines FSJ habe ich die Berechtigung meines Azubi Tickets verloren. Ich würde deshalb gerne, wie unter Punkt [Zahl].[Zahl].[Zahl]. meines Vertrages beschrieben, mein Abo zu einem Abo Premium für die Zone [Zahl] aufstocken.   Ich würde mich um eine baldige Antwort freuen.   Mit freundlichen Grüßen  Lucy Mustermann    ",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Änderung Produkt"
+    },
+    {
+        "index": 9434,
+        "description": "Sehr geehrte Damen und Herren, im Anhang finden Sie eine neue Kundenresonanz. Diese können Sie ebenfalls im Web-Portal https:\/\/www.serviceaktion.de\/omnimessenger einsehen. Vorgangsnummer: [Zahl] Mit freundlichen Grüßen omniphon GmbH Vorgang Datum [Datum]Uhrzeit Rückmeldung (Kanal) Telefon Beschreibung - Vorfall Kontrolle am [Zahl].[Zahl]. um [Zahl].[Zahl] Uhr an Haltestelle \"Am Mustermann\" Kundin hat [Zahl]-Fahrten Mustermann. Sie war mit ihrem Kleinkind unterwegs und ihr Kind wollte auch mal \"stempeln \", wie kleine Kinder so sind. Da sie kein \"Extrablatt\" zum Stempeln hatte, gab sie dem Kind die bereits abgestempelte Fahrkarte, da diese ja eh schon gestempelt ist. Die Kontrolle fand in Höhe Haltestelle \"Am Mustermann\" statt und der Kontrolleur sagte, die Mustermann ist ungültig, weil ja schon abgestempelt wurde (an [Zahl] unterschiedlichen Tagen) und damit ist die Mustermann praktisch voll. Sie erklärte ihm, dass ihr Kind auch \"mal stempeln wollte\" und ihr nicht bewusst gewesen war, dass man auch bereits gestempelte Fahrten nicht [Zahl] mal lösen darf (das Kind wollte ja im Prinzip nur spielen). Zudem sagte der Kontrolleur zu ihr, dass sie doch bitte ihr Kind richtig erziehen sollte. Diese Äußerung ist für sie nicht akzeptabel. Er wollte, dass sich die Kundin bei ihm entschuldigt und danach eine neue Fahrkarte zu lösen. Das hatte ihm die Kundin aber bereits im Vorfeld angeboten, es wurde aber seitens des Kontrolleurs nicht beachtet. Das Verhalten des Kontrolleurs ist für die Kundin nicht akzeptabel und sie erwartet eine Entschuldigung. Verkehrsinformationen Linie STR[Zahl] Haltestelle Gohlis Arkaden (Einstieg) Richtung Mustermann Zielhaltestelle Paunsdorf Center",
+        "category": "Hinweis zu unserem Personal",
+        "topic": "Fahrausweisprüfende",
+        "subtopic": "Kritik"
+    }, 
+    {
+        "index": 10273,
+        "description": "Mustermann Mustermann Mustermann-Mustermann-Mustermann.[Zahl] [Zahl] Leipzig Mustermann Mustermann ABO-vertragsnummer:[Zahl] Adnan Mustermann ABO-vertragsnummer:[Zahl] Max_i Mustermann ABO-vertragsnummer:[Zahl] Sehr gehrte Damenn und herren, Ich habe eine Anfrage, ich habe festgestellt, dass ein Betrag von [Zahl],[Zahl] € von meinem Konto zugunsten der LVB GMBH abgezogen wurde. Warum wurde dieser Betrag abgezogen? Ich muss [Zahl],[Zahl] € pro Monat für meine Mustermann, [Zahl],[Zahl] € für die Mustermann meines Sohnes und [Zahl],[Zahl] € für die Mustermann meiner Tochter bezahlen. Diese Beträge wurden für diesen Monat abgezogen. Bitte erkläre es mir. Mit Frundlishen Grüßen Mustermann Mustermann [Datum]Leipzig",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Fragen zu Kontoabbuchungen"
+    }, 
+    {
+        "index": 14179,
+        "description": "Sehr geehrte Damen und Herren, hiermit möchte ich zu dem bestehenden Abo der Mustermann Card meines Sohnes Rufus noch ein MDV Abo Mustermann hinzubuchen. Anbei der ausgefüllte Vertrag, es hat sich die Personalausweisnummer geändert. Wie läuft das mit der Aktivierung des Vertrages, kann das Abo mit auf die bestehende Mustermann gebucht werden? Vertragsnummer:[Zahl] Chipkartennr.: [Zahl].[Zahl]-[Zahl].[Zahl].[Zahl]-[Zahl] Mit freundlichen Grüßen Max_i Mustermann",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Neuantrag ABO\/Babycard"
+    }, 
+    {
+        "index": 4878,
+        "description": "Sehr geehrte Damen und Herren. Heute morgen ist die Linie [Zahl]. Mit der Nummer [Zahl] aus der Endstelle Stötteritz um [Zahl]:[Zahl] Uhr (Uhrzeit gem. elektronischer Anzeigetafel an der erster Haltestelle stadteinwärts) gefahren. Planmäßige Abfahrtszeit ist [Zahl]:[Zahl] Uhr der Haltestelle Stötteritz. Es ist mE nicht nachvollziehbar, warum [Zahl] min früher abgefahren wird. Es waren [Zahl] Mustermann \/ Mitarbeiter im Führerhaus. Selbst wenn es sich um Fahrschüler handelt, sind die Zeiten - natürlich soweit es geht unter Beachtung des Verkehrsaufkommen - nicht immer einzuhalten. Allerdings gilt das nicht für diese Uhrzeit und Abfahrt aus der Endstelle. Wenn man von etwas außerhalb kommt, ist ein Anschluss \/ erreichen der Bahn wichtig. Noch dazu gibt es bei schlechtem Wetter nicht einmal eine Unterstellmöglichkeit an der stadteinwärts liegenden Haltestelle. Warum gibt es hier nur eine Bank aber kein Wartehaus für Regenzeiten, Windschutz etc.? Ich erwarte, dass den Mitarbeitern der Verkehrsbetriebe mitgeteilt wird, Fahrtzeiten sind einzuhalten, vor allem wo es offensichtlich möglich ist. Max_i Mustermann",
+        "category": "Hinweis zu unserem Personal",
+        "topic": "Fahrpersonal",
+        "subtopic": "Kritik"
+    }, 
+    {
+        "index": 5828,
+        "description": "Sehr geehrte Damen und Herren, als ich eben versuchte mich für das Online Kundenportal anzumelden musste ich feststellen, dass immer noch meine Frau Max_i Mustermann als Vertragsnehmer hinterlegt ist. Ich bin seit Jahren JobTicket Kunde und habe die falschen Daten auch seit Jahren mehrfach in ihrem Servicepunkt am Hauptbahnhof Leipzig angezeigt. Letztmalig am [Datum] Mein Arbeitgeber hat mich darauf hingewiesen, dass sie ab Januar neue Kundenkarten verschicken. Da ich umgezogen bin, wollte ich kontrollieren ob meine Kundendaten korrekt hinterlegt sind. Wie ich feststellen musste ist weder meine neue Anschrift hinterlegt noch ist der Vertragsnehmer korrekt angegeben. Meine Frau hatte damals meinen Mustermann an meiner statt abgegeben, da ich verhindert war. Vielleicht rührt daher die Verwirrung. Könnten sie bitte meine Daten endlich korrigieren? Daten alt (und falsch): Vertragsnehmer: Max_i Mustermann, Anschrift: Dresdner Str. [Zahl]a, [Zahl] Leipzig. Korrekte Daten: Vertragsnehmer: Mustermann Mustermann, Anschrift: Max_i-Lassalle-Mustermann [Zahl], [Zahl] Taucha --》Aus diesem Mustermann bezahle ich auch für Zone [Zahl] und [Zahl]. Die korrekte Telefonnummer lautet:[Telefonnr]Mit freundlichen Grüßen Mustermann Mustermann",
+        "category": "Produkte & Angebote",
+        "topic": "Mein JOB Ticket",
+        "subtopic": "Änderung Kundendaten"
+    }, 
+    {
+        "index": 9211,
+        "description": "Sehr geehrte Damen und Herren, leider ist bei Ihrer Vertragsbestätigung vom [Datum]für das JOB-Ticket-Basis meine Mustermann falsch. Die Mustermann heißt richtig Marienstraße. Ich bitte Sie, meine Adresse entsprechend zu korrigieren. Vielen Dank im Voraus. Max_i Mustermann Marienstraße [Zahl] [Zahl] Markranstädt",
+        "category": "Produkte & Angebote",
+        "topic": "Mein JOB Ticket",
+        "subtopic": "Änderung Kundendaten"
+    }, 
+    {
+        "index": 14635,
+        "description": "Sehr geehrte Damen und Herren, hiermit möchte ich altersbedingt meine Monatskarte mit der Nummer [Zahl].[Zahl]-[Zahl].[Zahl].[Zahl]-[Zahl] zum nächstmöglichen Zeitpunkt kündigen. Meine Daten lauten: Max_i Mustermann, geb. [Datum] Gleichzeitig widerrufe ich zum Kündigungszeitpunkt mein Einverständnis zum Lastschrifteinzug. Vielen Dank und viele Grüsse Max_i Mustermann",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Kündigung des Vertrages"
+    }, 
+    {
+        "index": 12041,
+        "description": "Vertragsnummer: [Zahl]\/MMVP-a Sehr geehrter Damen und Herren, hiermit teile ich Ihnen meine aktuelle e-mail mit: [E-Mail] Mit frdl. Grüßen Dr. Max_i Mustermann",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Änderung Kundendaten"
+    },
+    {
+        "index": 7139,
+        "description": "Sehr geehrtes LVB-Team, die Kündigung des Abonnements wurde bestätigt und die Abgabe der LVB Abonnement Mustermann soll bis [Datum]erfolgen. Aufgrund der derzeitigen Situation können wir die Mustermann vorerst nicht bei ihnen in der Innenstadt angegeben. Bitte teilen Sie uns mit, wie und wohin diese postalisch zugesendet werden kann. Grüße, Anja Mustermann TypeApp for Android  herunterladen  Am [Zahl]. Okt. [Zahl], um [Zeit], Anja Mustermann < [E-Mail] > schrieb: Sehr geehrtes LVB-Team, Hiermit kündige ich zum nächstmöglichen Termin mein LVB -Abo mit Kundennummer: [Zahl].[Zahl]-[Zahl].[Zahl]-[Zahl] Anja Mustermann Denkmalsblick [Zahl] [Zahl] Leipzig. Bitte senden sie mir, gerne auch vorab per E-Mail, die Kündigung\/ Termin zu. Mit Ende des Abos erlischt mein erteiltes SEPA Lastschrift Mandat. Grüße, Anja Mustermann TypeApp for Android  herunterladen ",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Kündigung des Vertrages"
+    }, 
+    {
+        "index": 8422,
+        "description": "Sehr geehrte Damen und Herren, ich weiß nicht wann ich bei euch einen Vertrag abgeschlossen hätte aber hiermit kündige ich den Vertrag keine ahnung was der überhaupt ist und die Löschung meines ko tos, danke. Meine vertragsnummer ist: [Zahl] Mit freundlichen Grüßen Mustermann Mustermann -- Diese Nachricht wurde von meinem Android Mobiltelefon mit WEB.DE Mail gesendet.",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Kündigung des Vertrages"
+    }, 
+    {
+        "index": 11871,
+        "description": "Hallo, es ist mittlerweile Ende Februar und ich habe noch immer keine Rückmeldung zu meinem Anliegen [Zahl].[Zahl] bekommen. Der Fehler besteht noch immer. Sehr enttäuschend. Am Mo., [Zahl]. Dez. [Zahl] um [Zeit] Uhr schrieb Max_i Mustermann < [E-Mail] >: Sehr geehrte Damen und Herren, leider kann ich über die Leipzig MOVE App keine nextbikes mehr ausleihen. Auch nach mehrmaligem an- und abmelden und Neuinstallation der App sehe ich immer die angehängte Fehlermeldung. Ich würde mich freuen, wenn das zeitnah behoben werden könnte. Mit freundlichen Grüßen Max_i Mustermann",
+        "category": "Produkte & Angebote",
+        "topic": "LeipzigMOVE",
+        "subtopic": "Fragen zum Bikesharing"
+    }, 
+    {
+        "index": 12807,
+        "description": "Sehr geehrte Damen und Herren, als Anlage sende ich Ihnen den Mustermann für die BabyCard, sowie alle geforderten Unterlagen. Sollten Sie noch Fragen haben können Sie mich gern unter[Telefonnr]erreichen. Mit freundlichen Grüßen Lisa Mustermann",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Neuantrag ABO\/Babycard"
+    }, 
+    {
+        "index": 13710,
+        "description": "Sehr geehrte Damen und Herren, im Anhang finden Sie eine neue Kundenresonanz. Diese können Sie ebenfalls im Web-Portal https:\/\/www.serviceaktion.de\/omnimessenger einsehen. Vorgangsnummer: [Zahl] Mit freundlichen Grüßen omniphon GmbH Kundenresonanz (Beschwerde) Kundendaten Anrede Herr Nachname Mustermann Vorname Anschrift Anschrift (Zusatz) E-Mail [E-Mail] Telefon[Telefonnr]Geburtsdatum Vorgangsnummer [Zahl] Status warten auf Übertragung Projekt MDV Kategorie Beschwerde Datum\/Uhrzeit erstellt am [Datum][Zeit] Uhr von Max_i Mustermann letzte Bearbeitung am [Datum][Zeit] Uhr von ffuhge Vorgang Datum [Datum]Uhrzeit Rückmeldung (Kanal) E-Mail Beschreibung - Vorfall KD fühlt sich im Bus nicht wohl, da Fahrgäste ohne Mund-Nasen-Schutz mitfahren und kein Hinweis seitens des Verkehrsunternehmen gemacht wird. Verkehrsinformationen Linie Bus [Zahl] Haltestelle Richtung Merseburg\/Leipzig Zielhaltestelle Beschwerdekategorie Titel keine Corona- Maßnahmen im Bus Kategorie [Zahl] Sicherheit Kategorie [Zahl] keine Angabe Kategorie [Zahl] keine Angabe Bankdaten Kontoinhaber IBAN BIC",
+        "category": "Produkte & Angebote",
+        "topic": "Tarife, Fahrpläne und Liniennetz",
+        "subtopic": "Verbesserungshinweis Fahrplan & Linien"
+    }, 
+    {
+        "index": 6638,
+        "description": "Sehr geehrte Damen und Herren, ich habe am [Datum]meine Geldbörse verloren. Darin befand sich auch meine Jahreskarte. Ich bitte um Sperrung der alten ,- und Ausstellung einer neuen Jahreskarte- Meine Kundenadresse ist: Mustermann Max_i Mustermann Hempelstrasse [Zahl] [Zahl] Leipzig Telefonisch bin ich unter[Telefonnr]zu erreichen. Bitte die Ersatzkarte an meine Adresse schicken. über eine schnelle Bearbeitung würde ich mich freuen. Mit freundlichen Grüßen Mustermann Max_i Mustermann",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Meldung Verlust Chipkarte"
+    }, 
+    {
+        "index": 10148,
+        "description": "New fax received: Status: SUCCESS From: anonymous To: [Zahl] Mustermann: [Zahl] Date: Feb[Telefonnr], [Zeit] -- Please do not reply to this auto-generated E-Mail.",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Neue Bankverbindung"
+    }, 
+    {
+        "index": 8252,
+        "description": "Von: Mustermann <[E-Mail]> Vorname: Max_i Nachname: Mustermann Strasse: Gretschelstr., [Zahl] Ort: Leipzig Telefon:[Telefonnr]E-Mail: [E-Mail] DSGVO: Zugestimmt: Ich habe die Regelungen zum Datenschutz zur Kenntnis genommen und bin mit der Speicherung und Verarbeitung meiner Daten durch die Leipziger Verkehrsbetriebe (LVB) GmbH einverstanden. Nachrichtentext: Sehr geehrte Damen und Herren, ich habe mich bereits am [Datum]per E-Mail an Sie gewandt, leider aber bisher keine Antwort erhalten. Daher Versuche ich es nochmals hier. Leider kann ich über die Leipzig MOVE App keine nextbikes mehr ausleihen. Auch nach mehrmaligem an- und abmelden und Neuinstallation der App sehe ich immer die Fehlermeldung „[nextbike_general_booking_error:[Zahl]de_DE]“. Auch mehrere Bekannte haben das gleiche Problem. In Rücksprache mit nextbike sagte man mir, dass hier ausschließlich die LVB helfen könnten. Daher wende ich mich an Sie mit der Bitte und Frage, ob Sie dies möglichst zeitnah beheben könnten. Haben Sie im Vorraus vielen Dank. Mit freundlichen Grüßen Max_i Mustermann -- Diese E-Mail wurde von einem Kontaktformular von Leipzig Move (https:\/\/leipzig-move.de) gesendet",
+        "category": "Produkte & Angebote",
+        "topic": "LeipzigMOVE",
+        "subtopic": "Fragen zum Bikesharing"
+    }, 
+    {
+        "index": 5048,
+        "description": "<Form>Kontaktformular Verkehrsbetriebe<\/Form> <[formgen_email_header_subject]>Anfrage\/Information<\/[formgen_email_header_subject]> <Name>Mustermann<\/Name> <Vorname>Max_i<\/Vorname> <Mustermann>Sylterstrasse [Zahl] <\/Mustermann> <PLZ>[Zahl]<\/PLZ> <Ort>Leipzig<\/Ort> <Telefonnummer>[Telefonnr]<\/Telefonnummer> <E-Mail-Adresse>[E-Mail]<\/E-Mail-Adresse> <Ihre Nachricht an uns>I ch habe [Zahl] Zonen ABO Ich habe aber vor einigen Wochen die [Zahl].Zone gekündigt So dasich nur noch die Stadtzone als ABO habe. Wieweit sind Sie mit meiner Kündigung Mit freudlicheng Gruss Mustermann <\/Ihre Nachricht an uns> Bitte denken Sie an die Umwelt, bevor Sie diese Seite(n) drucken.",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Änderung Produkt"
+    }, 
+    {
+        "index": 5172,
+        "description": "Von: Mustermann <[E-Mail]> Vorname: Mustermann Nachname: Mustermann Strasse: Ort: Telefon: E-Mail: [E-Mail] DSGVO: Zugestimmt: Ich habe die Regelungen zum Datenschutz zur Kenntnis genommen und bin mit der Speicherung und Verarbeitung meiner Daten durch die Leipziger Verkehrsbetriebe (LVB) GmbH einverstanden. Nachrichtentext: Wieso hab ich nach wie vor den Move+ Tarif, zahle aber nichts hierfür...sehr verwirrend. -- Diese E-Mail wurde von einem Kontaktformular von Leipzig Move (https:\/\/leipzig-move.de) gesendet",
+        "category": "Produkte & Angebote",
+        "topic": "LeipzigMOVE",
+        "subtopic": "Sonstiges Anliegen LeipzigMOVE"
+    }, 
+    {
+        "index": 13491,
+        "description": "Sehr geehrte Damen und Herren, ich habe für meinen Sohn Max_i Mustermann eine SchülerCard mit Vertragsnummer [Zahl] abgeschlossen, die er im Jahr [Zahl]\/[Zahl] bisher auf Mustermann Corona und fehlenden Präsenzunterricht noch nicht genutzt hat. Gibt es irgend eine Möglichkeit zur anteiligen Rückzahlung des Beitrages? Weiterhin kündige ich hiermit das Abo zum nächstmöglichen Termin und bitte um schriftliche Bestätigung. In diesem Zusammenhang bitte ich um Mitteilung, warum ich eine Gutschrift in Höhe von [Zahl],[Zahl] Euro auf mein Konto gutgeschrieben bekam? Mit freundlichen Grüßen Max_i Mustermann Max_i Mustermann - Eitingonstraße [Zahl] - [Zahl] Leipzig - Telefon[Telefonnr]",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Kündigung des Vertrages"
+    }, 
+    {
+        "index": 12328,
+        "description": "Sehr geehrte Damen und Herren, hiermit möchte ich meine Adresse des laufenden ABO Light Vertrages ändern. Neue Adresse: Max_i Mustermann Essener Mustermann [Zahl] [Zahl] Leipzig Kundennummer: [Zahl] Geb.: [Datum]Ich bitte um eine Bestätigung der angegebenen Adressänderung. Mit freundlichen Grüßen, D. Mustermann Von meinem iPhone gesendet",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Änderung Kundendaten"
+    }, 
+    {
+        "index": 11269,
+        "description": "[E-Mail] Hallo liebe Kolleg*innen, die Kundin Max_i Mustermann ( [E-Mail] [Telefonnr]beklagt, dass sie von euch eine Mustermann und nun auch Mahnungen zu einer Ausleihe erhält, die von uns längst angepasst wurde. Im Anhang dieser E-Mail findet ihr die von uns bearbeitete Ausleihe. Auf das LeipzigMOVE Konto von Mustermann kann ich nicht zugreifen, da dies scheinbar gelöscht wurde. Von wem und warum ist für mich nicht nachvollziehbar. Am [Datum]haben wir die Ausleihkosten von [Zahl],[Zahl] EUR auf [Zahl],[Zahl] EUR reduziert, die Servicegebühr haben wir am [Datum]von [Zahl],[Zahl] EUR auf [Zahl],[Zahl] EUR reduziert. Da wir die Leihe bereits angepasst haben, verstehe ich nicht, warum die Kundin sich immer an uns wenden soll, wenn diese richtigerweise euch kontaktierte. Ich bitte um zeitnahe Klärung des Problems für Max_i Mustermann, gerne auch mit Rückmeldung an mich. Beste Grüße -- Max_i Mustermann | Customer Service Supervisor [Telefonnr] [Zahl] [Zahl] [Zahl] | Erich-Zeigner-Allee [Zahl]-[Zahl], [Zahl] Leipzig - Germany www.nextbike.de | www.nextbike.net (B[Zahl]B) nextbike GmbH | Erich-Zeigner-Allee [Zahl]-[Zahl], [Zahl] Leipzig Amtsgericht Leipzig HRB [Zahl] | Geschäftsführer: Mustermann von Harrach, Max_i Popp",
+        "category": "Produkte & Angebote",
+        "topic": "Erstattungen & Reklamationen",
+        "subtopic": "Rg.reklamation ABO Flex\/ LeipzigMOVE"
+    }, 
+    {
+        "index": 14190,
+        "description": "Swhr geehrter Damen und Herren, folgendes Problem,am [Zahl].März wurde mir mein Abo Monatsbetrag abgezogen und am [Zahl].März wieder auf mein Konto zurück gebucht obwohl mein Konto gedeckt ist.Jetzt soll ich [Zahl],[Zahl]€ nachzahlen.Ich habe schon bei der Service Nummer angerufen und die Dame meinte das es wohl ein Buchhaltungsfehler ist,da ich nicht die erste gewesen bin die wegen dem Problem angerufen hat. Meine Vertragsnummer: [Zahl] Chipkartennummer: [Zahl] Meine Daten: Mustermann Mustermann,Marsweg [Zahl],[Zahl] Leipzig,[Datum] Mfg Mustermann Holen Sie sich Outlook für Android",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Fragen zu Kontoabbuchungen"
+    }, 
+    {
+        "index": 904,
+        "description": " (AZ: [Zahl]) - Unterbrechung meines LVB Abos  Sehr geehrte Damen und Herren, mein Arbeitgeber wird sich mit Ihnen in Verbindung setzen um mein bestehendes Job Ticket zu kündigen. Hiermit bitte ich Sie, nach Erhalt der Information durch den Arbeitgeber Händlerbund Management AG, das bestehende jobticket in das normale Abo umzuwandeln, welches ich auch zuvor hatte. Vielen Dank für die Bestätigung und eine Info, ob ich meine aktuelle Abo Mustermann behalten kann oder dieser erneut getauscht werden muss. Mit freundlichen Grüßen Max_i Mustermann Max_i Mustermann <[E-Mail]> schrieb am Mo. [Zahl]. Juni [Zahl] um [Zeit]: > Sehr geehrte Damen und Herren, > > bitte entschuldigen Sie die Verwirrung, der Vertrag bleibt bestehen. Ich > nehme ab [Zahl].[Zahl]. das Job Ticket in Anspruch und habe gerade erfahren, dass > mein bestehender Vertrag kostenfrei auf das Job Ticket geändert werden > kann. Daher bleibt alles wie gehabt und Sie bekommen den Mustermann von meinem > Arbeitgeber. > Ich bitte nur um kurze Bestätigung. > > Vielen Dank. > > Mit freundlichen Grüßen > > Max_i Mustermann > > <[E-Mail]> schrieb am Mo. [Zahl]. Juni [Zahl] um [Zeit]: > >> Sehr geehrte Damen und Herren, >> >> ich möchte hiermit meinen bestehenden Vertrag zum [Zahl].[Zahl]. komplett >> kündigen und bitte Sie daher um eine zeitnahe Bestätigung über den Erhalt >> dieser E-Mail und entsprechende Beachtung. >> >> Mit freundlichen Grüßen >> >> Max_i Mustermann >> >> <[E-Mail]> schrieb am Mo. [Zahl]. Juni [Zahl] um [Zeit]: >> >>> >>> >>> >>> Sehr geehrte Frau Mustermann, >>> >>> >>> >>> >>> >>> vielen Dank für Ihre Nachricht. >>> >>> >>> >>> >>> >>> Grundsätzlich ist eine Unterbrechung des ABOs aus unvorhersehbaren >>> >>> >>> wichtigen Gründen möglich, sofern die Unterbrechungsdauer mindestens [Zahl] >>> >>> >>> Monat (nur vom Monatsersten bis zum Monatsletzten), jedoch nicht mehr >>> als [Zahl] >>> >>> >>> Monate beträgt. Als unvorhersehbarer wichtiger Mustermann wird u. a. eine >>> >>> >>> vorübergehende dienstliche Umsetzung an einen anderen Ort (außerhalb der >>> im >>> >>> >>> ABO-Vertrag angegebenen Tarifzonen) anerkannt. >>> >>> >>> >>> >>> >>> Es ist den Leipziger Verkehrsbetrieben jedoch ein Nachweis in geeigneter >>> >>> >>> Form vorzulegen. Wir bitten Sie daher darum, den Nachweis (z. B. eine >>> >>> >>> Bescheinigung Ihres Arbeitgebers) als Antwort auf diese E-Mail >>> zuzusenden. >>> >>> >>> >>> >>> >>> >>> >>> >>> Freundliche Grüße >>> >>> >>> >>> >>> >>> i. A. Mike Lieder >>> >>> >>> Mitarbeiter Vertrag und Abrechnung Privatkunden >>> >>> >>> >>> >>> >>> Leipziger Verkehrsbetriebe (LVB) GmbH >>> >>> >>> Georgiring [Zahl], [Zahl] Leipzig >>> <https:\/\/www.google.com\/maps\/search\/Georgiring+[Zahl],+[Zahl]+Leipzig?entry=gmail&source=g> >>> >>> >>> >>> >>> >>> Telefon:[Telefonnr]>>> >>> >>> Fax:[Telefonnr]>>> >>> >>> >>> >>> >>> [E-Mail] >>> >>> >>> www.L.de >>> >>> >>> >>> >>> >>> Facebook, Twitter, Youtube: www.L.de\/social >>> >>> >>> >>> >>> >>> Wir sind Leipziger. >>> >>> >>> >>> >>> >>> Leipziger Verkehrsbetriebe (LVB) GmbH · Postfach [Zahl] [Zahl] [Zahl] · [Zahl] Leipzig >>> >>> >>> Aufsichtsratsvorsitzender: Max_i Bonew >>> >>> >>> Geschäftsführung: Ulf Middelberg (Sprecher), Max_i Juhrs >>> >>> >>> Amtsgericht Leipzig · HRB-Nr. [Zahl] · Sitz der Gesellschaft: Leipzig >>> >>> >>> >>> >>> >>> Bitte denken Sie an die Umwelt, bevor Sie diese Seite(n) drucken. >>> >>> >>> >>> >>> >>> >> >> > >",
+        "category": "Produkte & Angebote",
+        "topic": "Mein JOB Ticket",
+        "subtopic": "Kündigung des Vertrages"
+    }, 
+    {
+        "index": 11455,
+        "description": "Sehr geehrte Damen und Herren, hiermit möchte ich diesen Vertrag zum nächst möglichen Termin ordentlich kündigen. Bitte bestätigen Sie die Kündigung unter Angabe des Termines. Mit freundlichen Grüßen Mustermann Mustermann < [E-Mail] > schrieb am Di., [Zahl]. Feb. [Zahl], [Zeit]: Sehr geehrter Herr Mustermann, anbei erhalten Sie Ihre aktuelle Mustermann. Mit freundlichen Grüßen Ihre Leipziger Verkehrsbetriebe (LVB) GmbH www.L.de Facebook, Twitter, Youtube: www.L.de\/social Wir sind Leipziger. Leipziger Verkehrsbetriebe (LVB) GmbH * Postfach [Zahl] * [Zahl] Leipzig Aufsichtsratsvorsitzender: Max_i Bonew Geschäftsführung: Ulf Middelberg (Sprecher), Max_i Juhrs Amtsgericht Leipzig * HRB-Nr. [Zahl] * Sitz der Gesellschaft: Leipzig Bitte denken Sie an die Umwelt, bevor Sie diese Nachricht ausdrucken",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Kündigung des Vertrages"
+    }, 
+    {
+        "index": 11666,
+        "description": "Sehr geehrte Damen und Herren, aufgrund der Unfreundlichkeit und der konsequenten Ignoranz von Beschwerden möchte ich meine ABOFlexCard ([Zahl].[Zahl]-[Zahl].[Zahl].[Zahl]-[Zahl]) zum nächstmöglichen Termin kündigen. Bitte teilen Sie mir mit, zu welchem Termin die Kündigung wirksam wird und wo ich die ABOFlex Card wann abgeben muss. Mit freundlichen Grüßen Jana Mustermann Rosa-Luxemburg-Str. [Zahl] [Zahl] Leipzig Tel.:[Telefonnr]",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Kündigung des Vertrages"
+    },
+    {
+        "index": 12414,
+        "description": "ABO VertragsNr.:[Telefonnr]Gläbiger ID-Nr.: DE[Zahl]LVB[Zahl] Sehr geehrte Damen und Herren, Die im Anhang beigefügte Mustermann habe ich heute, den [Datum] beglichen. Aufgrund des Bankwechsels war es ihnen offensichtlich nicht möglich den Betrag einzuziehen, obwohl die Bank normalerweise alle Institute informiert. Somit teile ich ihnen meine neuen Bankdaten mit und bitte um künftige SEPA-Lastschrift. Commerzbank AG Leipzig IBAN [IBAN] BIC COBADEFFXXX Ich bitte sie um eine schriftliche Bestätigung. Freundliche Grüße Max_i Mustermann",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Fragen zu Kontoabbuchungen"
+    }, 
+    {
+        "index": 4471,
+        "description": "Sehr geehrte Damen und Herren, im Anhang finden Sie eine neue Kundenresonanz. Diese können Sie ebenfalls im Web-Portal https:\/\/www.serviceaktion.de\/omnimessenger einsehen. Vorgangsnummer: [Zahl] Mit freundlichen Grüßen omniphon GmbH Vorgang Datum [Datum]Uhrzeit [Zeit] Uhr Beschreibung - Vorfall Fahrer trägt keine Maske. Er ist unfreundlich. Laut Anruferin weist er Kinder auf Maskenpflicht hin und vergreift sich wohl im Ton. Bitte prüfen und Kd. informieren. Verkehrsinformationen Linie [Zahl] Haltestelle Liebertwolkwitz Markt Richtung Leipzig Mustermann Zielhaltestelle Beschwerdekategorie Titel Beschwerde Kategorie [Zahl] Verhalten Kategorie [Zahl] Fahrer Kategorie [Zahl] keine Angabe",
+        "category": "Hinweis zu unserem Personal",
+        "topic": "Fahrpersonal",
+        "subtopic": "Kritik"
+    }, 
+    {
+        "index": 6698,
+        "description": "[Zahl].[Zahl]-[Zahl].[Zahl].[Zahl]-[Zahl]   Guten Tag,   soeben habe ich festgestellt, dass die monatliche Abbuchung zum [Zahl]. des Monats für meine Abo-Mustermann diesen Monat (noch) nicht erfolgt ist.   Was mich verwundert ist, dass auch in den Vormerkposten für morgen und übermorgen keine Abbuchung angezeigt wird. Selbst wenn ein Wochenende dazwischen liegt und der [Zahl]. darauf fällt wird pünktlich zum ersten Werktag der folgt abgebucht und bereits um den [Zahl].\/[Zahl]. eines jeden Monats ist diese auch in den Vormerkposten vermerkt - nur diesen Monat nicht.   Um es gleich vorwegzunehmen - das Konto ist immer gedeckt - es wurde nicht einmal versucht eine Abbuchung vorzunehmen.   Mit freundlichen Grüßen   René Mustermann Reiskestr. [Zahl] [Zahl] Leipzig              ",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Fragen zu Kontoabbuchungen"
+    }, 
+    {
+        "index": 10932,
+        "description": "Hiermit möchte ich Ihnen mitteilen, ob es möglich wäre meine abokarten zum [Zahl]. des von meinem angegeben Konto abzubuchen. Bitte um Bearbeitung meiner Sache. Frau Mustermann",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Änderung Datum Bankeinzug"
+    }, 
+    {
+        "index": 11661,
+        "description": "Von: Mustermann Vorname: Jens Nachname: Mustermann Strasse: Max_i-Mustermann-Mustermann, [Zahl]a Ort: Leipzig Telefon:[Telefonnr]E-Mail: [E-Mail] DSGVO: Nicht zugestimmt: Ich habe die Regelungen zum Datenschutz zur Kenntnis genommen und bin mit der Speicherung und Verarbeitung meiner Daten durch die Leipziger Verkehrsbetriebe (LVB) GmbH einverstanden. Nachrichtentext: Kundenvertragsnummer: [Zahl] Ich würde gern wissen wo man das Profil - Adresse, Rufnummer oder Bankverbindung ändern kann. Dies ist meine zweite Anfrage, ich bitte um Antwort. Die App ist sonst nicht nutzbar. -- Diese E-Mail wurde von einem Kontaktformular von Leipzig Move (https:\/\/leipzig-move.de) gesendet",
+        "category": "Produkte & Angebote",
+        "topic": "LeipzigMOVE",
+        "subtopic": "Profil vervollständigen"
+    }, 
+    {
+        "index": 563,
+        "description": " Ihre Zuschrift (AZ: [Zahl]) - ABO Flex Registrierung geht nicht  Sehr geehrter Herr Scheinpflug, ich hatte bereits im Mobilitätszentrum Leipzig meine E-Mailadresse: [E-Mail] , ändern lassen. Dies ist bereits vor Ihrer E-Mail passiert. Ist diese Adresse jetzt auch hinterlegt? Vielen Dank für eine Rückmeldung. Mit freundlichen Grüßen i.V. Max_i RAMMELT Vertrieb \/ Office France Elévateur Deutschland GmbH Pansastraße [Zahl] [Zahl] Leipzig - Germany Mob. [Telefonnr][Zahl] Tel. [Telefonnr][Zahl] - Fax [Telefonnr][Zahl] www.fe-deutschland.de",
+        "category": "Produkte & Angebote",
+        "topic": "LeipzigMOVE",
+        "subtopic": "Fragen zum L-Login"
+    }, 
+    {
+        "index": 11986,
+        "description": "EILT - Carsharing-Nutzung - Führerschein validieren Sehr geehrte Damen und Herren, ich wollte über die Leipzig-Move App morgen vormittag ein Auto mieten. Nun muss ich noch meinen Führerschein validieren, das war mir zuvor nicht bewusst. Über das Servicetelefon wurde mir eben mitgeteilt ich könne dies per Mail machen, da die Termine in den Kundenzentren sehr rar sind. Ich sende Ihnen hier meinen Führerschein im Anhang mit der Bitte um möglichst schnelle Bearbeitung. Im Profil meiner App sind zwei Kundennummern angegeben, ich weiß leider nicht, welche die nun relevante ist. [Zahl] oder [Zahl] Meine weiteren Daten: Max_i Mustermann Richterstr. [Zahl] [Zahl] Leipzig Geb.: [Datum]Gerne können Sie mich auch telefonisch kontaktieren unter:[Telefonnr]Besten Dank und freundliche Grüße Max_i Mustermann",
+        "category": "Produkte & Angebote",
+        "topic": "LeipzigMOVE",
+        "subtopic": "Profil vervollständigen"
+    },
+    {
+        "index": 7111,
+        "description": "Sehr geehrte Damen und Herren, Hiermit möchte ich Ihnen mitteilen, dass ich umgezogen bin und sich damit meine Anschrift geändert hat. Bitte aktualisieren Sie dahingehend meine Daten und bestätigen Sie mir die Änderungen schriftlich. Vielen Dank! Freundliche Grüße Max_i Mustermann [Zahl] Neue Adresse : Luisenstraße [Zahl] [Zahl] Schkeuditz",
+        "category": "Produkte & Angebote",
+        "topic": "LeipzigMOVE",
+        "subtopic": "Profil vervollständigen"
+    },
+    {
+        "index": 4040,
+        "description": "Hallo,warum findet das App keinen Nightliner wenn Mann von Wahren [Zahl]:[Zahl] Uhr zur Arbeit zum Lindenau Bushof fahren möchte ? Easy.GO findet diese Verbindung super. Schaltet easy.GO nie ab,das war wesentlich besser. Mit freundlichen Grüßen Max_i Mustermann Von meinem iPhone gesendet",
+        "category": "Produkte & Angebote",
+        "topic": "LeipzigMOVE",
+        "subtopic": "Fehler Fahrplanauskunft"
+    }, 
+    {
+        "index": 11484,
+        "description": "Bitte denken Sie an die Umwelt, bevor Sie diese Seite(n) drucken. -----Ursprüngliche Nachricht----- Von: [E-Mail] Gesendet: Mittwoch, [Zahl]. Februar [Zahl] [Zeit] An: ABRECHNUNG.VERKEHRSBETRIEBE Betreff: (EXTERN) Re: Mustermann [Zahl] zum LVB Kundenvertrag [Zahl] Sehr geehrte Damen und Herren, Ich kann die Abrechnung nicht nachvollziehen. Ich hatte das Fahrrad mit der Nummer [Zahl] am [Datum]um [Zeit] am Hauptbahnhof abgegeben, leider wurde es in der App nur als pausiert gemeldet. Als ich dies am nächsten Tag bemerkte, habe ich sofort bei Ihnen angerufen und eine Mitarbeiterin versicherte mir, das Fahrrad nun abgeschlossen zu haben und den Tarif auf [Zahl]€ „reguliert“ zu haben, da ich das Fahrrad ja auch nur [Zahl]min genutzt hatte. Deshalb kann ich die Berechnung von [Zahl]€ für diese Ausleihe nicht nachvollziehen. Ich hoffe sie können das nachvollziehen und ändern, da mir wie gesagt ihr Kollegin versicherte, das Rad abgeschlossen zu haben und den Betrag für die [Zahl]h annulliert zu haben. Ich würde mich sehr über eine Rückmeldung bzw. Richtigstellung der Abrechnung freuen. Mit freundlichen Grüßen Max_i Mustermann Zitat von [E-Mail]: > Sehr geehrte Frau Mustermann, > > > anbei erhalten Sie Ihre aktuelle Mustermann. > > > Mit freundlichen Grüßen > > Ihre Leipziger Verkehrsbetriebe (LVB) GmbH > > www.L.de > > Facebook, Twitter, Youtube: www.L.de\/social > > Wir sind Leipziger. > > Leipziger Verkehrsbetriebe (LVB) GmbH * Postfach [Zahl] * [Zahl] > Leipzig > Aufsichtsratsvorsitzender: Max_i Bonew > Geschäftsführung: Ulf Middelberg (Sprecher), Max_i Juhrs Amtsgericht > Leipzig * HRB-Nr. [Zahl] * Sitz der Gesellschaft: Leipzig > > Bitte denken Sie an die Umwelt, bevor Sie diese Nachricht ausdrucken",
+        "category": "Produkte & Angebote",
+        "topic": "Erstattungen & Reklamationen",
+        "subtopic": "Rg.reklamation ABO Flex\/ LeipzigMOVE"
+    }, 
+    {
+        "index": 1955,
+        "description": "sehr geehrte Damen und Herren, Die [Zahl].Mahnung vom [Datum]wurde am [Datum]( [Zahl],[Zahl]€ ) vollständig bezahlt. Abo-Vertragsnummer : [Zahl] Mit freundlichen Grüßen P.Mustermann ************************************* Mustermann Mustermann Mockauer Str. [Zahl] [Zahl] Leipzig Mobil:[Telefonnr]Email: [E-Mail] *************************************",
+        "category": "Produkte & Angebote",
+        "topic": "Mein Abonnement",
+        "subtopic": "Fragen zu Kontoabbuchungen"
+    }, 
+    {
+        "index": 7528,
+        "description": "Sehr geehrte Damen und Herren, hiermit möchte ich meine Jahreskarte Premium gern für ein weiteres Jahr ab[Telefonnr]verlängern bzw. neu beantragen. Bisher lief es als Job Ticket Premium mit der Vertragsnummer: [Zahl] über das St. Max_i-KH Leipzig. Am [Datum]habe ich meinen Arbeitgeber gewechselt. Mein neuer Arbeitgeber unterstützt das Jobticket leider nicht. Ich hätte die Jahreskarte Premium bitte weiterhin für [Zahl] Jahr für Markkleeberg und Leipzig. Mit freundlichen Grüßen Jana Mustermann ( Telefonnummer:[Telefonnr])",
+        "category": "Produkte & Angebote",
+        "topic": "Mein JOB Ticket",
+        "subtopic": "Änderung Produkt"
+    }
+]

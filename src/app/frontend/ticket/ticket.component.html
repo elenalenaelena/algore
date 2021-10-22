@@ -1,11 +1,17 @@
 <div class="card">
     <div class="card-header ticket">
-        Ticket Title
+        <small>Ticket-ID: {{ ticket.index }}</small>
+        <br>
+        {{ ticket.created_at}}
     </div>
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div *ngIf="front">
+        <h5 class="card-title">{{ ticket.category }}</h5>
+      </div>
+      <div *ngIf="!front">
+        {{ ticket.message }}
+      </div>         
+      <a href="#" (click)="flipSide()" class="btn btn-primary">Go somewhere</a>
     </div>
 </div>
 

@@ -1,32 +1,29 @@
-import { Injectable } from '@angular/core';
-import { Observable, throwError } from 'rxjs';
-import { catchError } from 'rxjs/operators';
-import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
+import { Injectable, OnInit, OnDestroy } from '@angular/core';
+import { Observable, BehaviorSubject } from 'rxjs';
 import { Ticket } from './ticket.model';
+import ticketData from './sample100.json'
 
 @Injectable({
   providedIn: 'root'
 })
-export class DataService {
+export class DataService implements OnInit, OnDestroy {
 
-  constructor() { } 
+  // use BehaviorSubject to be able to modify the data also
+  public tickets$ = new BehaviorSubject<Ticket[]>(ticketData);
 
-  getAssignees() {}
+  constructor() {
+  } 
 
-  getCategories() {}
-
-  getChannels () {}
-
-  getSubtopics() {}
-
-  getTopics() {}
-
-  getTicketById(index: number) {    
-    // return ticket
+  ngOnInit():void {
+    console.log(this.tickets$);
   }
-  
-  getTickets() {
-    // return ticket []
+
+  getTickets(): Observable<Ticket[]>{
+    return this.tickets$.asObservable();
+  }
+
+  ngOnDestroy(): void {
+    this.tickets$.unsubscribe();
   }
 
 }
