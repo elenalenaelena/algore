@@ -1,18 +1,34 @@
 <div class="card">
-    <div class="card-header ticket">
-        <small>Ticket-ID: {{ ticket.index }}</small>
-        <br>
-        {{ ticket.created_at}}
-    </div>
-    <div class="card-body">
-      <div *ngIf="front">
+    
+  <div class="card-header">
+     
+      <p class="date">{{ ticket.created_at}}</p>  
+      <p class="index">ID: {{ ticket.index }}</p>    
+
+  </div>
+
+  <div class="card-body">   
+
+      <!-- TICKET FRONT -->
+      <div class="front-side" *ngIf="front">        
+        <p class="subheadline">Kategorie</p>
         <h5 class="card-title">{{ ticket.category }}</h5>
+        <h6 data-confidence="ticket.confidence" class="confidence">{{ ticket.confidence }} %</h6>      
       </div>
-      <div *ngIf="!front">
+
+      <!-- TICKET BACK -->
+      <div class="back-side" *ngIf="!front">
         {{ ticket.message }}
-      </div>         
-      <a href="#" (click)="flipSide()" class="btn btn-primary">Go somewhere</a>
-    </div>
+      </div>            
+
+      <!-- BTN -->
+      <button (click)="flipSide()" class="btn btn-primary" type="button"> 
+        <span *ngIf="front">edit</span>  
+        <span *ngIf="!front">save</span>
+      </button>
+
+  </div>
+
 </div>
 
 

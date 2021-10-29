@@ -1,12 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
 
+/* BORDER */
+$algore-border-radius: .5em
+
 /* COLOR */
 $algore-white: #fff
 $algore-lt-grey: #c4c4c4
 $algore-dk-blue: #303544
+$algore-pink: #ef5da8
+$algore-green: #3bbcb2
 
-/* BORDER */
-$algore-border-radius: .5em
+/* FONT */
+$font-small: .8rem
 
 /* MARGIN */
 $algore-margin: .7em
+
+@mixin scrollbars
+    ::-webkit-scrollbar
+        width: 5px
+        border-radius: 10px
+        background-color: black
+
+    ::-webkit-scrollbar-thumb
+        border-radius: 10px
+        background-color: white
+
+    ::-webkit-scrollbar-track
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+        border-radius: 10px
+        background-color: black
