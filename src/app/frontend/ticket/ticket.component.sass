@@ -1,6 +1,7 @@
 @use "../../../styles" as styles
 
 @include styles.scrollbars
+@include styles.switches
 
 :host
   color: styles.$algore-white
@@ -20,7 +21,7 @@
   background: styles.$algore-lt-grey
   border-radius: styles.$algore-border-radius styles.$algore-border-radius 0 0
   display: inline-block
-  padding: 1em
+  padding: .2em 1.2em
 
   &:before
     content: ''
@@ -35,22 +36,28 @@
     border-left-color: white
     
   p 
+    color: styles.$algore-dk-blue
     display: inline-block
-    font-size: styles.$font-small  
+    font-size: styles.$font-small 
     font-weight: light
     margin: 0
-
-    &.date
-      float: left
+    width: 33%
    
     &.index
-      float: right   
+        text-align: center
+        font-size: styles.$font-small 
+
+    &.status 
+      font-style: italic
+      color: styles.$algore-pink
+      text-align: right
 
 .card-body
   background: styles.$algore-dk-blue
   border-radius: 0 0 styles.$algore-border-radius styles.$algore-border-radius
 
   .front-side
+    font-size: styles.$font-small  
 
   .back-side
     overflow-y: scroll
@@ -61,9 +68,10 @@
     color: #3BCBB2
   
   button
-        background-color: styles.$algore-white
-        color: styles.$algore-pink
-        border: 2px solid styles.$algore-pink
-        border-radius: styles.$algore-border-radius
-        float: right
-        font-size: styles.$font-small
+    background-color: styles.$algore-white
+    color: styles.$algore-pink
+
+  textarea
+    font-size: .7rem
+    padding: .375rem
+    margin: .375rem auto

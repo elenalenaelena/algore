@@ -5,6 +5,8 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { Ticket } from './shared/ticket.model';
 import { Subscription } from 'rxjs';
 import ticketData from './/shared/sample143.json'
+import { faThLarge, faThList} from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-root',
@@ -15,30 +17,36 @@ export class AppComponent implements OnInit, OnDestroy{
   
   title = 'algore';
   fileUrl: any;
-
+  faThLarge = faThLarge;
+  faThList = faThList;
+  view: boolean = true; // true = grid; false = table
   tickets: any[] = ticketData;
-
-  public ticket: Ticket = 
-    {
-      "index": 7181,
-      "created_at": "3. August 2021",
-      "message": "Schönen guten Tag Meine abo Mustermann lief bis zum [Datum]über den Konto meiner Mama, da ich die abokarte aber weiterhin verwenden möchte habe ich ein änderungs Vormular aus gefühlt Kartennummer [Zahl].[Zahl]-[Zahl].[Zahl].[Zahl]-[Zahl]",
-      "category": "Produkte & Angebote",
-      "topic": "Mein Abonnement",
-      "subtopic": "Änderung Produkt",
-      "priority": 7,
-      "status": "Abgeschlossen",
-      "deadline": "26. September 2021",
-      "channel": "Email",
-      "team": "Haltestelleninformation",
-      "assignee": "Kundenkontakt",
-      "customer": "Jonosch Schuster",
-      "contract_no": 1980,
-      "transaction_no": 10040,
-      "confidence": 81
-  }
+  columns: String[];
+  filterOptions: String[];
 
   constructor(private dataService: DataService, private logger: LogService, private sanitizer: DomSanitizer) {
+    this.columns = [   
+      'index',   
+      'date',
+      'title',
+      'confidency', 
+      'category',
+      'subtopic',
+      'topic',
+      'assignee',
+      'priority',
+    ];
+    this.filterOptions = [
+      'assignee',
+      'category',
+      'confidency', 
+      'date',
+      'index',
+      'priority',
+      'subtopic',
+      'title',
+      'topic'
+    ];
   }
 
   ngOnInit() {
@@ -56,6 +64,10 @@ export class AppComponent implements OnInit, OnDestroy{
       const blob = new Blob([data], { type: 'application/octet-stream' });    
       this.fileUrl = this.sanitizer.bypassSecurityTrustResourceUrl(window.URL.createObjectURL(blob));
     }
+  }
+
+  public toggleView() {
+    this.view = !this.view;
   }
 
   ngOnDestroy() {

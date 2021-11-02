@@ -5,20 +5,25 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TicketComponent } from './frontend/ticket/ticket.component';
+import { TicketTableComponent } from './frontend/ticket-table/ticket-table.component';
 
 import { DataService } from './shared/data.service';
 import { LogService } from './shared/log.service';
 import { LogPublishersService } from "./shared/log-publishers.service";
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    TicketComponent
+    TicketComponent,
+    TicketTableComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [
     DataService,
