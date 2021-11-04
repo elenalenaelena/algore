@@ -17,6 +17,9 @@
         <h5 class="card-title">{{ ticket.category }}</h5>
         <h6 data-confidence="ticket.confidence" class="confidence">{{ ticket.confidence }} %</h6>   
         <p>{{ ticket.topic }} > {{ ticket.subtopic }}</p>   
+        <div class="assignee">
+          {{ ticket.assignee }}            
+        </div>
       </div>
 
       <!-- TICKET BACK -->

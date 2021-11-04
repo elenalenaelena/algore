@@ -29,22 +29,30 @@
 
      <!-- toogle view between table and grid (= icon btn)-->
     <div class="ms-auto p-2">
-      <button (click)="toggleView()" class="btn" type="button"> 
+      <button (click)="this.view = !this.view;" class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Ansicht ändern"> 
         <span *ngIf="!view"><fa-icon [icon]="faThLarge"></fa-icon></span>  
         <span *ngIf="view"><fa-icon [icon]="faThList"></fa-icon></span>
       </button>  
     </div>    
+
+      <!-- toogle sort order -->
+    <div class="p-2">
+      <button (click)="this.reverse = !this.reverse; sortBy(sorting)" class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Sortierung ändern"> 
+        <span *ngIf="!reverse"><fa-icon [icon]="faSortAmountUp"></fa-icon></span>  
+        <span *ngIf="reverse"><fa-icon [icon]="faSortAmountDown"></fa-icon></span>
+      </button>  
+    </div>   
 
     <!-- sort by filter on {{ ticket.[attribute] }} (= dropdown) -->
     <div class="p-2">
       <div class="p-2">
         <div class="btn-group">
         <button class="btn btn-white shadow-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          sort by
+          {{ sorting }}
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
           <li *ngFor="let filterOption of filterOptions, let i = index">
-            <a class="dropdown-item" href="#">{{ filterOption }}</a>
+            <a class="dropdown-item" (click)='sortBy(filterOption)' href="#">{{ filterOption }}</a>
           </li>
         </ul>
         </div>
@@ -60,59 +68,15 @@
   </div> 
 
   <div *ngIf="!view" class="row row-cols-1">
-    <table class="table">
-      <thead>
-        <tr>
-          <th *ngFor="let column of columns, let i = index" class="col" scope="col">{{ column }}</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr> <!-- for each ticket -->
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>Mark</td>
-          <td>Otto</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>Mark</td>
-          <td>Otto</td>
 
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td colspan="2">Larry the Bird</td>
-          <td>@twitter</td>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>Mark</td>
-          <td>Otto</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="accordion accordion-flush">
+      <div class="accordion-item" *ngFor="let ticket of tickets; let i = index">
+        <app-accordion-ticket [ticket]=ticket [i]=i ></app-accordion-ticket>
+      </div>     
+     
+    </div>
 
-
-    <!--
-    <ul>
-      <li *ngFor="let ticket of tickets, let i = index">
-        <app-ticket-table></app-ticket-table>
-      </li>     
-    </ul>
-    -->
-</div> 
-
+  </div> 
 </div>
 
 <router-outlet></router-outlet>

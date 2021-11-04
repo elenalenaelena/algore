@@ -1,5 +1,6 @@
 @use "../../../styles" as styles
 
+@include styles.tickets
 @include styles.scrollbars
 @include styles.switches
 
@@ -42,15 +43,6 @@
     font-weight: light
     margin: 0
     width: 33%
-   
-    &.index
-        text-align: center
-        font-size: styles.$font-small 
-
-    &.status 
-      font-style: italic
-      color: styles.$algore-pink
-      text-align: right
 
 .card-body
   background: styles.$algore-dk-blue
