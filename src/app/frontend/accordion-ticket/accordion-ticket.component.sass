@@ -3,9 +3,31 @@
 @include styles.tickets
 @include styles.switches
 
+.accordion-button:after
+    display: none
+
 .ticket-head
+    position: relative
     background: styles.$algore-lt-grey
+    border-radius: 2px 0 0 2px
+    display: inline-block
+
+    &:before
+        content: ''
+        position: absolute
+        top: 0.9em
+        top: calc(0.6em - 1px)
+        height: 1.2em
+        width: 0.6em
+        background: white
+        left: -2px
+        border-radius: 0 1em 1em 0
+        border-left-color: white
+
+    &:active
+    color: styles.$algore-black    
 
 .ticket-tail
     background: styles.$algore-dk-blue
+    border-radius: 0 2px 2px 0
     color: styles.$algore-white

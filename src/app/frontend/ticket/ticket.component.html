@@ -15,7 +15,7 @@
       <!-- TICKET FRONT -->
       <div class="front-side" *ngIf="front">        
         <h5 class="card-title">{{ ticket.category }}</h5>
-        <h6 data-confidence="ticket.confidence" class="confidence">{{ ticket.confidence }} %</h6>   
+        <h6 data-confidence="ticket.confidence" class="confidence" [ngStyle]="{'color': mixColors(ticket.confidence)}">{{ ticket.confidence }} %</h6>   
         <p>{{ ticket.topic }} > {{ ticket.subtopic }}</p>   
         <div class="assignee">
           {{ ticket.assignee }}            
@@ -23,7 +23,7 @@
       </div>
 
       <!-- TICKET BACK -->
-      <div class="back-side" *ngIf="!front">
+      <div class="back-side py-2" *ngIf="!front">
         {{ ticket.message }}        
       </div>   
 

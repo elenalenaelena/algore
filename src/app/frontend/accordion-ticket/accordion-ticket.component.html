@@ -1,37 +1,37 @@
 <h2 class="accordion-header" [id]="'heading'+i">       
     <button class="accordion-button p-0" [ngClass]="{ 'collapsed': i != 0 }" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapse'+i" aria-expanded="true" [attr.aria-controls]="'collapse'+i">
-      <div class="container ticket-details p-0">
+      <div class="container ticket-details px-0">
         <div class="row">
            
             <!-- ticket head (grey)-->
-            <div class="col-3 ticket-head p-2">
-                <div class="row">
-                    <div class="col-4">
+            <div class="col-lg-3 ticket-head">
+                <div class="row p-2">
+                    <div class="col-3">
                         {{ ticket.created_at}}            
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 text-center">
                         {{ ticket.index }}           
                     </div>
-                    <div class="col-4 status">
+                    <div class="col-5 status text-center">
                         {{ ticket.status }}            
                     </div>
                 </div>                
             </div>
             
             <!-- ticket tail (blue)-->
-            <div class="col-9 ticket-tail p-2">
-                <div class="row">
+            <div class="col-lg-9 ticket-tail">
+                <div class="row p-2">
                     <div class="col-3 assignee">
                         {{ ticket.assignee }}            
                     </div>
                     <div class="col-7 classification">
                         {{ ticket.category }} > {{ ticket.topic }} > {{ ticket.subtopic }}           
                     </div>
-                    <div class="col-1">
-                        {{ ticket.confidence }}           
+                    <div class="col-1 text-center confidence" [ngStyle]="{'color': mixColors(ticket.confidence)}">
+                        {{ ticket.confidence }} %           
                     </div>
-                    <div class="col-1">
-                        {{ ticket.priority }}               
+                    <div class="col-1 text-center">
+                        {{ ticket.priority }} %            
                     </div>
                 </div>                
             </div>  

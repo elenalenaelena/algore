@@ -1,7 +1,7 @@
 <nav class="navbar sticky-top navbar-light bg-light">
   <div class="container">
     <a class="navbar-brand" href="#">
-      <img src="assets/inspector-logo.svg" alt="INspector logo" >
+      <img src="assets/inspector-logo.svg" alt="INspector logo" (click)="refreshPage()" >
     </a>
 
 
@@ -38,8 +38,8 @@
       <!-- toogle sort order -->
     <div class="p-2">
       <button (click)="this.reverse = !this.reverse; sortBy(sorting)" class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Sortierung ändern"> 
-        <span *ngIf="!reverse"><fa-icon [icon]="faSortAmountUp"></fa-icon></span>  
-        <span *ngIf="reverse"><fa-icon [icon]="faSortAmountDown"></fa-icon></span>
+        <span *ngIf="reverse"><fa-icon [icon]="faSortAmountUp"></fa-icon></span>  
+        <span *ngIf="!reverse"><fa-icon [icon]="faSortAmountDown"></fa-icon></span>
       </button>  
     </div>   
 
@@ -69,6 +69,28 @@
 
   <div *ngIf="!view" class="row row-cols-1">
 
+    <!-- accordion column names-->
+    <div class="container">
+      <div class="row accordion-column-names pb-2">         
+          <div class="col-lg-3">
+              <div class="row p-2">
+                  <div class="col-3">Datum</div>
+                  <div class="col-4 text-center">ID</div>
+                  <div class="col-5 text-center">Status</div>
+              </div>                
+          </div>          
+          <div class="col-lg-9">
+              <div class="row p-2">
+                  <div class="col-3">Abteilung</div>
+                  <div class="col-7">Kategorie > Thema > Unterthema</div>
+                  <div class="col-1 text-center">Konfidenz</div>
+                  <div class="col-1 text-center">Priorität</div>
+              </div>                
+          </div>  
+      </div>        
+    </div>
+
+    <!-- ticket accordion table -->
     <div class="accordion accordion-flush">
       <div class="accordion-item" *ngFor="let ticket of tickets; let i = index">
         <app-accordion-ticket [ticket]=ticket [i]=i ></app-accordion-ticket>

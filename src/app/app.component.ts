@@ -23,22 +23,12 @@ export class AppComponent implements OnInit, OnDestroy{
   faThList = faThList;
   view: boolean = true; // true = grid; false = table
   tickets: any[] = ticketData;
-  columns: String[];
   filterOptions: String[]; // contains all possible column names for sorting
   public sorting: String;  // holds the column name according to which the data are sorted
   reverse: boolean; // indicates the sort order (ascending | descending)
 
   constructor(private dataService: DataService, private logger: LogService, private sanitizer: DomSanitizer) {
-    this.columns = [   
-      'ID',   
-      'date',
-      'confidence', 
-      'priority',
-      'category',
-      'subtopic',
-      'topic',
-      'assignee'
-    ];
+
     this.filterOptions = [
       'assignee',
       'category',
@@ -48,15 +38,13 @@ export class AppComponent implements OnInit, OnDestroy{
       'priority',
       'status',
       'subtopic',
-      'title',
       'topic'
     ];
     this.sorting = 'created_at'; // default: sort by creation date 
     this.reverse = false;        // defualt: ascending order
   }
 
-  ngOnInit() {
-  }
+  ngOnInit(): void { }
 
   testLog(): void {
       this.logger.log("Test the `log()` Method");
@@ -70,6 +58,10 @@ export class AppComponent implements OnInit, OnDestroy{
       const blob = new Blob([data], { type: 'application/octet-stream' });    
       this.fileUrl = this.sanitizer.bypassSecurityTrustResourceUrl(window.URL.createObjectURL(blob));
     }
+  }
+
+  public refreshPage(){
+    window.location.reload();
   }
 
   /**
