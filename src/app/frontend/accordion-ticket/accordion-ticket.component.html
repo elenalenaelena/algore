@@ -7,7 +7,7 @@
             <div class="col-lg-3 ticket-head">
                 <div class="row p-2">
                     <div class="col-3">
-                        {{ ticket.created_at}}            
+                        {{ ticket.created_at | date:'dd MMM yy'}}            
                     </div>
                     <div class="col-4 text-center">
                         {{ ticket.index }}           
@@ -21,17 +21,21 @@
             <!-- ticket tail (blue)-->
             <div class="col-lg-9 ticket-tail">
                 <div class="row p-2">
+                    <div class="col-7 classification">
+                        <span class="category">{{ ticket.category }}</span>
+                        <span class="p-1">></span>
+                        {{ ticket.topic }}
+                        <span class="p-1">></span>
+                        {{ ticket.subtopic }}           
+                    </div>
                     <div class="col-3 assignee">
                         {{ ticket.assignee }}            
-                    </div>
-                    <div class="col-7 classification">
-                        {{ ticket.category }} > {{ ticket.topic }} > {{ ticket.subtopic }}           
                     </div>
                     <div class="col-1 text-center confidence" [ngStyle]="{'color': mixColors(ticket.confidence)}">
                         {{ ticket.confidence }} %           
                     </div>
-                    <div class="col-1 text-center">
-                        {{ ticket.priority }} %            
+                    <div class="col-1 text-center priority">
+                        {{ ticket.priority }}           
                     </div>
                 </div>                
             </div>  
@@ -43,6 +47,19 @@
 
   <div [id]="'collapse'+i" class="accordion-collapse collapse" [ngClass]="{ 'show': i == 0 }" [attr.aria-labelledby]="'heading'+i" data-bs-parent="#accordionExample">
     <div class="accordion-body">
-      {{ ticket.message }}
+        <div class="container px-0">
+            <div class="row">
+                <div class="col-lg-3 p-2 text-end">                   
+                </div>
+                <div class="col-lg-9 p-2"> 
+                    <div class="row py-4">
+                        <div class="col-7 classification">
+                            <span class="customer">{{ ticket.customer }}</span>                   
+                            {{ ticket.message }}  
+                        </div>
+                    </div>                              
+                </div>
+            </div>
+        </div>        
     </div>
   </div>

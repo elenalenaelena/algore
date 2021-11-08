@@ -2,37 +2,49 @@
     
   <div class="card-header">
 
-    <div class="d-flex justify-content-between bd-highlight mb-2">
-      <p class="py-2 bd-highlight">{{ ticket.created_at}}</p>
-      <p class="py-2 bd-highlight">ID: {{ ticket.index }}</p>
+    <div class="d-flex justify-content-between bd-highlight">
+      <p class="py-2 bd-highlight">{{ ticket.created_at | date:'dd MMM yy'}}</p>
+      <p class="py-2 bd-highlight index">ID: {{ ticket.index }}</p>
       <p class="py-2 bd-highlight status">{{ ticket.status }}</p>
     </div>
 
   </div>
 
-  <div class="card-body shadow">   
+  <div class="container card-body shadow">   
 
       <!-- TICKET FRONT -->
-      <div class="front-side" *ngIf="front">        
-        <h5 class="card-title">{{ ticket.category }}</h5>
-        <h6 data-confidence="ticket.confidence" class="confidence" [ngStyle]="{'color': mixColors(ticket.confidence)}">{{ ticket.confidence }} %</h6>   
-        <p>{{ ticket.topic }} > {{ ticket.subtopic }}</p>   
-        <div class="assignee">
-          {{ ticket.assignee }}            
+    <div class="front-side" *ngIf="front">      
+      <div class="row">        
+        <div class="col-9">  
+          <p class="col assignee">
+            {{ ticket.assignee }}
+          </p>
+          <p class="category m-0">{{ ticket.category }}</p>
+          {{ ticket.topic }}
+          <span class="p-1">></span>
+          {{ ticket.subtopic }}   
+        </div>
+        <div class="col-3">
+          <p data-confidence="ticket.confidence" class="confidence text-end" [ngStyle]="{'color': mixColors(ticket.confidence)}">{{ ticket.confidence }} %</p>
+          <p class="priority text-end m-0">{{ ticket.priority }}</p>    
         </div>
       </div>
+    </div>
 
-      <!-- TICKET BACK -->
-      <div class="back-side py-2" *ngIf="!front">
-        {{ ticket.message }}        
-      </div>   
+    <!-- TICKET BACK -->
+    <div class="back-side py-2" *ngIf="!front">
+      <span class="customer">{{ ticket.customer }}</span>
+      {{ ticket.message }}     
+    </div>   
 
-      <div class="pb-2 pt-4 position-relative">
-        <label class="switch position-absolute top-50 start-50 translate-middle">
+    <!-- FLIP CARD BTN -->
+      <div class="row pt-4 pb-2">
+        <label class="switch position-absolute start-50 translate-middle">
           <input (click)="flipSide()" type="checkbox" checked>
           <span class="slider round"></span>
         </label>
-      </div>
+      </div>     
+    
 
   </div>
 

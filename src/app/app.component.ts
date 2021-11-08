@@ -33,7 +33,7 @@ export class AppComponent implements OnInit, OnDestroy{
       'assignee',
       'category',
       'confidence', 
-      'date',
+      'created_at',
       'index',
       'priority',
       'status',
@@ -91,7 +91,40 @@ export class AppComponent implements OnInit, OnDestroy{
         }    
         return 0;    
     }    
-  }        
+  }   
+
+  /**
+   * @param word the word to translate
+   * @return the german translation
+   */  
+  getTranslationDE(word: String): String {
+
+    let t: String = '';
+
+    switch(word){
+      case 'assignee':
+        t = 'Abteilung'; break;
+      case 'created_at':
+        t = 'Datum'; break;
+      case 'index':
+        t = 'ID'; break;
+      case 'category':
+        t = 'Kategorie'; break;
+      case 'confidence':
+       t = 'Konfidenz'; break;
+      case 'priority':
+        t = 'Priorität'; break;
+      case 'status':
+        t = 'Status'; break;    
+      case 'topic':
+       t = 'Thema'; break;
+      case 'subtopic':
+       t = 'Unterthema'; break;      
+    }
+    
+    return t;
+
+  }
 
   ngOnDestroy() {
   }  

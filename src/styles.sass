@@ -6,6 +6,7 @@ $algore-border-radius: .5em
 /* COLOR */
 $algore-white: #fff
 $algore-lt-grey: #c4c4c4
+$algore-lt-blue: #0969da
 $algore-dk-blue: #303544
 $algore-pink: #ef5da8
 $algore-green: #3bbcb2
@@ -30,8 +31,9 @@ $caret-vertical-align:              $caret-width * .85
 $caret-spacing:                     $caret-width * .85
 
 /* FONT */
+$font-medium: 0.88rem
 $font-small: .7rem
-$font-extra-small: .5rem
+$font-extra-small: .6rem
 
 /* MARGIN */
 $algore-margin: .7em
@@ -59,8 +61,26 @@ $algore-margin: .7em
     padding-right: 3px
     font-weight: 900
 
+  .customer
+    display: block
+    font-style: italic
+    margin-bottom: .5em
+
+  .customer:before
+    font-family: "Font Awesome 5 Free"
+    content: "\f075"
+    display: inline-block
+    padding-right: 3px
+    font-weight: 900
+
+  .category,
+  .confidence,
+  .priority
+    font-size: $font-medium
+    font-weight: bold
+
   .confidence    
-    color: mix($algore-green, $algore-yellow, 60%)
+    color: mix($algore-green, $algore-yellow, 60%)    
 
   .index
     text-align: center
@@ -68,7 +88,7 @@ $algore-margin: .7em
 
   .status 
     font-style: italic
-    color: $algore-pink
+    color: $algore-lt-blue !important
     text-align: right
 
 @mixin fa-icons
