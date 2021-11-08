@@ -5,7 +5,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { Ticket } from './shared/ticket.model';
 import { Subscription } from 'rxjs';
 import ticketData from './/shared/sample143.json'
-import { faThLarge, faThList, faSortAmountUp, faSortAmountDown} from '@fortawesome/free-solid-svg-icons';
+import { faThLarge, faThList, faSortAmountUp, faSortAmountDown, faTicketAlt, faChartLine} from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -21,7 +21,10 @@ export class AppComponent implements OnInit, OnDestroy{
   faSortAmountUp = faSortAmountUp;
   faThLarge = faThLarge;
   faThList = faThList;
-  view: boolean = true; // true = grid; false = table
+  faTicketAlt = faTicketAlt;
+  faChartLine = faChartLine;
+  ticketView: boolean = true; // true = grid; false = table
+  view: boolean = true; // true = ticket view; false = dashboard view
   tickets: any[] = ticketData;
   filterOptions: String[]; // contains all possible column names for sorting
   public sorting: String;  // holds the column name according to which the data are sorted
@@ -31,10 +34,10 @@ export class AppComponent implements OnInit, OnDestroy{
 
     this.filterOptions = [
       'assignee',
-      'category',
-      'confidence', 
       'created_at',
       'index',
+      'category',
+      'confidence', 
       'priority',
       'status',
       'subtopic',
@@ -44,7 +47,11 @@ export class AppComponent implements OnInit, OnDestroy{
     this.reverse = false;        // defualt: ascending order
   }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+
+    this.sortBy(this.sorting);
+    
+   }
 
   testLog(): void {
       this.logger.log("Test the `log()` Method");
@@ -103,7 +110,7 @@ export class AppComponent implements OnInit, OnDestroy{
 
     switch(word){
       case 'assignee':
-        t = 'Abteilung'; break;
+        t = 'Bearbeiter:in'; break;
       case 'created_at':
         t = 'Datum'; break;
       case 'index':

@@ -91,10 +91,14 @@ $algore-margin: .7em
     color: $algore-lt-blue !important
     text-align: right
 
-@mixin fa-icons
+@mixin fa-icons-btns
 
   button:focus
     outline:0 !important
+
+  button.active
+    border-bottom: 3px solid $algore-dk-blue
+    border-radius: 0px
 
   button span
     background-color: $algore-white

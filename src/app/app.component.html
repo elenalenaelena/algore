@@ -13,25 +13,20 @@
   <!-- FILTERS -->
   <div class="d-flex">
     
-    <!-- date filter on {{ ticket.date }} (= dropdown & slider)-->
     <div class="p-2">
-        <div class="btn-group">
-        <button class="btn btn-white shadow-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Date Filter
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-        </div>
-     </div>
+      <button (click)="this.view = !this.view;" class="btn" [ngClass]="view ? 'active' : ''" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Tickets"> 
+        Tickets
+      </button>  
+      <button (click)="this.view = !this.view;" class="btn" [ngClass]="!view ? 'active' : ''" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Dashoard"> 
+        Dashboard
+      </button> 
+    </div>
 
-     <!-- toogle view between table and grid (= icon btn)-->
+     <!-- toogle ticketView between table and grid (= icon btn)-->
     <div class="ms-auto p-2">
-      <button (click)="this.view = !this.view;" class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Ansicht ändern"> 
-        <span *ngIf="!view"><fa-icon [icon]="faThLarge"></fa-icon></span>  
-        <span *ngIf="view"><fa-icon [icon]="faThList"></fa-icon></span>
+      <button (click)="this.ticketView = !this.ticketView;" class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Ansicht ändern"> 
+        <span *ngIf="!ticketView"><fa-icon [icon]="faThLarge"></fa-icon></span>  
+        <span *ngIf="ticketView"><fa-icon [icon]="faThList"></fa-icon></span>
       </button>  
     </div>    
 
@@ -60,45 +55,48 @@
     </div>
   </div>
 
-  <!-- TICKETS -->
-  <div *ngIf="view" class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
-      <div *ngFor="let ticket of tickets, let i = index" class="col">
-        <app-ticket [ticket]=ticket></app-ticket>
+  <div *ngIf="view">
+    <!-- ticket grid-->
+    <div *ngIf="ticketView" class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
+        <div *ngFor="let ticket of tickets, let i = index" class="col">
+          <app-ticket [ticket]=ticket></app-ticket>
+        </div>
+    </div> 
+    <!-- ticket accordion -->
+    <div *ngIf="!ticketView" class="row row-cols-1">
+      <!-- column names-->
+      <div class="container">
+        <div class="row accordion-column-names pb-2">         
+            <div class="col-lg-3">
+                <div class="row p-2">
+                    <div class="col-3">Datum</div>
+                    <div class="col-4 text-center">ID</div>
+                    <div class="col-5 text-center">Status</div>
+                </div>                
+            </div>          
+            <div class="col-lg-9">
+                <div class="row p-2">            
+                    <div class="col-7">Kategorie > Thema > Unterthema</div>
+                    <div class="col-3">Abteilung</div>
+                    <div class="col-1 text-center">Konfidenz</div>
+                    <div class="col-1 text-center">Priorität</div>
+                </div>                
+            </div>  
+        </div>        
       </div>
-  </div> 
+      <!-- accordion table -->
+      <div class="accordion accordion-flush">
+        <div class="accordion-item" *ngFor="let ticket of tickets; let i = index">
+          <app-accordion-ticket [ticket]=ticket [i]=i ></app-accordion-ticket>
+        </div>       
+      </div>
+    </div> 
+  </div>
 
-  <div *ngIf="!view" class="row row-cols-1">
+  <div *ngIf="!view">
+    confusion matrix
+  </div>
 
-    <!-- accordion column names-->
-    <div class="container">
-      <div class="row accordion-column-names pb-2">         
-          <div class="col-lg-3">
-              <div class="row p-2">
-                  <div class="col-3">Datum</div>
-                  <div class="col-4 text-center">ID</div>
-                  <div class="col-5 text-center">Status</div>
-              </div>                
-          </div>          
-          <div class="col-lg-9">
-              <div class="row p-2">            
-                  <div class="col-7">Kategorie > Thema > Unterthema</div>
-                  <div class="col-3">Abteilung</div>
-                  <div class="col-1 text-center">Konfidenz</div>
-                  <div class="col-1 text-center">Priorität</div>
-              </div>                
-          </div>  
-      </div>        
-    </div>
-
-    <!-- ticket accordion table -->
-    <div class="accordion accordion-flush">
-      <div class="accordion-item" *ngFor="let ticket of tickets; let i = index">
-        <app-accordion-ticket [ticket]=ticket [i]=i ></app-accordion-ticket>
-      </div>     
-     
-    </div>
-
-  </div> 
 </div>
 
 <router-outlet></router-outlet>
