@@ -16,9 +16,16 @@
     <div class="front-side" *ngIf="front">      
       <div class="row">        
         <div class="col-9">  
-          <p class="col assignee">
-            {{ ticket.assignee }}
-          </p>
+          <div class="btn-group">
+            <button class="dropdown-toggle assignee p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {{ ticket.assignee }} 
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li *ngFor="let assignee of assignees, let i = index">
+                <a class="dropdown-item" (click)='updateTicket({assignee: assignee})' href="#">{{ assignee }}</a>
+              </li>
+            </ul>
+        </div>  
           <p class="category m-0">{{ ticket.category }}</p>
           {{ ticket.topic }}
           <span class="p-1">></span>

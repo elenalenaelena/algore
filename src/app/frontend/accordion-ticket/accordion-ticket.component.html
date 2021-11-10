@@ -28,8 +28,17 @@
                         <span class="p-1">></span>
                         {{ ticket.subtopic }}           
                     </div>
-                    <div class="col-3 assignee">
-                        {{ ticket.assignee }}            
+                    <div class="col-3">
+                        <div class="btn-group">
+                            <button class="dropdown-toggle assignee" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                {{ ticket.assignee }} 
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li *ngFor="let assignee of assignees, let i = index">
+                                <a class="dropdown-item" href="#">{{ assignee }}</a>
+                              </li>
+                            </ul>
+                        </div>           
                     </div>
                     <div class="col-1 text-center confidence" [ngStyle]="{'color': mixColors(ticket.confidence)}">
                         {{ ticket.confidence }} %           

@@ -9,10 +9,13 @@ export class AccordionTicketComponent implements OnInit {
 
   @Input() ticket: any;
   @Input() i: any;
+  @Input() assignees: any;
 
-  constructor() { }
+  constructor() {    
+  }
 
-  ngOnInit(): void { }
+  ngOnInit(): void { 
+  }
 
   /**
  * Mixes two colors (green, pink) according to a specified weight 

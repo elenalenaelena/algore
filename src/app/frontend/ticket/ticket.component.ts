@@ -1,8 +1,6 @@
-import { Component, Input } from '@angular/core';
-import { throwIfEmpty } from 'rxjs/operators';
-import { Ticket } from 'src/app/shared/ticket.model';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { faPen, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
-
+import { Ticket } from '../../shared/ticket.model';
 
 @Component({
   selector: 'app-ticket',
@@ -16,8 +14,14 @@ export class TicketComponent {
   front: boolean = true;
 
   @Input() ticket: any;
+  @Input() assignees: any;
+  @Output() newUpdateEvent = new EventEmitter<Ticket>();
 
   constructor() { 
+  }
+
+  flipSide() {
+    this.front = !this.front;
   }
 
    /**
@@ -25,7 +29,7 @@ export class TicketComponent {
    * @param w the weight [0,100] for mixing the colors
    * @return the mixed color
    */
-  public mixColors(w: any): String {
+  mixColors(w: any): String {
 
     let color = "#";
     let green = '3bbcb2';
@@ -44,8 +48,17 @@ export class TicketComponent {
     return color;
   };
 
-  public flipSide() {
-    this.front = !this.front;
+  /**
+  * notifies the parent component about changes in the ticket's attribute values
+  * @param a the new assignee value
+  */
+  updateTicket(changes: any) {
+
+    let t: Ticket = { index: this.ticket.index };  
+
+    Object.assign(t, changes);
+
+    this.newUpdateEvent.emit(t);
   }
 
 }

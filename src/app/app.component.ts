@@ -3,10 +3,7 @@ import { DataService } from 'src/app/shared/data.service';
 import { LogService } from './shared/log.service';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Ticket } from './shared/ticket.model';
-import { Subscription } from 'rxjs';
-import ticketData from './/shared/sample143.json'
 import { faThLarge, faThList, faSortAmountUp, faSortAmountDown, faTicketAlt, faChartLine} from '@fortawesome/free-solid-svg-icons';
-
 
 @Component({
   selector: 'app-root',
@@ -15,20 +12,23 @@ import { faThLarge, faThList, faSortAmountUp, faSortAmountDown, faTicketAlt, faC
 })
 export class AppComponent implements OnInit, OnDestroy{
   
+  assignees: String[] = [];
   title = 'algore';
   fileUrl: any;
+  tickets: Ticket[] = []; 
+
   faSortAmountDown = faSortAmountDown;
   faSortAmountUp = faSortAmountUp;
   faThLarge = faThLarge;
   faThList = faThList;
   faTicketAlt = faTicketAlt;
   faChartLine = faChartLine;
+
   ticketView: boolean = true; // true = grid; false = table
-  view: boolean = true; // true = ticket view; false = dashboard view
-  tickets: any[] = ticketData;
   filterOptions: String[]; // contains all possible column names for sorting
-  public sorting: String;  // holds the column name according to which the data are sorted
   reverse: boolean; // indicates the sort order (ascending | descending)
+  sorting: String;  // holds the column name according to which the data are sorted  
+  view: boolean = true; // true = ticket view; false = dashboard view  
 
   constructor(private dataService: DataService, private logger: LogService, private sanitizer: DomSanitizer) {
 
@@ -45,13 +45,47 @@ export class AppComponent implements OnInit, OnDestroy{
     ];
     this.sorting = 'created_at'; // default: sort by creation date 
     this.reverse = false;        // defualt: ascending order
+    this.tickets = this.dataService.getTickets();
   }
 
   ngOnInit(): void {
+    this.sortBy(this.sorting);    
+    this.assignees = this.getKeys(this.groupBy(this.tickets, "assignee")); 
+    console.log(this.assignees);
+  }
 
-    this.sortBy(this.sorting);
-    
-   }
+   /**
+   * get distinct array keys, order ASC
+   * @param arr: the array
+   * @return string array containing the keys
+   */
+  getKeys(arr: any): String[] {
+
+    let keys: String[] = Object.keys(arr);
+    keys.sort();
+
+    return keys;
+  }
+
+   /**
+   * groups an array according to a given criteria
+   * @param arr: the array
+   * @param criteria: the attribute to group the array by
+   * @return the groups
+   */
+  groupBy(arr:any, criteria: any) { 
+
+    const groups = arr.reduce(function (acc:any , currentValue:any) {
+
+      if (!acc[currentValue[criteria]]) {
+        acc[currentValue[criteria]] = [];
+      }
+      acc[currentValue[criteria]].push(currentValue);
+      return acc;
+
+    }, {});
+    return groups;
+  }  
 
   testLog(): void {
       this.logger.log("Test the `log()` Method");
@@ -67,15 +101,15 @@ export class AppComponent implements OnInit, OnDestroy{
     }
   }
 
-  public refreshPage(){
+  refreshPage(): void {
     window.location.reload();
   }
 
   /**
-   * Passes the sorting value to the actual sorting function, manages sorting order, and updates the ticket data
+   * passes the sorting value to the actual sorting function, manages sorting order, and updates the ticket data accordingly
    * @param item the current dropdown value to sort by
    */
-  public sortBy(val: any){
+  sortBy(val: any){
 
     this.sorting = val;
 
@@ -89,7 +123,7 @@ export class AppComponent implements OnInit, OnDestroy{
    * @param prop the current dropdown value to sort by
    * @return the result of the comparison
    */
-  public getSortOrder(prop: any) {    
+  getSortOrder(prop: any) {    
     return function(a:any , b:any) {    
         if (a[prop] > b[prop]) {    
             return 1;    
@@ -101,6 +135,7 @@ export class AppComponent implements OnInit, OnDestroy{
   }   
 
   /**
+   * contains a small hard-coded dictionary to translate the column names in the data
    * @param word the word to translate
    * @return the german translation
    */  
@@ -118,19 +153,25 @@ export class AppComponent implements OnInit, OnDestroy{
       case 'category':
         t = 'Kategorie'; break;
       case 'confidence':
-       t = 'Konfidenz'; break;
+        t = 'Konfidenz'; break;
       case 'priority':
         t = 'Priorität'; break;
       case 'status':
         t = 'Status'; break;    
       case 'topic':
-       t = 'Thema'; break;
+        t = 'Thema'; break;
       case 'subtopic':
-       t = 'Unterthema'; break;      
+        t = 'Unterthema'; break;      
     }
     
     return t;
 
+  }
+
+  updateTickets(t: Ticket) {
+
+    this.dataService.updateTicket(t);
+    
   }
 
   ngOnDestroy() {

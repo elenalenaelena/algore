@@ -1,29 +1,35 @@
-import { Injectable, OnInit, OnDestroy } from '@angular/core';
-import { Observable, BehaviorSubject } from 'rxjs';
+import { Injectable, OnInit} from '@angular/core';
 import { Ticket } from './ticket.model';
-import ticketData from './sample100.json'
+import ticketData from './sample143.json'
 
 @Injectable({
   providedIn: 'root'
 })
-export class DataService implements OnInit, OnDestroy {
+export class DataService implements OnInit {
 
-  // use BehaviorSubject to be able to modify the data also
-  public tickets$ = new BehaviorSubject<Ticket[]>(ticketData);
+  tickets: Ticket[] = [];
 
   constructor() {
+    this.tickets = ticketData;
   } 
 
   ngOnInit():void {
-    console.log(this.tickets$);
   }
 
-  getTickets(): Observable<Ticket[]>{
-    return this.tickets$.asObservable();
+  getTickets(): Ticket[] {
+    return this.tickets;
   }
 
-  ngOnDestroy(): void {
-    this.tickets$.unsubscribe();
+  updateTicket( t: Ticket ) {    
+
+    const i = this.tickets.findIndex(x => x.index === t.index); // index of item to be modified    
+    let ticket = this.tickets[i];  // the ticket
+
+    for (var key in t) {
+      if(key !== 'index') {                  
+          ticket[key] = t[key as keyof typeof ticket]; // type-safe recasting of the key and access it as an attribute        
+      }
+    }   
   }
 
 }

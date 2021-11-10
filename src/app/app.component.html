@@ -59,7 +59,7 @@
     <!-- ticket grid-->
     <div *ngIf="ticketView" class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
         <div *ngFor="let ticket of tickets, let i = index" class="col">
-          <app-ticket [ticket]=ticket></app-ticket>
+          <app-ticket [ticket]=ticket [assignees]=assignees (newUpdateEvent)="updateTickets($event)"></app-ticket>
         </div>
     </div> 
     <!-- ticket accordion -->
@@ -87,7 +87,7 @@
       <!-- accordion table -->
       <div class="accordion accordion-flush">
         <div class="accordion-item" *ngFor="let ticket of tickets; let i = index">
-          <app-accordion-ticket [ticket]=ticket [i]=i ></app-accordion-ticket>
+          <app-accordion-ticket [ticket]=ticket [i]=i [assignees]=assignees ></app-accordion-ticket>
         </div>       
       </div>
     </div> 
