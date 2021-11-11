@@ -27,11 +27,14 @@ export class AccordionTicketComponent implements OnInit {
   mixColors(w: any): String {
 
     let color = "#";
-    let green = '3bbcb2';
-    let pink = 'ef5da8';   
+    let green = '3BBCB2';
+    let black = '000000';
+    let pink = 'EF5DA8';   
+    let yellow = 'F4DE51';
     let weight = parseInt(w);      
   
-    for(let i = 0; i <= 5; i += 2) { // loop through each of the 3 hex pairs—red, green, and blue
+    // for continuous color coding
+    /*for(let i = 0; i <= 5; i += 2) { // loop through each of the 3 hex pairs—red, green, and blue
       let v1 = parseInt((green.substr(i, 2)),16),
           v2 = parseInt((pink.substr(i, 2)),16),
           val = (Math.floor(v2 + (v1 - v2) * (weight / 100.0))).toString(16); // combine current channel
@@ -39,7 +42,18 @@ export class AccordionTicketComponent implements OnInit {
       while(val.length < 2) { val = '0' + val; } // prepend a '0' if val results in a single digit
       
       color += val; // concatenate everything
-    }      
+    }  */
+    
+    // for discrete color coding
+    if(weight < 60)
+      color += pink;
+    else if (weight >= 60 && weight < 90)
+      color += yellow;
+    else if (weight >= 90)
+      color += green;
+    else
+      color += black;
+      
     return color;
   };
   
