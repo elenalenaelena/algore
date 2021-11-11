@@ -13,23 +13,6 @@ $algore-green: #3bbcb2
 $algore-yellow: #f4de51
 $algore-black: #000
 
-/* DROPDOWN */
-$dropdown-min-width:                10rem
-$dropdown-padding-x:                0
-$dropdown-padding-y:                .5rem
-$dropdown-spacer:                   .125rem
-$dropdown-font-size:                1rem
-$dropdown-color:                    red
-$dropdown-bg:                       white
-$dropdown-border-color:             rgba(black, .15)
-$dropdown-border-radius:            $algore-border-radius
-$dropdown-border-width:             0
-$dropdown-inner-border-radius:      subtract($algore-border-radius, $dropdown-border-width)
-$dropdown-header-color:             $algore-dk-blue
-$caret-width:                       .8em
-$caret-vertical-align:              $caret-width * .85
-$caret-spacing:                     $caret-width * .85
-
 /* FONT */
 $font-medium: 0.88rem
 $font-small: .7rem
@@ -39,6 +22,10 @@ $font-extra-small: .6rem
 $algore-margin: .7em
 
 /* MIXINS */
+
+@mixin dropdowns
+  .dropdown-menu
+    font-size: $font-small
 
 @mixin tickets
 
@@ -89,13 +76,11 @@ $algore-margin: .7em
     color: mix($algore-green, $algore-yellow, 60%)    
 
   .index
-    text-align: center
     font-size: $font-small 
 
   .status 
     font-style: italic
     color: $algore-lt-blue !important
-    text-align: right
 
 @mixin fa-icons-btns
 

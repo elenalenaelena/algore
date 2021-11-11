@@ -1,23 +1,28 @@
 <div class="card">
     
-  <div class="card-header">
-
-    <div class="d-flex justify-content-between bd-highlight">
-      <p class="py-2 bd-highlight">{{ ticket.created_at | date:'dd MMM yy'}}</p>
-      <p class="py-2 bd-highlight index">ID: {{ ticket.index }}</p>
-      <p class="py-2 bd-highlight status">{{ ticket.status }}</p>
-    </div>
-
+  <!-- TICKET HEADER -->
+  <div class="card-header front"  *ngIf="front">
+    <div class="row py-2">
+      <p class="status">{{ ticket.status }}</p> 
+      <p>{{ ticket.created_at | date:'dd MMM yy'}}</p>
+      <p class="index">ID: {{ ticket.index }}</p>
+    </div>   
   </div>
 
-  <div class="container card-body shadow">   
+  <div class="card-header back" *ngIf="!front">
+    <div class="row py-2 back" >
+      <span class="customer" >{{ ticket.customer }}</span>
+    </div>   
+  </div>
 
-      <!-- TICKET FRONT -->
-    <div class="front-side" *ngIf="front">      
+  <!-- TICKET BODY -->
+  <div class="container pt-0 card-body shadow">   
+    
+    <div class="front-side pt-2" *ngIf="front">      
       <div class="row">        
         <div class="col-9">  
           <div class="btn-group">
-            <button class="dropdown-toggle assignee p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button class="dropdown-toggle assignee pt-2 px-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 {{ ticket.assignee }} 
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -26,7 +31,7 @@
               </li>
             </ul>
         </div>  
-          <p class="category m-0">{{ ticket.category }}</p>
+          <p class="category pt-2 m-0">{{ ticket.category }}</p>
           {{ ticket.topic }}
           <span class="p-1">></span>
           {{ ticket.subtopic }}   
@@ -38,20 +43,15 @@
       </div>
     </div>
 
-    <!-- TICKET BACK -->
-    <div class="back-side py-2" *ngIf="!front">
-      <span class="customer">{{ ticket.customer }}</span>
-      {{ ticket.message }}     
+    <div class="back-side" *ngIf="!front">      
+        {{ ticket.message }}      
     </div>   
 
     <!-- FLIP CARD BTN -->
-      <div class="row pt-4 pb-2">
-        <label class="switch position-absolute start-50 translate-middle">
-          <input (click)="flipSide()" type="checkbox" checked>
-          <span class="slider round"></span>
-        </label>
-      </div>     
-    
+    <label class="switch mt-4">
+      <input (click)="flipSide()" type="checkbox" checked>
+      <span class="slider round"></span>
+    </label>       
 
   </div>
 

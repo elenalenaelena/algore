@@ -50,14 +50,13 @@ export class TicketComponent {
 
   /**
   * notifies the parent component about changes in the ticket's attribute values
-  * @param a the new assignee value
+  * @param changes the new data
   */
   updateTicket(changes: any) {
 
-    let t: Ticket = { index: this.ticket.index };  
+    let t: Ticket = { index: this.ticket.index }; 
 
     Object.assign(t, changes);
-
     this.newUpdateEvent.emit(t);
   }
 

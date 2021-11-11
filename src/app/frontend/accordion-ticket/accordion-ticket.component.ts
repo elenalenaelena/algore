@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, EventEmitter, OnInit, Input, Output } from '@angular/core';
+import { Ticket } from '../../shared/ticket.model';
 
 @Component({
   selector: 'app-accordion-ticket',
@@ -10,6 +11,7 @@ export class AccordionTicketComponent implements OnInit {
   @Input() ticket: any;
   @Input() i: any;
   @Input() assignees: any;
+  @Output() newUpdateEvent = new EventEmitter<Ticket>();
 
   constructor() {    
   }
@@ -22,7 +24,7 @@ export class AccordionTicketComponent implements OnInit {
  * @param w the weight [0,100] for mixing the colors
  * @return the mixed color
  */
-  public mixColors(w: any): String {
+  mixColors(w: any): String {
 
     let color = "#";
     let green = '3bbcb2';
@@ -40,5 +42,17 @@ export class AccordionTicketComponent implements OnInit {
     }      
     return color;
   };
+  
+  /**
+  * notifies the parent component about changes in the ticket's attribute values
+  * @param changes the new data
+  */
+   updateTicket(changes: any) {
+
+    let t: Ticket = { index: this.ticket.index }; 
+
+    Object.assign(t, changes);
+    this.newUpdateEvent.emit(t);
+  }
 
 }

@@ -87,7 +87,7 @@
       <!-- accordion table -->
       <div class="accordion accordion-flush">
         <div class="accordion-item" *ngFor="let ticket of tickets; let i = index">
-          <app-accordion-ticket [ticket]=ticket [i]=i [assignees]=assignees ></app-accordion-ticket>
+          <app-accordion-ticket [ticket]=ticket [i]=i [assignees]=assignees (newUpdateEvent)="updateTickets($event)"></app-accordion-ticket>
         </div>       
       </div>
     </div> 

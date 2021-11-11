@@ -1,5 +1,6 @@
 @use "../../../styles" as styles
 
+@include styles.dropdowns
 @include styles.tickets
 @include styles.scrollbars
 @include styles.switches
@@ -17,30 +18,48 @@
 
 .card-header
   position: relative
-  background: styles.$algore-lt-grey
   border-radius: styles.$algore-border-radius styles.$algore-border-radius 0 0
   display: inline-block
   padding: .2em 1.2em
+  border-bottom: 0
 
-  &:before
-    content: ''
-    position: absolute
-    top: 0.8em
-    top: calc(0.8em - 1px)
-    height: 1.6em
-    width: 0.8em
-    background: white
-    left: -2px
-    border-radius: 0 1em 1em 0
-    border-left-color: white
-    
+  &.front
+    background-color: styles.$algore-lt-grey
+
+    &:before
+      content: ''
+      position: absolute
+      top: 0.8em
+      top: calc(0.8em - 1px)
+      height: 1.6em
+      width: 0.8em
+      background: white
+      left: -2px
+      border-radius: 0 1em 1em 0
+      border-left-color: white
+  
+  &.back
+    background-color: styles.$algore-dk-blue
+    color: styles.$algore-white
+
+    &:before
+      content: ''
+      position: absolute
+      top: 0.8em
+      top: calc(0.8em - 1px)
+      height: 1.6em
+      width: 0.8em
+      background: white
+      right: -2px
+      border-radius: 1em 0 0 1em
+      border-left-color: white
+
   p 
     color: styles.$algore-dk-blue
-    display: inline-block
+    display: block
     font-size: styles.$font-small 
     font-weight: light
     margin: 0
-    width: 33%
 
 .card-body
   background: styles.$algore-dk-blue
@@ -64,7 +83,7 @@
 
   .back-side
     overflow-y: auto
-    max-height: 250px
+    height: 150px
     box-sizing: border-box
 
   textarea
