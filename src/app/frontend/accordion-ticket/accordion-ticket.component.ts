@@ -19,6 +19,27 @@ export class AccordionTicketComponent implements OnInit {
   ngOnInit(): void { 
   }
 
+  mapStatusToColor(s: String): String {
+
+    let color: String = '#';
+    let black = '000000';
+    let pink = 'EF5DA8';   
+    let yellow = 'F4DE51';
+
+    switch(s) {
+      case 'Neu': 
+        color+= pink; break;
+      case 'In Bearbeitung': 
+        color+= yellow; break;
+      case 'Abgeschlossen': 
+       color+= black; break;
+      default:
+        color+= black; break;
+    }
+
+    return color;
+  }
+
   /**
  * Mixes two colors (green, pink) according to a specified weight 
  * @param w the weight [0,100] for mixing the colors

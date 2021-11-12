@@ -3,7 +3,7 @@
   <!-- TICKET HEADER -->
   <div class="card-header front"  *ngIf="front">
     <div class="row py-2">
-      <p class="status">{{ ticket.status }}</p> 
+      <p class="status" [ngStyle]="{'color': mapStatusToColor(ticket.status)}">{{ ticket.status }}</p> 
       <p class="date">{{ ticket.created_at | date:'dd MMM yy'}}</p>
       <p class="index">ID: {{ ticket.index }}</p>
     </div>   
@@ -40,7 +40,7 @@
         </div>
         <div class="col-3 pt-2 ps-0">
           <p data-confidence="ticket.confidence" class="confidence text-end m-0" [ngStyle]="{'color': mixColors(ticket.confidence)}">{{ ticket.confidence }} %</p>
-          <p class="priority text-end">{{ ticket.priority | normalizeToDomain_0_5}}</p>    
+          <p class="priority text-end">{{ ticket.priority | normalizeToDomain_0_5 }}</p>    
         </div>
       </div>
     </div>

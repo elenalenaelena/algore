@@ -6,13 +6,13 @@
             <!-- ticket head (grey)-->
             <div class="col-lg-3 ticket-head">
                 <div class="row p-2">
-                    <div class="col-3">
+                    <div class="col-3 date">
                         {{ ticket.created_at | date:'dd MMM yy'}}            
                     </div>
-                    <div class="col-4 text-center">
+                    <div class="col-4 index text-center">
                         {{ ticket.index }}           
                     </div>
-                    <div class="col-5 status text-center">
+                    <div class="col-5 status text-center" [ngStyle]="{'color': mapStatusToColor(ticket.status)}">
                         {{ ticket.status }}            
                     </div>
                 </div>                
@@ -44,7 +44,7 @@
                         {{ ticket.confidence }} %           
                     </div>
                     <div class="col-1 text-center priority">
-                        {{ ticket.priority }}           
+                        {{ ticket.priority | normalizeToDomain_0_5 }}           
                     </div>
                 </div>                
             </div>  
