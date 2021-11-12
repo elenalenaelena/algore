@@ -1,11 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* BORDER */
-$algore-border-radius: .5em
+$algore-border-radius: 1em
 
 /* COLOR */
 $algore-white: #fff
 $algore-lt-grey: #c4c4c4
+$algore-dk-grey: #767983
 $algore-lt-blue: #0969da
 $algore-dk-blue: #303544
 $algore-pink: #ef5da8
@@ -14,9 +15,11 @@ $algore-yellow: #f4de51
 $algore-black: #000
 
 /* FONT */
-$font-medium: 0.88rem
-$font-small: .7rem
-$font-extra-small: .6rem
+$font-large: 1.125rem          /* 18px */
+$font-regular: 1rem            /* 16px */
+$font-medium: 0.875rem         /* 14px */
+$font-small: .75rem            /* 12px */
+$font-extra-small: .625rem     /* 10px */
 
 /* MARGIN */
 $algore-margin: .7em
@@ -46,6 +49,8 @@ $algore-margin: .7em
     color: inherit
     background: transparent
     border: none
+    font-size: $font-small  
+    font-weight: 200
 
   .assignee:before
     font-family: "Font Awesome 5 Free"
@@ -57,6 +62,7 @@ $algore-margin: .7em
   .customer
     display: block
     font-style: italic
+    font-size: $font-small  
     margin-bottom: .5em
 
   .customer:before
@@ -69,18 +75,31 @@ $algore-margin: .7em
   .category,
   .confidence,
   .priority
-    font-size: $font-medium
+    font-size: $font-large
     font-weight: bold
 
   .confidence    
     color: mix($algore-green, $algore-yellow, 60%)    
 
+  .date
+    font-size: $font-extra-small  
+
   .index
-    font-size: $font-small 
+    font-size: $font-extra-small 
 
   .status 
     font-style: italic
+    font-size: $font-regular  
     color: $algore-lt-blue !important
+
+  .topic
+    font-size: $font-small 
+
+  .subtopic
+    font-size: $font-small   
+  
+  .message
+    font-size: $font-small     
 
 @mixin fa-icons-btns
 
@@ -166,8 +185,8 @@ $algore-margin: .7em
     .switch
       position: relative
       display: inline-block
-      width: 1.75rem
-      height: 1rem
+      width: 2.8125rem
+      height: 1.875rem
 
     .switch input 
       opacity: 0
@@ -181,15 +200,15 @@ $algore-margin: .7em
       left: 0
       right: 0
       bottom: 0
-      background-color: $algore-lt-grey
+      background-color: $algore-dk-grey
       -webkit-transition: .4s
       transition: .4s
 
     .slider:before 
       position: absolute
       content: ""
-      height: 1rem
-      width: 1rem
+      height: 1.875rem
+      width: 1.875rem
       background-color: $algore-yellow
       -webkit-transition: .4s
       transition: .4s
@@ -198,12 +217,17 @@ $algore-margin: .7em
       box-shadow: 0 0 1px white
 
     input:checked + .slider:before 
-      -webkit-transform: translateX(0.75rem)
-      -ms-transform: translateX(0.75rem)
-      transform: translateX(0.75rem)
+      -webkit-transform: translateX(0rem)
+      -ms-transform: translateX(0rem)
+      transform: translateX(0rem)
+
+    input:not(checked) + .slider:before 
+      -webkit-transform: translateX(0.9375rem)
+      -ms-transform: translateX(0.9375rem)
+      transform: translateX(0.9375rem)
 
     .slider.round 
-      border-radius: 1rem 
+      border-radius: 1.875rem 
 
     .slider.round:before 
       border-radius: 50%

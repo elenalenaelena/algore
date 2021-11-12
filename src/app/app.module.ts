@@ -12,13 +12,14 @@ import { LogPublishersService } from "./shared/log-publishers.service";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
 import { AccordionTicketComponent } from './frontend/accordion-ticket/accordion-ticket.component';
-
+import { NormalizeToDomainPipe } from './shared/NormalizeToDomainPipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     TicketComponent,
-    AccordionTicketComponent
+    AccordionTicketComponent,
+    NormalizeToDomainPipe
   ],
   imports: [
     BrowserModule,

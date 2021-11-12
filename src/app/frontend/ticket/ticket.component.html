@@ -4,14 +4,14 @@
   <div class="card-header front"  *ngIf="front">
     <div class="row py-2">
       <p class="status">{{ ticket.status }}</p> 
-      <p>{{ ticket.created_at | date:'dd MMM yy'}}</p>
+      <p class="date">{{ ticket.created_at | date:'dd MMM yy'}}</p>
       <p class="index">ID: {{ ticket.index }}</p>
     </div>   
   </div>
 
   <div class="card-header back" *ngIf="!front">
     <div class="row py-2 back" >
-      <span class="customer" >{{ ticket.customer }}</span>
+      <span class="customer p-0" >{{ ticket.customer }}</span>
     </div>   
   </div>
 
@@ -30,25 +30,27 @@
                 <a class="dropdown-item" (click)='updateTicket({assignee: assignee})' href="#">{{ assignee }}</a>
               </li>
             </ul>
-        </div>  
-          <p class="category pt-2 m-0">{{ ticket.category }}</p>
-          {{ ticket.topic }}
-          <span class="p-1">></span>
-          {{ ticket.subtopic }}   
+          </div>  
+          <p class="category m-0">{{ ticket.category }}</p>
+          <p class="topic subtopic m-0">
+            {{ ticket.topic }}
+            <span class="p-1">></span>
+            {{ ticket.subtopic }}
+          </p>      
         </div>
-        <div class="col-3">
-          <p data-confidence="ticket.confidence" class="confidence text-end" [ngStyle]="{'color': mixColors(ticket.confidence)}">{{ ticket.confidence }} %</p>
-          <p class="priority text-end m-0">{{ ticket.priority }}</p>    
+        <div class="col-3 pt-2 ps-0">
+          <p data-confidence="ticket.confidence" class="confidence text-end m-0" [ngStyle]="{'color': mixColors(ticket.confidence)}">{{ ticket.confidence }} %</p>
+          <p class="priority text-end">{{ ticket.priority | normalizeToDomain_0_5}}</p>    
         </div>
       </div>
     </div>
 
     <div class="back-side" *ngIf="!front">      
-        {{ ticket.message }}      
+      <p class="message pe-2">{{ ticket.message }}</p>     
     </div>   
 
     <!-- FLIP CARD BTN -->
-    <label class="switch mt-4">
+    <label class="switch mt-2">
       <input (click)="flipSide()" type="checkbox" checked>
       <span class="slider round"></span>
     </label>       
