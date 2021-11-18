@@ -6,28 +6,25 @@
             <!-- ticket head (grey)-->
             <div class="col-lg-3 ticket-head">
                 <div class="row p-2">
-                    <div class="col-3 date">
-                        {{ ticket.created_at | date:'dd MMM yy'}}            
-                    </div>
+                    <div class="col-3 status text-center" [ngStyle]="{'color': mapStatusToColor(ticket.status)}">
+                        {{ ticket.status }}            
+                    </div>                    
                     <div class="col-4 index text-center">
                         {{ ticket.index }}           
                     </div>
-                    <div class="col-5 status text-center" [ngStyle]="{'color': mapStatusToColor(ticket.status)}">
-                        {{ ticket.status }}            
-                    </div>
+                    <div class="col-5 date">
+                        {{ ticket.created_at | date:'dd MMM yy'}}            
+                    </div>                    
                 </div>                
             </div>
             
             <!-- ticket tail (blue)-->
             <div class="col-lg-9 ticket-tail">
                 <div class="row p-2">
-                    <div class="col-7 classification">
-                        <span class="category">{{ ticket.category }}</span>
+                    <div class="col-3 category">{{ ticket.category }}</div>
+                    <div class="col-4"> {{ ticket.topic }}
                         <span class="p-1">></span>
-                        {{ ticket.topic }}
-                        <span class="p-1">></span>
-                        {{ ticket.subtopic }}           
-                    </div>
+                        {{ ticket.subtopic }}    </div>
                     <div class="col-3">
                         <div class="btn-group">
                             <button class="dropdown-toggle assignee" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -58,13 +55,15 @@
     <div class="accordion-body">
         <div class="container px-0">
             <div class="row">
-                <div class="col-lg-3 p-2 text-end">                   
+                <div class="col-lg-3 p-2 lt-grey-15">                   
                 </div>
-                <div class="col-lg-9 p-2"> 
-                    <div class="row py-4">
+                <div class="col-lg-9 p-2 dk-blue-90"> 
+                    <div class="row p-2">
                         <div class="col-7 classification">
-                            <span class="customer">{{ ticket.customer }}</span>                   
-                            {{ ticket.message }}  
+                         
+                                <span class="customer">{{ ticket.customer }}</span>                   
+                                {{ ticket.message }} 
+                             
                         </div>
                     </div>                              
                 </div>

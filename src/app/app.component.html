@@ -11,7 +11,7 @@
 <div class="container">
 
   <!-- FILTERS -->
-  <div class="d-flex">
+  <div class="d-flex quicksand">
     
     <div class="p-2">
       <button (click)="this.view = !this.view;" class="btn" [ngClass]="view ? 'active' : ''" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Tickets"> 
@@ -66,17 +66,18 @@
     <div *ngIf="!ticketView" class="row row-cols-1">
       <!-- column names-->
       <div class="container">
-        <div class="row accordion-column-names pb-2">         
+        <div class="row accordion-column-names pb-2 quicksand fw-bold">         
             <div class="col-lg-3">
-                <div class="row p-2">
-                    <div class="col-3">Datum</div>
+                <div class="row p-2">    
+                    <div class="col-3 text-center">Status</div>
                     <div class="col-4 text-center">ID</div>
-                    <div class="col-5 text-center">Status</div>
+                    <div class="col-5">Datum</div>
                 </div>                
             </div>          
             <div class="col-lg-9">
                 <div class="row p-2">            
-                    <div class="col-7">Kategorie > Thema > Unterthema</div>
+                    <div class="col-3">Kategorie</div>
+                    <div class="col-4">Thema <span class="p-1">></span> Unterthema</div>
                     <div class="col-3">Abteilung</div>
                     <div class="col-1 text-center">Konfidenz</div>
                     <div class="col-1 text-center">Priorität</div>

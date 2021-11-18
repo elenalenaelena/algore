@@ -1,10 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 
+@font-face 
+  font-family: 'Quicksand'
+  src: url('assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf') format("truetype-variations")
+
+@font-face 
+  font-family: 'WorkSans'
+  src: url('assets/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf') format("truetype-variations")
+
 /* BORDER */
 $algore-border-radius: 1em
 
 /* COLOR */
 $algore-white: #fff
+$algore-bg: #f9fafd
 $algore-lt-grey: #c4c4c4
 $algore-dk-grey: #767983
 $algore-lt-blue: #0969da
@@ -18,11 +27,35 @@ $algore-black: #000
 $font-large: 1.125rem          /* 18px */
 $font-regular: 1rem            /* 16px */
 $font-medium: 0.875rem         /* 14px */
-$font-small: .75rem            /* 12px */
+$font-small: 0.8125rem         /* 13px */
 $font-extra-small: .625rem     /* 10px */
+$font-body: WorkSans
+$font-headings: Quicksand
 
 /* MARGIN */
 $algore-margin: .7em
+
+body
+  background: $algore-bg
+  font-family: $font-body 
+  font-size: 13px !important
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6
+  font-family: $font-headings
+  font-style: normal
+
+.quicksand
+  font-family: Quicksand
+  font-size: $font-medium
+
+.work-sans
+  font-family: WorkSans
+  font-size: $font-small
 
 /* MIXINS */
 
@@ -50,7 +83,7 @@ $algore-margin: .7em
     background: transparent
     border: none
     font-size: $font-small  
-    font-weight: 200
+    font-weight: light
 
   .assignee:before
     font-family: "Font Awesome 5 Free"
@@ -61,7 +94,6 @@ $algore-margin: .7em
 
   .customer
     display: block
-    font-style: italic
     font-size: $font-small  
     margin-bottom: .5em
 
@@ -75,7 +107,7 @@ $algore-margin: .7em
   .category,
   .confidence,
   .priority
-    font-size: $font-large
+    font-size: $font-medium
     font-weight: bold
 
   .confidence    
