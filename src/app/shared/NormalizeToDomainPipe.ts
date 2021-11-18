@@ -10,6 +10,6 @@ import { Pipe, PipeTransform } from '@angular/core';
 @Pipe({name: 'normalizeToDomain_0_5'})
 export class NormalizeToDomainPipe implements PipeTransform {
   transform(value: number): number {
-    return Math.round(value / 20);
+    return Math.ceil(value / 20);
   }
 }
