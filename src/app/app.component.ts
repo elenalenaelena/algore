@@ -51,7 +51,6 @@ export class AppComponent implements OnInit, OnDestroy{
   ngOnInit(): void {
     this.sortBy(this.sorting);    
     this.assignees = this.getKeys(this.groupBy(this.tickets, "assignee")); 
-    console.log(this.assignees);
   }
 
    /**

@@ -12,10 +12,12 @@
     .lt-grey-15
         background: styles.$algore-lt-grey
         opacity: 0.15
+        border-radius: 0 0 0 styles.$algore-border-radius
 
     .dk-blue-90
         background: styles.$algore-dk-blue
-        opacity: 0.9    
+        opacity: 0.9   
+        border-radius: 0 0 styles.$algore-border-radius 0
 
 .accordion-button:after
     display: none
@@ -23,30 +25,29 @@
 .ticket-head
     position: relative
     background: styles.$algore-lt-grey
-    border-radius: 2px 0 0 2px
+    border-radius: styles.$algore-border-radius 0 0 2px
     display: inline-block
 
     &:before
         content: ''
         position: absolute
         top: 0.9em
-        top: calc(0.6em - 1px)
-        height: 1.2em
-        width: 0.6em
-        background: white
+        top: calc(0.9em - 1px)
+        height: 1.8em
+        width: 0.9em
+        background: styles.$algore-bg
         left: -2px
         border-radius: 0 1em 1em 0
-        border-left-color: white
+        border-left-color: styles.$algore-bg
 
     &:active
         color: styles.$algore-black    
     
     .date,
-    .index, 
-    .status
+    .index
       font-size: styles.$font-small    
 
 .ticket-tail
     background: styles.$algore-dk-blue
-    border-radius: 0 2px 2px 0
+    border-radius: 0 styles.$algore-border-radius 2px 0
     color: styles.$algore-white

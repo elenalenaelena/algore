@@ -5,34 +5,32 @@
            
             <!-- ticket head (grey)-->
             <div class="col-lg-3 ticket-head">
-                <div class="row p-2">
-                    <div class="col-3 status text-center" [ngStyle]="{'color': mapStatusToColor(ticket.status)}">
-                        {{ ticket.status }}            
-                    </div>                    
+                <div class="row px-2 py-3">
+                    <div class="col-5 date text-center">
+                        {{ ticket.created_at | date:'dd MMM yy'}}            
+                    </div>  
                     <div class="col-4 index text-center">
                         {{ ticket.index }}           
-                    </div>
-                    <div class="col-5 date">
-                        {{ ticket.created_at | date:'dd MMM yy'}}            
-                    </div>                    
+                    </div>                                 
+                    <div class="col-3 status text-center" [ngClass]="mapStatusToIcon(ticket.status)"></div>                    
                 </div>                
             </div>
             
             <!-- ticket tail (blue)-->
             <div class="col-lg-9 ticket-tail">
-                <div class="row p-2">
+                <div class="row px-2 py-3">
                     <div class="col-3 category">{{ ticket.category }}</div>
                     <div class="col-4"> {{ ticket.topic }}
-                        <span class="p-1">></span>
+                        <span *ngIf=ticket.subtopic class="p-1">></span>
                         {{ ticket.subtopic }}    </div>
                     <div class="col-3">
                         <div class="btn-group">
                             <button class="dropdown-toggle assignee" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                {{ ticket.assignee }} 
+                                {{ ticket.assignee | trimString }} 
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                               <li *ngFor="let assignee of assignees, let i = index">
-                                <a class="dropdown-item" (click)='updateTicket({assignee: assignee});' href="#">{{ assignee }}</a>
+                                <a class="dropdown-item" (click)='updateTicket({assignee: assignee}); updateTicket({confidence: 100 });' href="#">{{ assignee }}</a>
                               </li>
                             </ul>
                         </div>           

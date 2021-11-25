@@ -24,25 +24,22 @@ export class TicketComponent {
     this.front = !this.front;
   }
 
-  mapStatusToColor(s: String): String {
+  mapStatusToIcon(s: String): String {
 
-    let color: String = '#';
-    let black = '000000';
-    let pink = 'EF5DA8';   
-    let yellow = 'F4DE51';
-
+    let ng_class: String;
+    
     switch(s) {
       case 'Neu': 
-        color+= pink; break;
+        ng_class='status-new'; break;
       case 'In Bearbeitung': 
-        color+= yellow; break;
+        ng_class='status-in-progress'; break;
       case 'Abgeschlossen': 
-       color+= black; break;
+        ng_class='status-done'; break;
       default:
-        color+= black; break;
+        ng_class='status-new'; break;
     }
 
-    return color;
+    return ng_class;
   }
 
    /**
@@ -93,6 +90,7 @@ export class TicketComponent {
 
     Object.assign(t, changes);
     this.newUpdateEvent.emit(t);
+    console.log(changes)
   }
 
 }

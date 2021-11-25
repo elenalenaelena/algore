@@ -13,13 +13,16 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
 import { AccordionTicketComponent } from './frontend/accordion-ticket/accordion-ticket.component';
 import { NormalizeToDomainPipe } from './shared/NormalizeToDomainPipe';
+import { TrimStringPipe } from './shared/TrimStringPipe';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     TicketComponent,
     AccordionTicketComponent,
-    NormalizeToDomainPipe
+    NormalizeToDomainPipe,
+    TrimStringPipe
   ],
   imports: [
     BrowserModule,

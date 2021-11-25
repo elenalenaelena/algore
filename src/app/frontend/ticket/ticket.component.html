@@ -3,9 +3,9 @@
   <!-- TICKET HEADER -->
   <div class="card-header front"  *ngIf="front">
     <div class="row py-2">
-      <p class="status" [ngStyle]="{'color': mapStatusToColor(ticket.status)}">{{ ticket.status }}</p> 
       <p class="date">{{ ticket.created_at | date:'dd MMM yy'}}</p>
-      <p class="index">ID: {{ ticket.index }}</p>
+      <p class="index text-center">ID: {{ ticket.index }}</p>      
+      <p class="status text-end p-0" [ngClass]="mapStatusToIcon(ticket.status)" data-toggle="tooltip" data-placement="top" title="{{ ticket.status}}"></p> 
     </div>   
   </div>
 
@@ -20,25 +20,25 @@
     
     <div class="front-side pt-2" *ngIf="front">      
       <div class="row">        
-        <div class="col-9">  
+        <div class="col-8">  
           <div class="btn-group">
             <button class="dropdown-toggle assignee pt-2 px-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                {{ ticket.assignee }} 
+                {{ ticket.assignee | trimString }}
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
               <li *ngFor="let assignee of assignees, let i = index">
-                <a class="dropdown-item" (click)='updateTicket({assignee: assignee})' href="#">{{ assignee }}</a>
+                <a class="dropdown-item" (click)='updateTicket({assignee: assignee}); updateTicket({confidence: 100 });' href="#">{{ assignee }}</a>
               </li>
             </ul>
           </div>  
           <p class="category m-0">{{ ticket.category }}</p>
           <p class="topic subtopic m-0">
             {{ ticket.topic }}
-            <span class="p-1">></span>
+            <span *ngIf=ticket.subtopic class="p-1">></span>
             {{ ticket.subtopic }}
           </p>      
         </div>
-        <div class="col-3 pt-2 ps-0">
+        <div class="col-4 pt-2 ps-0">
           <p data-confidence="ticket.confidence" class="confidence text-end m-0" [ngStyle]="{'color': mixColors(ticket.confidence)}">{{ ticket.confidence }} %</p>
           <p class="priority text-end">{{ ticket.priority | normalizeToDomain_0_5 }}</p>    
         </div>

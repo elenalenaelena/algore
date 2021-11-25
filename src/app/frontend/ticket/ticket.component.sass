@@ -29,18 +29,19 @@
     &:before
       content: ''
       position: absolute
-      top: 0.8em
-      top: calc(1.5em - 1px)
-      height: 2em
-      width: 1em
-      background: white
-      left: -2px
+      top: calc(0.9em - 1px)
+      height: 1.8em
+      width: 0.9em
+      background: styles.$algore-bg
+      left: -1px
       border-radius: 0 1em 1em 0
-      border-left-color: white
+      border-left-color: styles.$algore-bg
 
     .date,
-    .index
-      font-size: styles.$font-extra-small 
+    .index,
+    .status
+      font-size: styles.$font-small
+      width: 33%
   
   &.back
     background-color: styles.$algore-dk-blue
@@ -49,14 +50,13 @@
     &:before
       content: ''
       position: absolute
-      top: 0.8em
-      top: calc(1.5em - 1px)
-      height: 2em
-      width: 1em
-      background: white
+      top: calc(0.9em - 1px)
+      height: 1.8em
+      width: 0.9em
+      background: styles.$algore-bg
       right: -2px
       border-radius: 1em 0 0 1em
-      border-left-color: white
+      border-left-color: styles.$algore-bg
 
   p 
     color: styles.$algore-dk-blue

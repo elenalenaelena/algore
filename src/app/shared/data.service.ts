@@ -1,6 +1,6 @@
 import { Injectable, OnInit} from '@angular/core';
 import { Ticket } from './ticket.model';
-import ticketData from './sample143.json'
+import ticketData from './balanced_data.json'
 
 @Injectable({
   providedIn: 'root'

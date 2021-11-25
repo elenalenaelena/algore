@@ -52,6 +52,7 @@ h6
 .quicksand
   font-family: Quicksand
   font-size: $font-medium
+  font-variation-settings: 'wght' 800
 
 .work-sans
   font-family: WorkSans
@@ -90,7 +91,6 @@ h6
     content: "\f007"
     display: inline-block
     padding-right: 3px
-    font-weight: 900
 
   .customer
     display: block
@@ -102,7 +102,6 @@ h6
     content: "\f075"
     display: inline-block
     padding-right: 3px
-    font-weight: 900
 
   .category,
   .confidence,
@@ -120,8 +119,32 @@ h6
     color: $algore-white !important
 
   .status 
-    font-style: italic
     font-size: $font-regular
+    color: $algore-dk-blue
+
+    &.status-new:before
+      font-family: "Font Awesome 5 Free"
+      content: "\f111"
+      display: inline-block
+      padding-right: 3px
+      font-weight: 900
+      padding: 0
+    
+    &.status-in-progress:before
+      font-family: "Font Awesome 5 Free"
+      content: "\f059"
+      display: inline-block
+      padding-right: 3px
+      font-weight: 900
+      padding: 0
+
+    &.status-done:before
+      font-family: "Font Awesome 5 Free"
+      content: "\f058"
+      display: inline-block
+      padding-right: 3px
+      font-weight: 900
+      padding: 0
 
   .topic
     font-size: $font-small 
@@ -216,8 +239,8 @@ h6
     .switch
       position: relative
       display: inline-block
-      width: 2.8125rem
-      height: 1.875rem
+      width: 2.7em
+      height: 1.8em
 
     .switch input 
       opacity: 0
@@ -238,14 +261,11 @@ h6
     .slider:before 
       position: absolute
       content: ""
-      height: 1.875rem
-      width: 1.875rem
+      height: 1.8em
+      width: 1.8em
       background-color: $algore-yellow
       -webkit-transition: .4s
       transition: .4s
-
-    input:focus + .slider 
-      box-shadow: 0 0 1px white
 
     input:checked + .slider:before 
       -webkit-transform: translateX(0rem)
@@ -253,12 +273,12 @@ h6
       transform: translateX(0rem)
 
     input:not(checked) + .slider:before 
-      -webkit-transform: translateX(0.9375rem)
-      -ms-transform: translateX(0.9375rem)
-      transform: translateX(0.9375rem)
+      -webkit-transform: translateX(0.9em)
+      -ms-transform: translateX(0.9em)
+      transform: translateX(0.9em)
 
     .slider.round 
-      border-radius: 1.875rem 
+      border-radius: 1em 
 
     .slider.round:before 
       border-radius: 50%
