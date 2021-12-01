@@ -10,16 +10,20 @@
 
 <div class="container">
 
-  <!-- FILTERS -->
+  <!-- FILTER -->
   <div class="d-flex quicksand">
-    
+  
+    <!-- performance accordion header * -->
     <div class="p-2">
-      <button (click)="this.view = !this.view;" class="btn" [ngClass]="view ? 'active' : ''" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Tickets"> 
-        Tickets
-      </button>  
-      <button (click)="this.view = !this.view;" class="btn" [ngClass]="!view ? 'active' : ''" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Dashoard"> 
-        Dashboard
-      </button> 
+      <div class="p-2 accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button btn-white shadow-sm p-2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Performance
+              </button>
+            </h2>        
+          </div>
+      </div>       
     </div>
 
      <!-- toogle ticketView between table and grid (= icon btn)-->
@@ -54,6 +58,28 @@
       </div>
     </div>
   </div>
+
+  <!-- * performance accordion body -->
+  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+    <div class="accordion-body">     
+      <img class="w-100" src="assets/confs.png">
+
+      <div class="row pt-4">
+        <div class="col-lg-9">
+          <p class="help">Was bedeutet das?</p>
+          <p>Die Konfidenz gibt an, mit welcher Zuverlässigkeit Inspector die Tickets für bestimmte Kategorie zuordnen konnte. <b>Je höher die Konfidenz, desto besser werden Tickets einer Kategorie erkannt.</b> Mit zunehmender Lebensdauer von Inspector steigen auch die Konfidenzwerte, weil das System dazulernt. Grundlage der Konfidenz ist das F1-Maß aus der Statistik, das harmonische Mittel des Anteils korrekter Zuordnungen (Sensitivität, über der Nulllinie) sowie korrekter Nicht-Zuordnungen (Spezifität, unter der Nulllinie).</p>  
+          <ul>
+            <li>Tickets, die korrekterweise der Kategorie zugeordnet wurden, stehen über der Nulllinie (bunt).</li>
+            <li>Tickets, die korrekterweise als nicht der Kategorie zugehörig erkannt wurden, stehen unter der Nullinie (schwach bunt).</li>
+            <li>Weitere Tickets (schwarz) wurden entweder fälschlicherweise der Kategorie zugeordnet oder nicht als der Kategorie zugehörig erkannt.</li>
+          </ul>  
+      </div> 
+      </div> 
+    </div>
+  </div>
+
+  
+  <!-- TICKETS -->
 
   <div *ngIf="view">
     <!-- ticket grid-->
@@ -92,10 +118,6 @@
         </div>       
       </div>
     </div> 
-  </div>
-
-  <div *ngIf="!view">
-    <img src="assets/cm.png">
   </div>
 
 </div>
