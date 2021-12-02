@@ -59,7 +59,6 @@
       border-left-color: styles.$algore-bg
 
   p 
-    color: styles.$algore-dk-blue
     display: block
     font-size: styles.$font-small 
     font-weight: light
@@ -69,6 +68,7 @@
   background: styles.$algore-dk-blue
   border-radius: 0 0 styles.$algore-border-radius styles.$algore-border-radius
   color: styles.$algore-white
+  height: 185px
 
   .confidence:before
     content: "Konfidenz"
@@ -83,10 +83,15 @@
     font-size: styles.$font-small 
     font-weight: 200
 
-  .back-side
-    overflow-y: auto
+  .front-side
     height: 150px
-    box-sizing: border-box
+
+  .back-side
+    height: 150px
+
+    p
+      overflow-y: auto
+      height: 140px
 
   textarea
     font-size: .7rem
