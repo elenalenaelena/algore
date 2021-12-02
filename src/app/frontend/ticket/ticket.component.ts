@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { faPen, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { Ticket } from '../../shared/ticket.model';
+import { LogService } from 'src/app/shared/log.service';
 
 @Component({
   selector: 'app-ticket',
@@ -17,7 +18,7 @@ export class TicketComponent {
   @Input() assignees: any;
   @Output() newUpdateEvent = new EventEmitter<Ticket>();
 
-  constructor() { 
+  constructor(private logger: LogService) { 
   }
 
   flipSide() {
@@ -90,7 +91,9 @@ export class TicketComponent {
 
     Object.assign(t, changes);
     this.newUpdateEvent.emit(t);
-    console.log(changes)
-  }
 
+    if(changes.assignee!==undefined) {
+      this.logger.log('Ticket ' + t.index + ' assigned to ' + changes.assignee);
+    }
+  }
 }
