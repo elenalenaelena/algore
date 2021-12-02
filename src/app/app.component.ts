@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { DataService } from 'src/app/shared/data.service';
 import { LogService } from './shared/log.service';
 import { DomSanitizer } from '@angular/platform-browser';
@@ -11,7 +11,8 @@ import { faThLarge, faThList, faSortAmountUp, faSortAmountDown, faTicketAlt, faC
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent implements OnInit, OnDestroy{
-  
+  @ViewChild("performanceGraph", {read: ElementRef}) performanceGraph: ElementRef | null = null;
+
   assignees: String[] = [];
   title = 'algore';
   fileUrl: any;
@@ -102,6 +103,27 @@ export class AppComponent implements OnInit, OnDestroy{
 
   refreshPage(): void {
     window.location.reload();
+  }
+
+  toggleTicketView(): void {
+    this.ticketView = !this.ticketView;
+    this.logger.log('Toggled ticket view: ' + this.ticketView);
+  }
+
+  toggleSortOrder(): void {
+    this.reverse = !this.reverse; 
+    this.sortBy(this.sorting);
+    this.logger.log('Toggled sort order: ' + this.reverse);
+  }
+
+  togglePerformance(): void {
+    let statusString: String = this.performanceGraph?.nativeElement.offsetHeight > 0 ? 'off' : 'on';
+    this.logger.log('Toggled performance view: ' + statusString);
+  }
+
+  sortByFilter(filterOption: String): void {
+    this.sortBy(filterOption);
+    this.logger.log('Sorting by filter: ' + filterOption);
   }
 
   /**

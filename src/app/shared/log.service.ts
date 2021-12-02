@@ -82,10 +82,13 @@ export class LogService {
             entry.extraInfo = params;
             entry.logWithDate = this.logWithDate;
             for (let logger of this.publishers) {
-                logger.log(entry).subscribe(response => console.log(response));
+                logger.log(entry).subscribe(response => this.processObservable(response));
             }
         }
-    }    
+    }
+
+    private processObservable(param: boolean) {
+    }
 
     debug(msg: string, ...optionalParams: any[]) {
         this.writeToLog(msg, LogLevel.Debug, optionalParams);

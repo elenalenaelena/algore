@@ -23,6 +23,7 @@ export class TicketComponent {
 
   flipSide() {
     this.front = !this.front;
+    this.logger.log('Flipped ticket: ' + this.ticket.index + ' to ' + this.front);
   }
 
   mapStatusToIcon(s: String): String {

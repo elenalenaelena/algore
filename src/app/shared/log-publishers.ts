@@ -76,6 +76,53 @@ export class LogLocalStorage extends LogPublisher {
     }    
 }
 
+export class LogSessionStorage extends LogPublisher {
+    constructor() {
+        // Must call `super()`from derived classes
+        super();
+        
+        // Set location
+        this.location = "logging";
+    }
+    
+    dump(): string | null {
+        let retrieve: string | null = sessionStorage.getItem(this.location);
+        return retrieve;
+    }
+
+    // Append log entry to local storage
+    log(entry: LogEntry): Observable<boolean> {
+        let ret: boolean = false;
+        let values: LogEntry[];
+        
+        try {
+            // Get previous values from local storage
+            let retrieve: string | null = sessionStorage.getItem(this.location);
+            values = retrieve == null ? [] : JSON.parse(retrieve);
+            
+            // Add new log entry to array
+            values.push(entry);
+            
+            // Store array into local storage
+            sessionStorage.setItem(this.location, JSON.stringify(values));
+            
+            // Set return value
+            ret = true;
+        } catch (ex) {
+            // Display error in console
+            console.log(ex);
+        }
+        
+        return of(ret);
+    }
+    
+    // Clear all log entries from local storage
+    clear(): Observable<boolean> {
+        sessionStorage.removeItem(this.location);
+        return of(true);
+    }    
+}
+
 export class LogWebApi extends LogPublisher {
     constructor(private http: HttpClient) {
         // Must call `super()`from derived classes

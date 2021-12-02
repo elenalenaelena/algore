@@ -18,7 +18,7 @@
       <div class="p-2 accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button btn-white shadow-sm p-2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <button class="accordion-button btn-white shadow-sm p-2 collapsed" type="button" (click)="togglePerformance()" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                 Performance
               </button>
             </h2>        
@@ -28,7 +28,7 @@
 
      <!-- toogle ticketView between table and grid (= icon btn)-->
     <div class="ms-auto p-2">
-      <button (click)="this.ticketView = !this.ticketView;" class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Ansicht ändern"> 
+      <button (click)="toggleTicketView()" class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Ansicht ändern"> 
         <span *ngIf="!ticketView"><fa-icon [icon]="faThLarge"></fa-icon></span>  
         <span *ngIf="ticketView"><fa-icon [icon]="faThList"></fa-icon></span>
       </button>  
@@ -36,7 +36,7 @@
 
       <!-- toogle sort order -->
     <div class="p-2">
-      <button (click)="this.reverse = !this.reverse; sortBy(sorting)" class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Sortierung ändern"> 
+      <button (click)="toggleSortOrder()" class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Sortierung ändern"> 
         <span *ngIf="reverse"><fa-icon [icon]="faSortAmountUp"></fa-icon></span>  
         <span *ngIf="!reverse"><fa-icon [icon]="faSortAmountDown"></fa-icon></span>
       </button>  
@@ -51,7 +51,7 @@
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
           <li *ngFor="let filterOption of filterOptions, let i = index">
-            <a class="dropdown-item" (click)='sortBy(filterOption)' href="#">{{ this.getTranslationDE(filterOption) }}</a>
+            <a class="dropdown-item" (click)="sortByFilter(filterOption)" href="#">{{ this.getTranslationDE(filterOption) }}</a>
           </li>
         </ul>
         </div>
@@ -60,7 +60,7 @@
   </div>
 
   <!-- * performance accordion body -->
-  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+  <div #performanceGraph id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
     <div class="accordion-body">     
       <img class="w-100" src="assets/confs.png">
 

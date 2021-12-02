@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Input, Output } from '@angular/core';
 import { Ticket } from '../../shared/ticket.model';
+import { LogService } from 'src/app/shared/log.service';
 
 @Component({
   selector: 'app-accordion-ticket',
@@ -13,7 +14,7 @@ export class AccordionTicketComponent implements OnInit {
   @Input() assignees: any;
   @Output() newUpdateEvent = new EventEmitter<Ticket>();
 
-  constructor() {    
+  constructor(private logger: LogService) {    
   }
 
   ngOnInit(): void { 
@@ -85,6 +86,9 @@ export class AccordionTicketComponent implements OnInit {
 
     Object.assign(t, changes);
     this.newUpdateEvent.emit(t);
-  }
 
+    if(changes.assignee!==undefined) {
+      this.logger.log('Ticket ' + t.index + ' assigned to ' + changes.assignee);
+    }
+  }
 }
