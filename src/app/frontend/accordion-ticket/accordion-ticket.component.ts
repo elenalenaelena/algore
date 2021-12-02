@@ -88,7 +88,7 @@ export class AccordionTicketComponent implements OnInit {
     this.newUpdateEvent.emit(t);
 
     if(changes.assignee!==undefined) {
-      this.logger.log('Ticket ' + t.index + ' assigned to ' + changes.assignee);
+      this.logger.log('Ticket ' + t.index + ' assigned to ' + changes.assignee, [1, t.index, this.assignees.indexOf(changes.assignee)]);
     }
   }
 }

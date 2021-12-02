@@ -107,23 +107,23 @@ export class AppComponent implements OnInit, OnDestroy{
 
   toggleTicketView(): void {
     this.ticketView = !this.ticketView;
-    this.logger.log('Toggled ticket view: ' + this.ticketView);
+    this.logger.log('Toggled ticket view: ' + this.ticketView, [3, null, this.ticketView ? 105 : 104]);
   }
 
   toggleSortOrder(): void {
     this.reverse = !this.reverse; 
     this.sortBy(this.sorting);
-    this.logger.log('Toggled sort order: ' + this.reverse);
+    this.logger.log('Toggled sort order: ' + this.reverse, [5, null, this.reverse ? 100 : 101]);
   }
 
   togglePerformance(): void {
-    let statusString: String = this.performanceGraph?.nativeElement.offsetHeight > 0 ? 'off' : 'on';
-    this.logger.log('Toggled performance view: ' + statusString);
+    let status: number = this.performanceGraph?.nativeElement.offsetHeight > 0 ? 100 : 101;
+    this.logger.log('Toggled performance view: ' + status, [4, null, status]);
   }
 
   sortByFilter(filterOption: String): void {
     this.sortBy(filterOption);
-    this.logger.log('Sorting by filter: ' + filterOption);
+    this.logger.log('Sorting by filter: ' + (10 + this.filterOptions.indexOf(filterOption)), [6, null, (10 + this.filterOptions.indexOf(filterOption))]);
   }
 
   /**

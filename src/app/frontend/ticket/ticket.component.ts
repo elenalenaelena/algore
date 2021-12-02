@@ -23,7 +23,7 @@ export class TicketComponent {
 
   flipSide() {
     this.front = !this.front;
-    this.logger.log('Flipped ticket: ' + this.ticket.index + ' to ' + this.front);
+    this.logger.log('Flipped ticket: ' + this.ticket.index + ' to ' + this.front, [2, this.ticket.index, this.front ? 100 : 101]);
   }
 
   mapStatusToIcon(s: String): String {
@@ -87,14 +87,13 @@ export class TicketComponent {
   * @param changes the new data
   */
   updateTicket(changes: any) {
-
     let t: Ticket = { index: this.ticket.index }; 
 
     Object.assign(t, changes);
     this.newUpdateEvent.emit(t);
 
     if(changes.assignee!==undefined) {
-      this.logger.log('Ticket ' + t.index + ' assigned to ' + changes.assignee);
+      this.logger.log('Ticket ' + t.index + ' assigned to ' + changes.assignee, [1, t.index, this.assignees.indexOf(changes.assignee)]);
     }
   }
 }
