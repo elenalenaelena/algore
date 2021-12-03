@@ -157,8 +157,22 @@ h6
 
 @mixin fa-icons-btns
 
-  button.accordion-button:after 
-    margin-left: 0.7em
+  .btn-highlight
+    background-color: $algore-yellow
+
+  button.accordion-button:after,
+  button.dropdown-toggle:after
+    background-image: none  
+    font-family: "Font Awesome 5 Free"
+    font-style: normal
+    font-weight: bold
+    content: "\f078"
+    display: inline-block
+    width: auto
+    height: auto
+    margin-left: .3rem
+    border: 0
+    vertical-align: 0
   
   .help
    font-style: italic

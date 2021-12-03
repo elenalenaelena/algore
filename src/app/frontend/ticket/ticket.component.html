@@ -1,7 +1,7 @@
 <div class="card">
     
   <!-- TICKET HEADER -->
-  <div class="card-header front"  *ngIf="front">
+  <div class="card-header front" *ngIf="front">
     <div class="row py-2">
       <p class="date">{{ ticket.created_at | date:'dd MMM yy'}}</p>
       <p class="index text-center">ID: {{ ticket.index }}</p>      
@@ -10,8 +10,8 @@
   </div>
 
   <div class="card-header back" *ngIf="!front">
-    <div class="row py-2 back" >
-      <span class="customer p-0" >{{ ticket.customer }}</span>
+    <div class="row py-2" >
+      <p class="customer p-0" >{{ ticket.customer }}</p>
     </div>   
   </div>
 
@@ -46,14 +46,14 @@
     </div>
 
     <div class="back-side" *ngIf="!front">      
-      <p class="message pe-2">{{ ticket.message }}</p>     
+      <p class="message">{{ ticket.message }}</p>     
     </div>   
 
-    <!-- FLIP CARD BTN -->
-    <label class="switch mt-2">
+    <!-- FLIP CARD BTN --> 
+    <label class="switch">
       <input (click)="flipSide()" type="checkbox" checked>
       <span class="slider round"></span>
-    </label>       
+    </label>          
 
   </div>
 
