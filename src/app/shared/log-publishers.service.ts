@@ -19,15 +19,15 @@ export class LogPublishersService {
         this.publishers.push(new LogConsole());
 
         // Create instance of `LogLocalStorage` Class
-        let localStorageLogger = new LogLocalStorage();
-        this.publishers.push(localStorageLogger);
+        //let localStorageLogger = new LogLocalStorage();
+        //this.publishers.push(localStorageLogger);
 
         // Create instance of `LogSessionStorage` Class
-        let sessionStorageLogger = new LogSessionStorage();
-        sessionStorageLogger.clear();
-        this.publishers.push(sessionStorageLogger);
+        //let sessionStorageLogger = new LogSessionStorage();
+        //sessionStorageLogger.clear();
+        //this.publishers.push(sessionStorageLogger);
 
         // Create instance of `LogWebApi` Class
-        //this.publishers.push(new LogWebApi(this.http));
+        this.publishers.push(new LogWebApi(this.http));
     }
 }

@@ -3,6 +3,7 @@ import { of, throwError } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 import { LogEntry } from './log.service';
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 export abstract class LogPublisher {
     location: string = "";
@@ -129,7 +130,7 @@ export class LogWebApi extends LogPublisher {
         super();
         
         // Set location
-        this.location = "/api/log";
+        this.location = environment.logApi;
     }
     
     dump(): string | null {
