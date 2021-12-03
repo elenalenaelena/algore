@@ -1,0 +1,110 @@
+<!-- TICKETS -->
+<div class="container">
+
+    <!-- FILTER -->
+    <div class="sticky-top quicksand">
+
+        <div class="d-flex justify-content-end">
+            
+            <!-- performance accordion header * -->
+            <div class="p-2 accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button btn btn-highlight shadow-sm p-2 collapsed" type="button" (click)="togglePerformance()" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Performance
+                    </button>
+                    </h2>        
+                </div>
+            </div>  
+        
+            <!-- toogle ticketView between table and grid (= icon btn)-->  
+            <button (click)="toggleTicketView()" class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Ansicht ändern"> 
+                <span *ngIf="!ticketView" class="bg-transparent"><fa-icon [icon]="faThLarge"></fa-icon></span>  
+                <span *ngIf="ticketView" class="bg-transparent"><fa-icon [icon]="faThList"></fa-icon></span>
+            </button>  
+            
+                <!-- toogle sort order -->   
+                <button (click)="toggleSortOrder()" class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Sortierung ändern"> 
+                <span *ngIf="reverse" class="bg-transparent"><fa-icon [icon]="faSortAmountUp"></fa-icon></span>  
+                <span *ngIf="!reverse" class="bg-transparent"><fa-icon [icon]="faSortAmountDown"></fa-icon></span>
+                </button>  
+            
+                <!-- sort by filter on {{ ticket.[attribute] }} (= dropdown) -->    
+                <div class="py-2">
+                <div class="btn-group">
+                    <button class="btn shadow-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{ this.getTranslationDE(sorting) }}
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li *ngFor="let filterOption of filterOptions, let i = index">
+                        <a class="dropdown-item" (click)="sortByFilter(filterOption)" href="#">{{ this.getTranslationDE(filterOption) }}</a>
+                    </li>
+                    </ul>
+                </div>
+                </div> 
+
+        </div>     
+        
+        <!-- * performance accordion body -->
+        <div #performanceGraph id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">     
+            <img class="w-100" src="assets/confs.png">
+    
+            <div class="row pt-4">
+            <div class="col-lg-9">
+                <p class="help">Was bedeutet das?</p>
+                <p>Die Konfidenz gibt an, mit welcher Zuverlässigkeit Inspector die Tickets für bestimmte Kategorie zuordnen konnte. <b>Je höher die Konfidenz, desto besser werden Tickets einer Kategorie erkannt.</b> Mit zunehmender Lebensdauer von Inspector steigen auch die Konfidenzwerte, weil das System dazulernt. Grundlage der Konfidenz ist das F1-Maß aus der Statistik, das harmonische Mittel des Anteils korrekter Zuordnungen (Sensitivität, über der Nulllinie) sowie korrekter Nicht-Zuordnungen (Spezifität, unter der Nulllinie).</p>  
+                <ul>
+                <li>Tickets, die korrekterweise der Kategorie zugeordnet wurden, stehen über der Nulllinie (bunt).</li>
+                <li>Tickets, die korrekterweise als nicht der Kategorie zugehörig erkannt wurden, stehen unter der Nullinie (schwach bunt).</li>
+                <li>Weitere Tickets (schwarz) wurden entweder fälschlicherweise der Kategorie zugeordnet oder nicht als der Kategorie zugehörig erkannt.</li>
+                </ul>  
+            </div> 
+            </div> 
+        </div>
+        </div>
+
+    </div>
+  
+    
+
+  <div *ngIf="view">
+    <!-- ticket grid-->
+    <div *ngIf="ticketView" class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
+        <div *ngFor="let ticket of tickets, let i = index" class="col">
+          <app-ticket [ticket]=ticket [assignees]=assignees (newUpdateEvent)="updateTickets($event)"></app-ticket>
+        </div>
+    </div> 
+    <!-- ticket accordion -->
+    <div *ngIf="!ticketView" class="row row-cols-1">
+      <!-- column names-->
+      <div class="container">
+        <div class="row accordion-column-names pb-2 quicksand">         
+            <div class="col-lg-3">
+                <div class="row p-2">  
+                  <div class="col-5 text-center">Datum</div>  
+                  <div class="col-4 text-center">ID</div>
+                  <div class="col-3 text-center">Status</div>
+                </div>                
+            </div>          
+            <div class="col-lg-9">
+                <div class="row p-2">            
+                    <div class="col-3">Kategorie</div>
+                    <div class="col-4">Thema <span class="p-1">></span> Unterthema</div>
+                    <div class="col-3">Bearbeiter:in</div>
+                    <div class="col-1 text-center">Konfidenz</div>
+                    <div class="col-1 text-center">Priorität</div>
+                </div>                
+            </div>  
+        </div>        
+      </div>
+      <!-- accordion table -->
+      <div class="accordion accordion-flush">
+        <div class="accordion-item" *ngFor="let ticket of tickets; let i = index">
+          <app-accordion-ticket [ticket]=ticket [i]=i [assignees]=assignees (newUpdateEvent)="updateTickets($event)"></app-accordion-ticket>
+        </div>       
+      </div>
+    </div> 
+  </div>
+
+</div>

@@ -6,8 +6,14 @@
       <img src="assets/inspector-logo.svg" alt="INspector logo" (click)="refreshPage()" >
     </a>
 
+  </div>
+</nav> 
+
+<!-- TICKETS -->
+<div style="display: none;" class="container">
+
     <!-- FILTER -->
-    <div class="d-flex justify-content-end quicksand">
+    <div class="d-flex sticky-top justify-content-end quicksand">
 
       <!-- performance accordion header * -->
       <div class="p-2 accordion accordion-flush" id="accordionFlushExample">
@@ -66,12 +72,6 @@
         </div> 
       </div>
     </div>
-
-  </div>
-</nav> 
-
-<!-- TICKETS -->
-<div class="container">
 
   <div *ngIf="view">
     <!-- ticket grid-->
