@@ -9,7 +9,7 @@
             <!-- performance accordion header * -->
             <div class="p-2 accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingOne">
+                    <h2 class="accordion-header" id="flush-headingOne" data-bs-toggle="tooltip" data-bs-placement="top" title="Performance-Metriken ein/ausblenden">
                     <button class="accordion-button btn btn-highlight shadow-sm p-2 collapsed" type="button" (click)="togglePerformance()" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                         Performance
                     </button>
@@ -18,20 +18,20 @@
             </div>  
         
             <!-- toogle ticketView between table and grid (= icon btn)-->  
-            <button (click)="toggleTicketView()" class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Ansicht ändern"> 
+            <button (click)="toggleTicketView()" class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Ansichtsmodus wechseln"> 
                 <span *ngIf="!ticketView" class="bg-transparent"><fa-icon [icon]="faThLarge"></fa-icon></span>  
                 <span *ngIf="ticketView" class="bg-transparent"><fa-icon [icon]="faThList"></fa-icon></span>
             </button>  
             
                 <!-- toogle sort order -->   
-                <button (click)="toggleSortOrder()" class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Sortierung ändern"> 
+                <button (click)="toggleSortOrder()" class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Sortierung umkehren"> 
                 <span *ngIf="reverse" class="bg-transparent"><fa-icon [icon]="faSortAmountUp"></fa-icon></span>  
                 <span *ngIf="!reverse" class="bg-transparent"><fa-icon [icon]="faSortAmountDown"></fa-icon></span>
                 </button>  
             
                 <!-- sort by filter on {{ ticket.[attribute] }} (= dropdown) -->    
                 <div class="py-2">
-                <div class="btn-group">
+                <div class="btn-group" data-bs-toggle="tooltip" data-bs-placement="top" title="sortieren nach">
                     <button class="btn shadow-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     {{ this.getTranslationDE(sorting) }}
                     </button>

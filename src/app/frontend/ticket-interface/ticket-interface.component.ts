@@ -1,9 +1,9 @@
 import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { faSortAmountDown, faSortAmountUp, faThLarge, faThList, faTicketAlt, faChartLine } from '@fortawesome/free-solid-svg-icons';
-import { DataService } from '../shared/data.service';
-import { LogService } from '../shared/log.service';
-import { Ticket } from '../shared/ticket.model';
+import { DataService } from '../../shared/data.service';
+import { LogService } from '../../shared/log.service';
+import { Ticket } from '../../shared/ticket.model';
 
 @Component({
   selector: 'app-ticket-interface',

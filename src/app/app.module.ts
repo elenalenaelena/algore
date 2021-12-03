@@ -14,13 +14,17 @@ import { FormsModule } from '@angular/forms';
 import { AccordionTicketComponent } from './frontend/accordion-ticket/accordion-ticket.component';
 import { NormalizeToDomainPipe } from './shared/NormalizeToDomainPipe';
 import { TrimStringPipe } from './shared/TrimStringPipe';
-import { IntroductionComponent } from './introduction/introduction.component';
 import { Routes, RouterModule } from '@angular/router';
-import { TicketInterfaceComponent } from './ticket-interface/ticket-interface.component';
+import { TicketInterfaceComponent } from './frontend/ticket-interface/ticket-interface.component';
+import { IntroductionComponent } from './study/introduction/introduction.component';
+import { PrivacyComponent } from './study/privacy/privacy.component';
+import { ThankYouComponent } from './study/thank-you/thank-you.component';
 
 const appRoutes: Routes = [
   { path: '', component: TicketInterfaceComponent },
-  { path: 'introduction', component: IntroductionComponent }
+  { path: 'introduction', component: IntroductionComponent },
+  { path: 'privacy', component: PrivacyComponent },
+  { path: 'thank-you', component: ThankYouComponent },
 ];
 
 @NgModule({
@@ -30,8 +34,10 @@ const appRoutes: Routes = [
     AccordionTicketComponent,
     NormalizeToDomainPipe,
     TrimStringPipe,
+    TicketInterfaceComponent,
     IntroductionComponent,
-    TicketInterfaceComponent
+    PrivacyComponent, 
+    ThankYouComponent
   ],
   imports: [
     BrowserModule,
