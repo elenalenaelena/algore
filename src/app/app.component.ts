@@ -17,6 +17,7 @@ export class AppComponent implements OnInit, OnDestroy{
   title = 'algore';
   fileUrl: any;
   tickets: Ticket[] = []; 
+  progress: number = 25;
 
   faSortAmountDown = faSortAmountDown;
   faSortAmountUp = faSortAmountUp;
@@ -99,6 +100,16 @@ export class AppComponent implements OnInit, OnDestroy{
       const blob = new Blob([data], { type: 'application/octet-stream' });    
       this.fileUrl = this.sanitizer.bypassSecurityTrustResourceUrl(window.URL.createObjectURL(blob));
     }
+  }
+
+  makeProgress(): number {
+
+    /*let bar: HTMLElement = document.querySelector(".progress-bar") as HTMLElement;
+    
+    bar.style.width = this.progress + "%"; 
+    bar.innerText = this.progress + "%";  */
+    return this.progress;
+
   }
 
   refreshPage(): void {
