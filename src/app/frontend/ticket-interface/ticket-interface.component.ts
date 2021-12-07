@@ -4,6 +4,7 @@ import { faSortAmountDown, faSortAmountUp, faThLarge, faThList, faTicketAlt, faC
 import { DataService } from '../../shared/data.service';
 import { LogService } from '../../shared/log.service';
 import { Ticket } from '../../shared/ticket.model';
+import { Task} from '../../shared/task.model';
 
 @Component({
   selector: 'app-ticket-interface',
@@ -18,6 +19,9 @@ export class TicketInterfaceComponent implements OnInit, OnDestroy{
   title = 'algore';
   fileUrl: any;
   tickets: Ticket[] = []; 
+  tasks: Task[] = [];
+  taskState: number = 0;
+  appState: number = 4;
 
   faSortAmountDown = faSortAmountDown;
   faSortAmountUp = faSortAmountUp;
@@ -30,7 +34,7 @@ export class TicketInterfaceComponent implements OnInit, OnDestroy{
   filterOptions: String[]; // contains all possible column names for sorting
   reverse: boolean; // indicates the sort order (ascending | descending)
   sorting: String;  // holds the column name according to which the data are sorted  
-  view: boolean = true; // true = ticket view; false = dashboard view  
+  view: boolean = true; // true = ticket view; false = dashboard view 
 
   constructor(private dataService: DataService, private logger: LogService, private sanitizer: DomSanitizer) {
 
@@ -46,13 +50,16 @@ export class TicketInterfaceComponent implements OnInit, OnDestroy{
       'topic'
     ];
     this.sorting = 'created_at'; // default: sort by creation date 
-    this.reverse = false;        // defualt: ascending order
+    this.reverse = false;        // default: ascending order
+    this.tasks = this.dataService.getTasks();
     this.tickets = this.dataService.getTickets();
+   
+    this.dataService.setAppState(this.appState);
   }
 
-  ngOnInit(): void {
-    this.sortBy(this.sorting);    
-    this.assignees = this.getKeys(this.groupBy(this.tickets, "assignee")); 
+  ngOnInit(): void {     
+    this.assignees = this.getKeys(this.groupBy(this.tickets, "assignee"));  
+    this.sortBy(this.sorting);   
   }
 
     /**
@@ -190,13 +197,26 @@ export class TicketInterfaceComponent implements OnInit, OnDestroy{
 
   }
 
-  updateTickets(t: Ticket) {
-
-    this.dataService.updateTicket(t);
+  updateTask(t: Task) {    
     
+    if((t.answer != "")) {
+      t.done = true;
+      this.dataService.updateTask(t); 
+      this.taskState++;
+      this.dataService.setTaskState(this.taskState);   
+      this.appState ++;
+      this.dataService.setAppState(this.appState);
+    } 
+  }
+
+  updateTicket(t: Ticket) {
+    this.dataService.updateTicket(t); 
+    console.log('update ticket')
   }
 
   ngOnDestroy() {
+  
+    
   }  
 
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from '../../shared/data.service';
 
 @Component({
   selector: 'app-introduction',
@@ -7,6 +8,9 @@ import { Component } from '@angular/core';
 })
 export class IntroductionComponent {
 
-  constructor() { }
+  appState: number = 1;
 
+  constructor(private dataService: DataService ) { 
+    this.dataService.setAppState(this.appState);
+  }
 }

@@ -1,12 +1,12 @@
 <div class="progress fixed-top" style="height: 3px; display: block;">
-  <div class="progress-bar" role="progressbar" style="width: 25%; height: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+  <div class="progress-bar" role="progressbar" [style.width.%]="progress" style="height: 100%;" [attr.aria-valuenow]="progress" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
 
 <nav class="navbar sticky-top navbar-light bg-light">  
     <div class="container">
 
     <!-- LOGO -->
-    <a class="navbar-brand me-auto" href="#">
+    <a class="navbar-brand me-auto" href="introduction">
       <img src="assets/inspector-logo.svg" alt="INspector logo" (click)="refreshPage()" >
     </a>
 
