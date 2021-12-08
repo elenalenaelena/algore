@@ -52,7 +52,6 @@ export class AppComponent implements OnInit {
   showProgress(state: number): void {    
     
     this.appState = state;  
-    console.log('AppState: ' + this.appState);
     let divider = 100/this.amountAppStates; // calculate width (%) of a single progress step
     this.progress = state * divider;        // multiply by current state             
 

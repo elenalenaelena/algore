@@ -2,37 +2,32 @@
 <p>{{ task.description }}</p>
 
 <!-- text input (if task has attribute "text")-->
-<div *ngIf="task.input == 'text'" class="mb-3">
-    <input type="text" class="form-control" id="textInput" placeholder="placeholder">
+<div *ngIf="task.input == 'number'">
+    <input contenteditable="true" type="number" class="d-inline-block form-control form-control-sm w-25 me-2" id="numberInput" (input)="checkNumericAnswer($event)" min="0" max="100" placeholder="">%
 </div>
 
 <!-- checkbox (if task has attribute "checkbox") -->
-<div *ngIf="task.input == 'checkbox'" class="mb-3">
-    <input class="form-check-input me-2" type="checkbox" id="taskDoneCheckbox" autocomplete="off">
-    <label class="form-check-label" for="taskDoneCheckbox">Ok, ich habe die Aufgabe erledigt.</label>
+<div *ngIf="task.input == 'checkbox'">
+    <input class="form-check-input me-2" type="checkbox" [(ngModel)]="taskDone" id="taskDoneCheckbox" autocomplete="off">
+    <label class="form-check-label" for="taskDoneCheckbox">Ok, erledigt.</label>
 </div>
 
 <!-- readonly text area (if task has attribute "readonly")-->
-<div *ngIf="task.input == 'readonly'" class="mb-3">
+<div *ngIf="task.input == 'readonly'">
     <p class="readonly" >Ausgewähltes Ticket (ID): [ placeholder ]</p>
 </div>
 
 <!-- dropdown (categories) (if task has attribute "dropdown")-->
-<div *ngIf="task.input == 'dropdown'" class="mb-3 btn-group">
-    <button class="dropdown-toggle assignee" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        ticket.assignee 
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-      <li><!--*ngFor="let assignee of assignees, let i = index" -->
-        <a class="dropdown-item" href="#"> assignee </a>
-      </li>
-    </ul>
+<div *ngIf="task.input == 'select'" class="btn-group d-block">
+    
+    <select class="form-select form-select-sm w-75" [(ngModel)]="task.answer" (change)="checkOptionSelected()">
+        <option value="" disabled selected>Bitte wählen</option>
+        <option *ngFor="let assignee of assignees" [ngValue]="assignee">{{assignee}}</option>
+    </select>
 </div>   
 
-<br>
-
 <!-- next page -->
-<a class="btn" (click)='updateTask({answer:"the answer"});' role="button">weiter</a>
+<a class="btn" [ngClass]="taskDone ? 'enabled' : 'disabled'" (click)='updateTask({answer:"the answer"});'role="button">weiter</a>
 
 
 

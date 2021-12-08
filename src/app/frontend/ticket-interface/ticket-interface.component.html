@@ -1,8 +1,13 @@
+<!--<div class="position-fixed px-2" *ngFor="let task of tasks, let i = index">
+  <app-task *ngIf="i === taskState" [task]=task [assignees]=assignees (newUpdateEvent)="updateTask($event)"></app-task>
+</div> -->
+
 <div class="container">
 
   <!-- TASK -->
-  <div *ngFor="let task of tasks, let i = index">
-    <app-task *ngIf="i === taskState" [task]=task (newUpdateEvent)="updateTask($event)"></app-task>
+
+  <div class="d-inline-block ms-0" *ngFor="let task of tasks, let i = index">
+    <app-task *ngIf="i === taskState" [task]=task [assignees]=assignees (newUpdateEvent)="updateTask($event)"></app-task>
   </div> 
 
   <!-- FILTER -->
