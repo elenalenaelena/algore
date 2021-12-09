@@ -42,7 +42,6 @@ export class TicketInterfaceComponent implements OnInit, OnDestroy{
       'assignee',
       'created_at',
       'index',
-      'category',
       'confidence', 
       'priority',
       'status',
@@ -174,13 +173,11 @@ export class TicketInterfaceComponent implements OnInit, OnDestroy{
 
     switch(word){
       case 'assignee':
-        t = 'Bearbeiter:in'; break;
+        t = 'Bearbeiter:in / Kategorie'; break;
       case 'created_at':
         t = 'Datum'; break;
       case 'index':
         t = 'ID'; break;
-      case 'category':
-        t = 'Kategorie'; break;
       case 'confidence':
         t = 'Konfidenz'; break;
       case 'priority':

@@ -11,6 +11,7 @@ import { DataService } from './shared/data.service';
 import { LogPublishersService } from "./shared/log-publishers.service";
 import { LogService } from './shared/log.service';
 import { NormalizeToDomainPipe } from './shared/NormalizeToDomainPipe';
+import { ExtractStringPipe } from './shared/ExtractStringPipe';
 import { TrimStringPipe } from './shared/TrimStringPipe';
 
 import { AccordionTicketComponent } from './frontend/accordion-ticket/accordion-ticket.component';
@@ -39,6 +40,7 @@ const appRoutes: Routes = [
     TicketComponent,
     AccordionTicketComponent,
     NormalizeToDomainPipe,
+    ExtractStringPipe,
     TrimStringPipe,
     TicketInterfaceComponent,
     IntroductionComponent,

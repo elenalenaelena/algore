@@ -5,6 +5,8 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { Ticket } from './shared/ticket.model';
 import { Task} from './shared/task.model';
+import { takeUntil } from 'rxjs/operators';
+import { fromEvent } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -33,6 +35,17 @@ export class AppComponent implements OnInit {
     this.amountAppStates = this.dataService.getAmountAppStates();
     this.dataService.getAppState()
       .subscribe( x=> this.showProgress(x));
+    
+    // Browser back button hijacking has become nearly impossible in Chrome now
+    /*
+    fromEvent(window, 'onbeforeunload')
+      .subscribe({
+        next: () => { console.log('Back navigation detected.') }
+      });
+    */
+  }
+  onDestroy(onDestroy: any): import("rxjs").OperatorFunction<Event, Event> {
+    throw new Error('Method not implemented.');
   }
 
   testLog(): void {
@@ -65,6 +78,18 @@ export class AppComponent implements OnInit {
     if (window.confirm("Wollen Sie die Seite neu laden? Ihre Eingaben werden verworfen.")) {
       window.location.reload();
     }
+   
+  }
+
+  preventBackNavigation(event: Event):void {
+    window.history.pushState({page: 1}, "", "");
+
+    
+        if(event){
+            window.location.href = 'https://www.google.com/';
+            // Code to handle back button or prevent from navigation
+        }
+    
   }
 
 }
