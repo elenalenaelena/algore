@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
 import { LogPublisher, LogConsole, LogLocalStorage, LogSessionStorage, LogWebApi } from "./log-publishers";
+import { environment } from 'src/environments/environment';
 
 @Injectable()
 export class LogPublishersService {
@@ -25,8 +25,10 @@ export class LogPublishersService {
             LogPublishersService.uniqueId = id;
         }        
 
-        // Create instance of LogConsole Class
-        this.publishers.push(new LogConsole());
+        if(!environment.production) {
+            // Create instance of LogConsole Class
+            this.publishers.push(new LogConsole());
+        }
 
         // Create instance of `LogLocalStorage` Class
         //let localStorageLogger = new LogLocalStorage();
