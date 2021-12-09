@@ -45,8 +45,8 @@
       </div>
     </div>
 
-    <div class="back-side" *ngIf="!front">      
-      <p class="message">{{ ticket.message }}</p>     
+    <div class="back-side" *ngIf="!front">
+      <p class="message" (scroll)="ticketScrolled($event)">{{ ticket.message }}</p>     
     </div>   
 
     <!-- FLIP CARD BTN --> 

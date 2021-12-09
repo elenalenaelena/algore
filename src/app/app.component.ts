@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { DataService } from 'src/app/shared/data.service';
 import { LogService } from './shared/log.service';
 import { DomSanitizer } from '@angular/platform-browser';
@@ -12,6 +12,10 @@ import { faThLarge, faThList, faSortAmountUp, faSortAmountDown, faTicketAlt, faC
 })
 export class AppComponent implements OnInit, OnDestroy{
   @ViewChild("performanceGraph", {read: ElementRef}) performanceGraph: ElementRef | null = null;
+  @HostListener('window:scroll', ['$event']) 
+  doSomething(event: any) {
+    this.logger.log('Scrolled ' + window.pageYOffset, [9, null, window.pageYOffset]);
+  }
 
   assignees: String[] = [];
   title = 'algore';

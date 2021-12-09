@@ -4,8 +4,6 @@ import { Injectable } from '@angular/core';
 import { LogPublisher } from "./log-publishers";
 import { LogPublishersService } from "./log-publishers.service";
 
-const uniqueId: string = '_' + Math.random().toString(36).substr(2, 9);
-
 export enum LogLevel {
     All = 0,
     Debug = 1,
@@ -18,7 +16,7 @@ export enum LogLevel {
 
 export class LogEntry {
     // Public Properties
-    sessionId: string = uniqueId;
+    sessionId: string = LogPublishersService.uniqueId;
     entryDate: Date = new Date();
     message: string = "";
     level: LogLevel = LogLevel.Debug;
