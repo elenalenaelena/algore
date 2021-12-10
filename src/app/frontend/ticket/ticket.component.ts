@@ -18,6 +18,7 @@ export class TicketComponent {
   faChevronLeft = faChevronLeft;
   front: boolean = true;
 
+  @Input() ab_test: any;
   @Input() ticket: any;
   @Input() assignees: any;
   @Output() newUpdateEvent = new EventEmitter<Ticket>();

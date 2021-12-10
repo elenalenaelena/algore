@@ -27,11 +27,11 @@
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
               <li *ngFor="let assignee of assignees, let i = index">
-                <a class="dropdown-item" (click)='updateTicket({assignee: assignee}); updateTicket({confidence: 100 });' href="#">{{ assignee }}</a>
+                <a class="dropdown-item" (click)='updateTicket({assignee: assignee}); updateTicket({confidence: 100 }); updateTicket({topic: "Allgemein"}); updateTicket({subtopic: ""});' href="#">{{ assignee }}</a>
               </li>
             </ul>
           </div>  
-          <p class="category m-0">{{ ticket.category }}</p>
+          <p class="category m-0">{{ ticket.assignee | extractString }}</p>
           <p class="topic subtopic m-0">
             {{ ticket.topic }}
             <span *ngIf=ticket.subtopic class="p-1">></span>
@@ -39,7 +39,7 @@
           </p>      
         </div>
         <div class="col-4 pt-2 ps-0">
-          <p data-confidence="ticket.confidence" class="confidence text-end m-0" [ngStyle]="{'color': mixColors(ticket.confidence)}">{{ ticket.confidence }} %</p>
+          <p data-confidence="ticket.confidence" class="confidence text-end m-0" [ngStyle]="{'color': mixColors(ticket.confidence)}"><span *ngIf="ab_test">{{ ticket.confidence | numberToText }}</span><span *ngIf="!ab_test">{{ ticket.confidence }} %</span></p>
           <p class="priority text-end">{{ ticket.priority | normalizeToDomain_0_5 }}</p>    
         </div>
       </div>

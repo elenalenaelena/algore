@@ -1,0 +1,51 @@
+[
+    {
+        "no": 1,
+        "description": "Finden Sie ein Ticket aus der unsichersten Kategorie und leiten sie es weiter.",
+        "answer": "",
+        "input": "checkbox",
+        "done": false
+    },
+    {
+        "no": 2,
+        "description": "Finden Sie und leiten Sie alle Tickets weiter, die sicher der Kategorie X zugeordnet sind.",
+        "answer": "",
+        "input": "checkbox",
+        "done": false
+    },
+    {
+        "no": 3,
+        "description": "Suchen Sie ein Ticket aus, dass Sie am schnellsten der richtigen Abteilung weiterleiten können.",
+        "answer": "",
+        "input": "checkbox",
+        "done": false
+    },
+    {
+        "no": 4,
+        "description": "Wieviele Tickets (Prozentzahl oder absolute Zahl) schätzen Sie bedürfen hinsichtlich ihrer Zuordnung zu Kategorien einer manuellen Überprüfung?", 
+        "answer": "",
+        "input": "number",       
+        "done": false
+    },
+    {
+        "no": 5,
+        "description": "Nennen Sie die Kategorie, die durch den Algorithmus am sichersten erkannt bzw. zugeordnet wird!",        
+        "answer": "",
+        "input": "select",
+        "done": false
+    },
+    {
+        "no": 6,
+        "description": "Welche Kategorie schätzen Sie, wird durch den Algorithmus am unsichersten erkannt bzw. zugeordnet?",
+        "answer": "",
+        "input": "select",
+        "done": false
+    },
+    {
+        "no": 7,
+        "description": "Wieviele Tickets (Prozentzahl oder absolut) wurden in der Kategorie X falsch zugeordnet?",
+        "answer": "",
+        "input": "number",
+        "done": false
+    }
+]

@@ -1,0 +1,40 @@
+<div class="pt-2 task container">
+
+    <div class="row">
+        <div class="col-6">     
+            <h4>Aufgabe {{ task.no }}</h4>
+            <p>{{ task.description }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">           
+            
+              <!-- text input (if task has attribute "text")-->
+              <div *ngIf="task.input == 'number'">
+                <input contenteditable="true" type="number" class="d-inline-block form-control form-control-sm w-25 me-2" id="numberInput" (input)="checkNumericAnswer($event)" min="0" max="100" placeholder="">%
+            </div>
+
+            <!-- checkbox (if task has attribute "checkbox") -->
+            <div *ngIf="task.input == 'checkbox'">
+                <input class="form-check-input me-2" type="checkbox" [(ngModel)]="taskDone" id="taskDoneCheckbox" autocomplete="off">
+                <label class="form-check-label" for="taskDoneCheckbox">Ok, erledigt.</label>
+            </div>
+
+            <!-- dropdown (categories) (if task has attribute "dropdown")-->
+            <div *ngIf="task.input == 'select'" class="btn-group d-block">
+                
+                <select class="form-select form-select-sm" [(ngModel)]="task.answer" (change)="checkOptionSelected()">
+                    <option value="" disabled selected>Bitte wählen</option>
+                    <option *ngFor="let assignee of assignees" [ngValue]="assignee">{{assignee}}</option>
+                </select>
+            </div>   
+        </div>
+        <div class="col-6 d-flex align-content-end">      
+            <!-- next page -->    
+            <a class="btn py-0" [ngClass]="taskDone ? 'enabled' : 'disabled'" (click)='updateTask({answer:"the answer"});'role="button">weiter</a> 
+        </div>   
+    </div>   
+</div>
+
+
+
