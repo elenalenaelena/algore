@@ -17,7 +17,9 @@ export class AppComponent implements OnInit {
   @ViewChild("performanceGraph", {read: ElementRef}) performanceGraph: ElementRef | null = null;
   @HostListener('window:scroll', ['$event']) 
   doSomething(event: any) {
-    this.logger.log('Scrolled ' + window.pageYOffset, [9, null, window.pageYOffset]);
+    if(this.dataService.getCurrentAppState()>=4 && this.dataService.getCurrentAppState()<12) {
+      this.logger.log('Scrolled ' + window.pageYOffset, [9, null, window.pageYOffset]);
+    }
   }
 
   title = 'algore';

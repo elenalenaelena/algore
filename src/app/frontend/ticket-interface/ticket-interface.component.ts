@@ -56,6 +56,8 @@ export class TicketInterfaceComponent implements OnInit, OnDestroy{
     this.tickets = this.dataService.getTickets();
    
     this.dataService.setAppState(this.appState);
+
+    this.logger.log("Trial start", [10, null, 0]);
   }
 
   ngOnInit(): void {         
@@ -198,13 +200,18 @@ export class TicketInterfaceComponent implements OnInit, OnDestroy{
 
   updateTask(t: Task) {    
     
-    if((t.answer != "")) {
+    if((t.done)) {
+      this.logger.log("Task done: " + t.no, [10, t.no, t.answer=="" ? null : t.answer]);
+      this.logger.log("Trial end", [102, null, t.no]);
+
       t.done = true;
       this.dataService.updateTask(t); 
       this.taskState++;
       this.dataService.setTaskState(this.taskState);   
       this.appState ++;
       this.dataService.setAppState(this.appState);
+
+      this.logger.log("Trial start", [101, null, t.no]);
     } 
   }
 

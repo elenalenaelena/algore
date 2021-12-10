@@ -11,12 +11,12 @@
             
               <!-- text input (if task has attribute "text")-->
               <div *ngIf="task.input == 'number'">
-                <input contenteditable="true" type="number" class="d-inline-block form-control form-control-sm w-25 me-2" id="numberInput" (input)="checkNumericAnswer($event)" min="0" max="100" placeholder="">%
+                <input contenteditable="true" type="number" [(ngModel)]="task.answer" class="d-inline-block form-control form-control-sm w-25 me-2" id="numberInput" (input)="checkNumericAnswer($event)" min="0" max="100" placeholder="">%
             </div>
 
             <!-- checkbox (if task has attribute "checkbox") -->
             <div *ngIf="task.input == 'checkbox'">
-                <input class="form-check-input me-2" type="checkbox" [(ngModel)]="taskDone" id="taskDoneCheckbox" autocomplete="off">
+                <input class="form-check-input me-2" type="checkbox" [(ngModel)]="task.done" id="taskDoneCheckbox" autocomplete="off">
                 <label class="form-check-label" for="taskDoneCheckbox">Ok, erledigt.</label>
             </div>
 
@@ -31,7 +31,7 @@
         </div>
         <div class="col-6 d-flex align-content-end">      
             <!-- next page -->    
-            <a class="btn py-0" [ngClass]="taskDone ? 'enabled' : 'disabled'" (click)='updateTask({answer:"the answer"});'role="button">weiter</a> 
+            <a class="btn py-0" [ngClass]="task.done ? 'enabled' : 'disabled'" (click)='updateTask({});' role="button">weiter</a> 
         </div>   
     </div>   
 </div>

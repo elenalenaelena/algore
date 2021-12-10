@@ -40,6 +40,10 @@ export class DataService implements OnInit {
     return this.amountAppStates;
   }
 
+  getCurrentAppState(): number {
+    return this.appState$.getValue();
+  }
+
   getAppState(): Observable<number> {
     return this.appState$.asObservable();
   }
