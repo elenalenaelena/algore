@@ -36,7 +36,7 @@
                         </div>           
                     </div>
                     <div class="col-1 text-center confidence" [ngStyle]="{'color': mixColors(ticket.confidence)}">
-                        {{ ticket.confidence }} %           
+                        <span *ngIf="ab_test">{{ ticket.confidence | numberToText }}</span><span *ngIf="!ab_test">{{ ticket.confidence }} %</span>         
                     </div>
                     <div class="col-1 text-center priority">
                         {{ ticket.priority | normalizeToDomain_0_5 }}           

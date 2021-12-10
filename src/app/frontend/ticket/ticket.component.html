@@ -39,7 +39,7 @@
           </p>      
         </div>
         <div class="col-4 pt-2 ps-0">
-          <p data-confidence="ticket.confidence" class="confidence text-end m-0" [ngStyle]="{'color': mixColors(ticket.confidence)}">{{ ticket.confidence }} %</p>
+          <p data-confidence="ticket.confidence" class="confidence text-end m-0" [ngStyle]="{'color': mixColors(ticket.confidence)}"><span *ngIf="ab_test">{{ ticket.confidence | numberToText }}</span><span *ngIf="!ab_test">{{ ticket.confidence }} %</span></p>
           <p class="priority text-end">{{ ticket.priority | normalizeToDomain_0_5 }}</p>    
         </div>
       </div>

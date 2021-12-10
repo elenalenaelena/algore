@@ -9,6 +9,7 @@ import { LogService } from 'src/app/shared/log.service';
 })
 export class AccordionTicketComponent implements OnInit {
 
+  @Input() ab_test: any;
   @Input() ticket: any;
   @Input() i: any;
   @Input() assignees: any;

@@ -22,6 +22,7 @@ export class TicketInterfaceComponent implements OnInit, OnDestroy{
   tasks: Task[] = [];
   taskState: number = 0;
   appState: number = 4;
+  ab_test: boolean;
 
   faSortAmountDown = faSortAmountDown;
   faSortAmountUp = faSortAmountUp;
@@ -38,6 +39,7 @@ export class TicketInterfaceComponent implements OnInit, OnDestroy{
 
   constructor(private dataService: DataService, private logger: LogService, private sanitizer: DomSanitizer) {
 
+    this.ab_test = this.dataService.get_ab(); // TODO: replace by evaluating if logger sessionID is even or odd
     this.filterOptions = [
       'assignee',
       'created_at',
@@ -56,12 +58,12 @@ export class TicketInterfaceComponent implements OnInit, OnDestroy{
     this.dataService.setAppState(this.appState);
   }
 
-  ngOnInit(): void {     
+  ngOnInit(): void {         
     this.assignees = this.getKeys(this.groupBy(this.tickets, "assignee"));  
     this.sortBy(this.sorting);   
   }
 
-    /**
+  /**
    * get distinct array keys, order ASC
    * @param arr: the array
    * @return string array containing the keys

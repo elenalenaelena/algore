@@ -10,6 +10,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 })
 export class DataService implements OnInit {
 
+  private ab: boolean;
   private amountAppStates: number;
   private appState$ = new BehaviorSubject<number>(1); // for progress bar calculation and navigation management
   private taskState$ = new BehaviorSubject<number>(1); // for navigation management upon task completion
@@ -17,6 +18,7 @@ export class DataService implements OnInit {
   private tickets: Ticket[];
 
   constructor( ) { 
+    this.ab = this.create_ab();
     this.amountAppStates = 12;
     this.tickets = ticketData; 
     this.tasks = taskData;   
@@ -24,6 +26,15 @@ export class DataService implements OnInit {
 
   ngOnInit():void {
   } 
+
+  // creates random boolean, replace return statement by evaluating sessionID!
+  create_ab(): boolean {
+    return (Math.round(Math.random()) % 2  == 0) ? true : false; 
+  }
+
+  get_ab(): boolean {
+    return this.ab;
+  }  
 
   getAmountAppStates(): number {
     return this.amountAppStates;

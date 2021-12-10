@@ -15,7 +15,7 @@
       <div class="d-flex justify-content-end">
         
         <!-- performance accordion header * -->
-        <div class="p-2 accordion accordion-flush" id="accordionFlushExample">
+        <div *ngIf="ab_test" class="p-2 accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingOne" data-bs-toggle="tooltip" data-bs-placement="top" title="Performance-Metriken ein/ausblenden">
                 <button class="accordion-button btn btn-highlight shadow-sm p-2 collapsed" type="button" (click)="togglePerformance()" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -80,7 +80,7 @@
     <!-- ticket grid-->
     <div *ngIf="ticketView" class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
         <div *ngFor="let ticket of tickets, let i = index" class="col">
-          <app-ticket [ticket]=ticket [assignees]=assignees (newUpdateEvent)="updateTicket($event)"></app-ticket>
+          <app-ticket [ab_test]="ab_test" [ticket]=ticket [assignees]=assignees (newUpdateEvent)="updateTicket($event)"></app-ticket>
         </div>
     </div> 
 
@@ -110,7 +110,7 @@
       <!-- accordion table -->
       <div class="accordion accordion-flush">
         <div class="accordion-item" *ngFor="let ticket of tickets; let i = index">
-          <app-accordion-ticket [ticket]=ticket [i]=i [assignees]=assignees (newUpdateEvent)="updateTicket($event)"></app-accordion-ticket>
+          <app-accordion-ticket [ab_test]="ab_test" [ticket]=ticket [i]=i [assignees]=assignees (newUpdateEvent)="updateTicket($event)"></app-accordion-ticket>
         </div>       
       </div>
 

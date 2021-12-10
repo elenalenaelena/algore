@@ -11,6 +11,7 @@ import { DataService } from './shared/data.service';
 import { LogPublishersService } from "./shared/log-publishers.service";
 import { LogService } from './shared/log.service';
 import { NormalizeToDomainPipe } from './shared/NormalizeToDomainPipe';
+import { NumberToTextPipe } from './shared/NumberToTextPipe';
 import { ExtractStringPipe } from './shared/ExtractStringPipe';
 import { TrimStringPipe } from './shared/TrimStringPipe';
 
@@ -40,6 +41,7 @@ const appRoutes: Routes = [
     TicketComponent,
     AccordionTicketComponent,
     NormalizeToDomainPipe,
+    NumberToTextPipe,
     ExtractStringPipe,
     TrimStringPipe,
     TicketInterfaceComponent,
