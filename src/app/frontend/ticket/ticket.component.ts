@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, HostListener, Input, Output } from '@angular/core';
 import { faPen, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { Ticket } from '../../shared/ticket.model';
 import { LogService } from 'src/app/shared/log.service';
@@ -9,6 +9,10 @@ import { LogService } from 'src/app/shared/log.service';
   styleUrls: ['./ticket.component.sass']
 })
 export class TicketComponent {
+  @HostListener("scroll", ["$event"])
+  ticketScrolled(event: any) {
+    this.logger.log('Scrolled ticket ' + this.ticket.index + ' to ' + event.srcElement.scrollTop, [8, this.ticket.index, event.srcElement.scrollTop]);
+  }
 
   faPen = faPen;
   faChevronLeft = faChevronLeft;
@@ -28,7 +32,6 @@ export class TicketComponent {
   }
 
   mapStatusToIcon(s: String): String {
-
     let ng_class: String;
     
     switch(s) {

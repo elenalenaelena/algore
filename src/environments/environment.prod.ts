@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  logApi: 'https://thawing-temple-52411.herokuapp.com/log'
 };

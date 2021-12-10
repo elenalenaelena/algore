@@ -16,6 +16,7 @@ export enum LogLevel {
 
 export class LogEntry {
     // Public Properties
+    sessionId: string = LogPublishersService.uniqueId;
     entryDate: Date = new Date();
     message: string = "";
     level: LogLevel = LogLevel.Debug;
