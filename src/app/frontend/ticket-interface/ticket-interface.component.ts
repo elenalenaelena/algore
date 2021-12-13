@@ -39,6 +39,8 @@ export class TicketInterfaceComponent implements OnInit, OnDestroy{
 
   constructor(private dataService: DataService, private logger: LogService, private sanitizer: DomSanitizer) {
 
+    //this.logger.getSessionID();
+
     this.ab_test = this.dataService.get_ab(); // TODO: replace by evaluating if logger sessionID is even or odd
     this.filterOptions = [
       'assignee',

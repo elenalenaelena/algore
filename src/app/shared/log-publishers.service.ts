@@ -42,4 +42,8 @@ export class LogPublishersService {
         // Create instance of `LogWebApi` Class
         this.publishers.push(new LogWebApi(this.http));
     }
+
+    getSessionID(): string | null {
+        return sessionStorage.getItem('sessionId');
+    }
 }

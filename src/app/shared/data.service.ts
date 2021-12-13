@@ -4,6 +4,7 @@ import { Task } from './task.model';
 import ticketData from './balanced_data.json'
 import taskData from './tasks.json'
 import { BehaviorSubject, Observable } from 'rxjs';
+import { LogPublishersService } from "./log-publishers.service";
 
 @Injectable({
   providedIn: 'root'
@@ -17,8 +18,8 @@ export class DataService implements OnInit {
   private tasks: Task[];
   private tickets: Ticket[];
 
-  constructor( ) { 
-    this.ab = this.create_ab();
+  constructor( private logPublisherService: LogPublishersService ) { 
+    this.ab = this.create_ab(this.logPublisherService.getSessionID());
     this.amountAppStates = 12;
     this.tickets = ticketData; 
     this.tasks = taskData;   
@@ -27,9 +28,22 @@ export class DataService implements OnInit {
   ngOnInit():void {
   } 
 
-  // creates random boolean, replace return statement by evaluating sessionID!
-  create_ab(): boolean {
-    return (Math.round(Math.random()) % 2  == 0) ? true : false; 
+  // return true if sessionID's hash value is even, false if odd
+  create_ab(s: string | null ): boolean {
+
+    if(s) {
+      let hash = this.getSmallTinyHash(s);
+      return (Math.round(hash) % 2  == 0) ? true : false;
+    }
+    else {
+      console.log("No sessionID received from LogPublishersService.");
+      return true;    
+    }     
+  }
+
+  // create simple hash from alphanumeric string
+  getSmallTinyHash(s: string): number{
+    for(var i=0,h=9;i<s.length;)h=Math.imul(h^s.charCodeAt(i++),9**9);return h^h>>>9
   }
 
   get_ab(): boolean {
