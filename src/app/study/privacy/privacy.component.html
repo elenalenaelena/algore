@@ -1,8 +1,12 @@
 <div class="container">  
-    <h1>Datenschutzerklärung</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id accumsan tellus. Pellentesque vel lorem pellentesque, placerat nunc nec, sodales ipsum. Curabitur varius varius lectus, eget molestie ligula venenatis nec. Vestibulum tellus augue, tempor in arcu id, fermentum euismod purus. Sed in elementum augue. Etiam malesuada finibus mi ac pretium. Ut a elit vitae augue vulputate aliquet. Duis vel ex mattis, placerat diam quis, tempor nibh. Duis mauris ex, commodo quis odio ac, egestas efficitur enim. Etiam facilisis euismod quam sed pellentesque. Etiam vel semper libero, vitae dapibus odio.</p>
-    <input class="form-check-input me-2" type="checkbox" [(ngModel)]="privacy" id="privacyCheckCheckbox" autocomplete="off">
-    <label class="form-check-label" for="privacyCheckCheckbox">Ich stimme der Datenschutzerklärung zu.</label><br>
-    <a href="introduction" class="btn" role="button">zurück</a>
-    <a href="preliminary" class="btn" [ngClass]="privacy ? 'enabled' : 'disabled'" role="button">weiter</a>
+    <div class="row">
+        <div class="col-lg-8">
+            <h1>Datenschutzerklärung</h1>
+            <p>Im Rahmen der Studie werden allgemeine Daten der Teilnehmenden erhoben, Antworten der Teilnahmenden gespeichert sowie die Interaktionen mit Interface-Elementen geloggt. Alle Daten werden in anonymisierter Form verarbeitet, sodass kein Rückschluss auf Ihre Person möglich ist. Die Daten werden ausschließlich zum wissenschaftlichen Zweck erhoben und verarbeitet und nach Abschluss des Forschungsprojektes gelöscht.</p>
+            <input class="form-check-input me-2" type="checkbox" [(ngModel)]="privacy" id="privacyCheckCheckbox" autocomplete="off">
+            <label class="form-check-label" for="privacyCheckCheckbox">Ich habe die Datenschutzerklärung gelesen und stimme der anonymisierten Verarbeitung der Daten zu.</label><br>
+            <a href="introduction" class="btn" role="button">zurück</a>
+            <a href="preliminary" class="btn" [ngClass]="privacy ? 'enabled' : 'disabled'" role="button">weiter</a>
+        </div>
+    </div>
 </div>
