@@ -1,4 +1,26 @@
 <div class="container">
+
+<!-- <div id="3" data-bs-toggle="modal" href="#exampleModalToggle" style="cursor: pointer;">Show</div>-->
+
+<!-- The Modal -->
+<div *ngIf="showModal" id="modal" class="modal-backdrop" id="exampleModalToggle" tabindex="-1">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+    
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Erläuterung zum Interface</h4>
+        <button type="button" class="btn-close" (click)="toggleModal()"></button>
+      </div>
+      
+      <!-- Modal body -->
+      <div class="modal-body">
+        <img src="assets/how-to-interface_1.png"/>
+      </div>
+          
+    </div>
+  </div>
+</div> 
   
   <div class="row">
     <div class="col-lg-6">
@@ -119,3 +141,4 @@
   </div>
 
 </div>
+

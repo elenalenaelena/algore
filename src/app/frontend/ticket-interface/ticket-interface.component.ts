@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnDestroy, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { faSortAmountDown, faSortAmountUp, faThLarge, faThList, faTicketAlt, faChartLine } from '@fortawesome/free-solid-svg-icons';
 import { DataService } from '../../shared/data.service';
@@ -13,7 +13,8 @@ import { Task} from '../../shared/task.model';
 })
 
 export class TicketInterfaceComponent implements OnInit, OnDestroy{
-  @ViewChild("performanceGraph", {read: ElementRef}) performanceGraph: ElementRef | null = null;
+  @ViewChild("performanceGraph", {read: ElementRef}) performanceGraph: ElementRef | null = null; 
+  @ViewChild('modal', { static: true }) modal!: ElementRef<any>;
 
   assignees: String[] = [];
   title = 'algore';
@@ -23,6 +24,7 @@ export class TicketInterfaceComponent implements OnInit, OnDestroy{
   taskState: number = 0;
   appState: number = 4;
   ab_test: boolean;
+  showModal:boolean;
 
   faSortAmountDown = faSortAmountDown;
   faSortAmountUp = faSortAmountUp;
@@ -54,6 +56,7 @@ export class TicketInterfaceComponent implements OnInit, OnDestroy{
     ];
     this.sorting = 'created_at'; // default: sort by creation date 
     this.reverse = false;        // default: ascending order
+    this.showModal = true;
     this.tasks = this.dataService.getTasks();
     this.tickets = this.dataService.getTickets();
    
@@ -116,6 +119,10 @@ export class TicketInterfaceComponent implements OnInit, OnDestroy{
 
   refreshPage(): void {
     window.location.reload();
+  }
+
+  toggleModal():void {
+    this.showModal = !this.showModal;
   }
 
   toggleTicketView(): void {
