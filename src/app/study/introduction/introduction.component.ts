@@ -14,6 +14,6 @@ export class IntroductionComponent {
   constructor(private logger: LogService, private dataService: DataService ) { 
     this.dataService.setAppState(this.appState);
 
-    this.logger.log("Session start", [100, null, null]);
+    this.logger.log("Session start", [100, null, dataService.get_ab() ? 1 : 0]);
   }
 }
