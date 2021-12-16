@@ -8,42 +8,42 @@
     },
     {
         "no": 2,
-        "description": "Finden Sie und leiten Sie alle Tickets weiter, die sicher der Kategorie X zugeordnet sind.",
+        "description": "Finden Sie und leiten Sie alle Tickets weiter, die sicher der Kategorie \"Erhöhtes Beförderungsentgelt\" zugeordnet sind.",
         "answer": "",
         "input": "checkbox",
         "done": false
     },
     {
         "no": 3,
-        "description": "Suchen Sie ein Ticket aus, dass Sie am schnellsten der richtigen Abteilung weiterleiten können.",
+        "description": "Suchen Sie ein Ticket mit unsicherer Kategorisierung und leiten Sie es über die Dropdown-Auswahl schnellstmöglich an die richtige Abteilung weiter.",
         "answer": "",
         "input": "checkbox",
         "done": false
     },
     {
         "no": 4,
-        "description": "Wieviele Tickets (Prozentzahl oder absolute Zahl) schätzen Sie bedürfen hinsichtlich ihrer Zuordnung zu Kategorien einer manuellen Überprüfung?", 
+        "description": "Schätzen Sie: Wieviel Prozent der Tickets bedürfen hinsichtlich ihrer Zuordnung zu Kategorien einer manuellen Überprüfung?", 
         "answer": "",
         "input": "number",       
         "done": false
     },
     {
         "no": 5,
-        "description": "Nennen Sie die Kategorie, die durch den Algorithmus am sichersten erkannt bzw. zugeordnet wird!",        
+        "description": "Wählen Sie in der Dropdown-Auswahl diejenige Kategorie aus, die ihrer Meinung nach durch den Algorithmus am sichersten erkannt bzw. zugeordnet wird.",        
         "answer": "",
         "input": "select",
         "done": false
     },
     {
         "no": 6,
-        "description": "Welche Kategorie schätzen Sie, wird durch den Algorithmus am unsichersten erkannt bzw. zugeordnet?",
+        "description": "Wählen Sie in der Dropdown-Auswahl diejenige Kategorie aus, die ihrer Meinung nach durch den Algorithmus am unsichersten erkannt bzw. zugeordnet wird.",        
         "answer": "",
         "input": "select",
         "done": false
     },
     {
         "no": 7,
-        "description": "Wieviele Tickets (Prozentzahl oder absolut) wurden in der Kategorie X falsch zugeordnet?",
+        "description": "Schätzen Sie: Wieviel Prozent der Tickets wurden in der Kategorie \"Sonstiges\" falsch zugeordnet?",
         "answer": "",
         "input": "number",
         "done": false
