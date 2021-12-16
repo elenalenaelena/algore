@@ -1,21 +1,21 @@
 [
     {
         "no": 1,
-        "description": "Finden Sie ein Ticket aus der unsichersten Kategorie und leiten sie es weiter.",
+        "description": "Finden Sie ein Ticket aus der unsichersten Kategorie und leiten sie dieses über die Dropdown-Auswahl weiter.",
         "answer": "",
         "input": "checkbox",
         "done": false
     },
     {
         "no": 2,
-        "description": "Finden Sie und leiten Sie alle Tickets weiter, die sicher der Kategorie \"Erhöhtes Beförderungsentgelt\" zugeordnet sind.",
+        "description": "Finden Sie alle Tickets, die sicher der Kategorie \"Erhöhtes Beförderungsentgelt\" zugeordnet sind, leiten Sie diese über die Dropdown-Auswahl weiter.",
         "answer": "",
         "input": "checkbox",
         "done": false
     },
     {
         "no": 3,
-        "description": "Suchen Sie ein Ticket mit unsicherer Kategorisierung und leiten Sie es über die Dropdown-Auswahl schnellstmöglich an die richtige Abteilung weiter.",
+        "description": "Suchen Sie ein Ticket mit unsicherer Kategorisierung und leiten Sie dieses über die Dropdown-Auswahl schnellstmöglich an die richtige Abteilung weiter.",
         "answer": "",
         "input": "checkbox",
         "done": false
