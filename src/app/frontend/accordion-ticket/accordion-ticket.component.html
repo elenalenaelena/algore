@@ -1,5 +1,5 @@
 <h2 class="accordion-header" [id]="'heading'+i">       
-    <button class="accordion-button p-0" [ngClass]="{ 'collapsed': i != 0 }" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapse'+i" aria-expanded="false" [attr.aria-controls]="'collapse'+i">
+    <button class="accordion-button p-0 collapsed" [ngClass]="{ 'collapsed': i != 0 }" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapse'+i" aria-expanded="false" [attr.aria-controls]="'collapse'+i">
       <div class="container ticket-details px-0">
         <div class="row">
            
@@ -22,7 +22,8 @@
                     <div class="col-3 category">{{ ticket.assignee | extractString }}</div>
                     <div class="col-4"> {{ ticket.topic }}
                         <span *ngIf=ticket.subtopic class="p-1">></span>
-                        {{ ticket.subtopic }}    </div>
+                        {{ ticket.subtopic }}    
+                    </div>
                     <div class="col-3">
                         <div class="btn-group">
                             <button class="dropdown-toggle assignee" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -49,7 +50,7 @@
     </button>
   </h2>
 
-  <div [id]="'collapse'+i" class="accordion-collapse collapse" [ngClass]="{ 'show': i == 0 }" [attr.aria-labelledby]="'heading'+i" data-bs-parent="#accordionExample">
+  <div [id]="'collapse'+i" class="accordion-collapse collapse" [attr.aria-labelledby]="'heading'+i" data-bs-parent="#accordionExample">
     <div class="accordion-body">
         <div class="container px-0">
             <div class="row">
