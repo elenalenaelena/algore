@@ -5,8 +5,6 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { Ticket } from './shared/ticket.model';
 import { Task} from './shared/task.model';
-import { takeUntil } from 'rxjs/operators';
-import { fromEvent } from 'rxjs';
 
 @Component({
   selector: 'app-root',
