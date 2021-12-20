@@ -11,7 +11,11 @@
             
               <!-- text input (if task has attribute "text")-->
               <div *ngIf="task.input == 'number'">
-                <input contenteditable="true" type="number" [(ngModel)]="task.answer" class="d-inline-block form-control form-control-sm w-25 me-2" id="numberInput" (input)="checkNumericAnswer($event)" min="0" max="100" placeholder="">%
+                <input type="range"  [(ngModel)]="task.answer" (input)="setNumericAnswer($event)" list="tickmarks" class="form-range" min="0" max="100" step="10" id="rangeInput">
+                <datalist id="tickmarks" class="d-flex justify-content-between">
+                    <option value="0" label="niedrig (0%)"></option>
+                    <option value="100" label="hoch (100%)"></option>
+                </datalist>
             </div>
 
             <!-- checkbox (if task has attribute "checkbox") -->

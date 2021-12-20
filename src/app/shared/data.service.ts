@@ -1,7 +1,7 @@
 import { Injectable, OnInit} from '@angular/core';
 import { Ticket } from './ticket.model';
 import { Task } from './task.model';
-import ticketData from './balanced_data.json'
+import ticketData from './balanced_data_cleaner.json'
 import taskData from './tasks.json'
 import { BehaviorSubject, Observable } from 'rxjs';
 import { LogPublishersService } from "./log-publishers.service";
