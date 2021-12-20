@@ -1,6 +1,6 @@
 import { Component, ElementRef, OnDestroy, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
-import { faSortAmountDown, faSortAmountUp, faThLarge, faThList, faTicketAlt, faChartLine } from '@fortawesome/free-solid-svg-icons';
+import { faSortAmountDown, faSortAmountUp, faThLarge, faThList, faTicketAlt, faChartLine, faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
 import { DataService } from '../../shared/data.service';
 import { LogService } from '../../shared/log.service';
 import { Ticket } from '../../shared/ticket.model';
@@ -32,6 +32,7 @@ export class TicketInterfaceComponent implements OnInit, OnDestroy{
   faThList = faThList;
   faTicketAlt = faTicketAlt;
   faChartLine = faChartLine;
+  faQuestionCircle = faQuestionCircle;
 
   ticketView: boolean = true; // true = grid; false = table
   filterOptions: String[]; // contains all possible column names for sorting
