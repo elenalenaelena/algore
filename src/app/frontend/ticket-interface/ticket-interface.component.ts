@@ -124,6 +124,7 @@ export class TicketInterfaceComponent implements OnInit, OnDestroy{
 
   toggleModal():void {
     this.showModal = !this.showModal;
+    this.logger.log("Help button", [200, null, this.showModal ? 101 : 100]);
   }
 
   toggleTicketView(): void {
