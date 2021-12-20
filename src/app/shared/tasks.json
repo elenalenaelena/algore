@@ -1,14 +1,14 @@
 [
     {
         "no": 1,
-        "description": "Finden Sie ein Ticket aus der unsichersten Kategorie und leiten sie dieses über die Dropdown-Auswahl weiter.",
+        "description": "Finden Sie ein beliebiges Ticket aus der unsichersten Kategorie. Leiten sie dieses über die Dropdown-Auswahl innerhalb der Tickets an eine passende Person weiter.",
         "answer": "",
         "input": "checkbox",
         "done": false
     },
     {
         "no": 2,
-        "description": "Finden Sie alle Tickets, die sicher der Kategorie \"Erhöhtes Beförderungsentgelt\" zugeordnet sind, leiten Sie diese über die Dropdown-Auswahl weiter.",
+        "description": "Finden Sie das Ticket, welches sehr sicher der Kategorie \"Erhöhtes Beförderungsentgelt\" zugeordnet ist. Leiten Sie dieses über die Dropdown-Auswahl innerhalb des Tickets an eine passende Person weiter.",
         "answer": "",
         "input": "checkbox",
         "done": false
@@ -22,30 +22,30 @@
     },
     {
         "no": 4,
-        "description": "Schätzen Sie: Wieviel Prozent der Tickets bedürfen hinsichtlich ihrer Zuordnung zu Kategorien einer manuellen Überprüfung?", 
+        "description": "Schätzen Sie: Mit welcher Sicherheit wurden die Tickets den Kategorien im Durchschnitt zugewiesen?", 
         "answer": "",
         "input": "number",       
         "done": false
     },
     {
         "no": 5,
-        "description": "Wählen Sie in der Dropdown-Auswahl diejenige Kategorie aus, die ihrer Meinung nach durch den Algorithmus am sichersten erkannt bzw. zugeordnet wird.",        
+        "description": "Schätzen Sie: Mit welcher Sicherheit wurden die Tickets der Kategorie \"Sonstiges\" zugewiesen?",
         "answer": "",
-        "input": "select",
+        "input": "number",
         "done": false
     },
     {
         "no": 6,
-        "description": "Wählen Sie in der Dropdown-Auswahl diejenige Kategorie aus, die ihrer Meinung nach durch den Algorithmus am unsichersten erkannt bzw. zugeordnet wird.",        
+        "description": "Wählen Sie in nachstehender Dropdown-Auswahl diejenige Kategorie aus, die das System Ihrer Meinung nach mit der größten Sicherheit erkennt bzw. zuordnet.",        
         "answer": "",
         "input": "select",
         "done": false
     },
     {
         "no": 7,
-        "description": "Schätzen Sie: Wieviel Prozent der Tickets wurden in der Kategorie \"Sonstiges\" falsch zugeordnet?",
+        "description": "Wählen Sie in nachstehender Dropdown-Auswahl diejenige Kategorie aus, die das System Ihrer Meinung nach mit der geringsten Sicherheit erkennt bzw. zuordnet.",        
         "answer": "",
-        "input": "number",
+        "input": "select",
         "done": false
     }
 ]

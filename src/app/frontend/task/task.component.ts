@@ -24,18 +24,9 @@ export class TaskComponent implements OnInit {
      this.task.done = false;
   }
 
-  checkNumericAnswer(e: any):void {  
-
-    let val = e.target.value;
-    let reg = new RegExp('^[0-9]+$');
-
-    // test if user input is number and in range [0,100] %
-    if(reg.test(val) && (val >=0 && val <= 100)) {     
-      this.task.answer = val;
-      this.task.done = true;         
-    } else {
-      this.task.done = false;   
-    }
+  setNumericAnswer(e: any):void {  
+    this.task.answer = e.target.value;
+    this.task.done = true;   
   }
 
   updateTask(changes: any) {
