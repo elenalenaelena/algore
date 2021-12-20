@@ -46,6 +46,10 @@
                 </h2>        
             </div>
         </div>  
+
+        <button (click)="toggleModal()" class="my-2 btn" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Hilfe zum Interface"> 
+          <span class="bg-transparent"><fa-icon [icon]="faQuestionCircle"></fa-icon></span>
+        </button>  
     
         <!-- toogle ticketView between table and grid (= icon btn)-->  
         <button (click)="toggleTicketView()" class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Ansichtsmodus wechseln"> 
@@ -141,12 +145,3 @@
   </div>
 
 </div>
-
-<div class="position-fixed bottom-0 end-0">
-  <!-- toogle modal with interface description -->  
-  <button id="help" (click)="toggleModal()" class="my-2 btn" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Hilfe zum Interface"> 
-    <span class="bg-transparent"><fa-icon [icon]="faQuestionCircle"></fa-icon></span>
-  </button>  
-</div>
-
-
