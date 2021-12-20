@@ -63,7 +63,7 @@ export class TicketInterfaceComponent implements OnInit, OnDestroy{
    
     this.dataService.setAppState(this.appState);
 
-    this.logger.log("Trial start", [10, null, 0]);
+    this.logger.log("Trial start", [101, null, 0]);
   }
 
   ngOnInit(): void {         
