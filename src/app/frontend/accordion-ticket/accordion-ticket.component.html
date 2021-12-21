@@ -1,10 +1,9 @@
 <h2 class="accordion-header" [id]="'heading'+i">       
-    <button class="accordion-button p-0 collapsed" [ngClass]="{ 'collapsed': i != 0 }" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapse'+i" aria-expanded="false" [attr.aria-controls]="'collapse'+i">
       <div class="container ticket-details px-0">
         <div class="row">
            
             <!-- ticket head (grey)-->
-            <div class="col-lg-3 ticket-head">
+            <div class="col-lg-3 ticket-head collapsed" [ngClass]="{ 'collapsed': i != 0 }" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapse'+i" aria-expanded="false" [attr.aria-controls]="'collapse'+i">
                 <div class="row px-2 py-3">
                     <div class="col-5 date text-center">
                         {{ ticket.created_at | date:'dd MMM yy'}}            
@@ -19,8 +18,11 @@
             <!-- ticket tail (blue)-->
             <div class="col-lg-9 ticket-tail">
                 <div class="row px-2 py-3">
-                    <div class="col-3 category">{{ ticket.assignee | extractString }}</div>
-                    <div class="col-4"> {{ ticket.topic }}
+                    <div class="col-3 category ticket-tail collapsed" [ngClass]="{ 'collapsed': i != 0 }" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapse'+i" aria-expanded="false" [attr.aria-controls]="'collapse'+i">
+                        {{ ticket.assignee | extractString }}
+                    </div>
+                    <div class="col-4 ticket-tail collapsed" [ngClass]="{ 'collapsed': i != 0 }" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapse'+i" aria-expanded="false" [attr.aria-controls]="'collapse'+i">
+                        {{ ticket.topic }}
                         <span *ngIf=ticket.subtopic class="p-1">></span>
                         {{ ticket.subtopic }}    
                     </div>
@@ -36,7 +38,9 @@
                             </ul>
                         </div>           
                     </div>
-                    <div class="col-1 text-center confidence" [ngStyle]="{'color': mixColors(ticket.confidence)}">
+                    <div class="col-1 text-center confidence ticket-tail collapsed" [ngStyle]="{'color': mixColors(ticket.confidence)}" [ngClass]="{ 'collapsed': i != 0 }" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapse'+i" aria-expanded="false" [attr.aria-controls]="'collapse'+i">
+
+                    
                         <span *ngIf="ab_test">{{ ticket.confidence | numberToText }}</span><span *ngIf="!ab_test">{{ ticket.confidence }} %</span>         
                     </div>
                     <div class="col-1 text-center priority">
@@ -47,10 +51,9 @@
 
         </div>        
       </div>
-    </button>
   </h2>
 
-  <div [id]="'collapse'+i" class="accordion-collapse collapse" [attr.aria-labelledby]="'heading'+i" data-bs-parent="#accordionExample">
+  <div [id]="'collapse'+i" class="accordion-collapse collapse" [attr.aria-labelledby]="'heading'+i" data-bs-parent="#accordionParent">
     <div class="accordion-body">
         <div class="container px-0">
             <div class="row">
