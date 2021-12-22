@@ -30,7 +30,10 @@ export class TaskComponent implements OnInit {
   }
 
   updateTask(changes: any) {
-    
+    if(typeof this.task.answer === 'string' && this.task.answer != '') {
+      this.task.answer = this.assignees.indexOf(this.task.answer);
+    }
+
     let t: Task = { 
       no: this.task.no,
       answer: this.task.answer,
