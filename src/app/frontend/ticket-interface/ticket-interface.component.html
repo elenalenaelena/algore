@@ -75,12 +75,22 @@
         <div class="py-2">
           <div class="btn-group" data-bs-toggle="tooltip" data-bs-placement="top" title="sortieren nach">
               <button class="btn shadow-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              {{ this.getTranslationDE(sorting) }}
+              <!-- DE -->
+              <!--
+               {{ this.getTranslationDE(sorting) }}
+              -->
+              {{ sorting }}
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <!-- DE -->
+              <!--
                 <li *ngFor="let filterOption of filterOptions, let i = index">
                     <a class="dropdown-item" (click)="sortByFilter(filterOption)" href="#">{{ this.getTranslationDE(filterOption) }}</a>
                 </li>
+              -->
+                <li *ngFor="let filterOption of filterOptions, let i = index">
+                  <a class="dropdown-item" (click)="sortByFilter(filterOption)" href="#">{{ filterOption }}</a>
+              </li>
               </ul>
           </div>
         </div> 
@@ -125,18 +135,18 @@
       <div class="row accordion-column-names pb-2 quicksand">         
           <div class="col-lg-3">
               <div class="row p-2">  
-                <div class="col-5 text-center">Datum</div>  
+                <div class="col-5 text-center">Date</div>  
                 <div class="col-4 text-center">ID</div>
                 <div class="col-3 text-center">Status</div>
               </div>                
           </div>          
           <div class="col-lg-9">
               <div class="row p-2">            
-                  <div class="col-3">Kategorie</div>
-                  <div class="col-4">Thema <span class="p-1">></span> Unterthema</div>
-                  <div class="col-3">Bearbeiter:in</div>
-                  <div class="col-1 text-center">Konfidenz</div>
-                  <div class="col-1 text-center">Priorität</div>
+                  <div class="col-3">Category</div>
+                  <div class="col-4">Topic <span class="p-1">></span> Subtopic</div>
+                  <div class="col-3">Assignee</div>
+                  <div class="col-1 text-center">Confidency</div>
+                  <div class="col-1 text-center">Priority</div>
               </div>                
           </div>  
       </div>        
