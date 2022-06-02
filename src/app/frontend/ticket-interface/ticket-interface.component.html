@@ -2,18 +2,19 @@
 
 <!-- <div id="3" data-bs-toggle="modal" href="#exampleModalToggle" style="cursor: pointer;">Show</div>-->
 
-<!-- The Modal -->
+<!-- MODAL (HOW TO USE THE INTERFACE POPUP) -->
+<!--
 <div *ngIf="showModal" id="modal" class="modal-backdrop" id="exampleModalToggle" tabindex="-1">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
     
-      <!-- Modal Header -->
+     
       <div class="modal-header">
         <h4 class="modal-title">Erläuterung zum Interface</h4>
         <button type="button" class="btn-close" (click)="toggleModal()"></button>
       </div>
       
-      <!-- Modal body -->
+     
       <div class="modal-body">
         <img src="assets/how-to-interface_1.png"/>
       </div>
@@ -21,15 +22,19 @@
     </div>
   </div>
 </div> 
-  
+-->
+ 
+<!--TASKS-->
+<!--
   <div class="row">
     <div class="col-lg-6">
-       <!-- TASK -->
+     
       <div class="d-inline-block ms-0" *ngFor="let task of tasks, let i = index">
         <app-task *ngIf="i === taskState" [task]=task [assignees]=assignees (newUpdateEvent)="updateTask($event)"></app-task>
       </div>
     </div>
   </div>  
+-->
 
   <!-- FILTER -->
   <div class="sticky-top quicksand"> 
@@ -47,9 +52,12 @@
             </div>
         </div>  
 
+      <!-- OPEN MODAL BTN-->
+      <!--
         <button (click)="toggleModal()" class="my-2 btn" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Hilfe zum Interface"> 
           <span class="bg-transparent"><fa-icon [icon]="faQuestionCircle"></fa-icon></span>
-        </button>  
+        </button> 
+      --> 
     
         <!-- toogle ticketView between table and grid (= icon btn)-->  
         <button (click)="toggleTicketView()" class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Ansichtsmodus wechseln"> 
