@@ -24,7 +24,7 @@ export class TicketInterfaceComponent implements OnInit, OnDestroy{
   taskState: number = 0;
   appState: number = 4;
   ab_test: boolean;
-  showModal:boolean;
+  showModal: boolean;
 
   faSortAmountDown = faSortAmountDown;
   faSortAmountUp = faSortAmountUp;
@@ -42,9 +42,8 @@ export class TicketInterfaceComponent implements OnInit, OnDestroy{
 
   constructor(private dataService: DataService, private logger: LogService, private sanitizer: DomSanitizer) {
 
-    //this.logger.getSessionID();
-
-    this.ab_test = this.dataService.get_ab(); // TODO: replace by evaluating if logger sessionID is even or odd
+    //this.ab_test = this.dataService.get_ab();
+    this.ab_test = true;
     this.filterOptions = [
       'assignee',
       'created_at',
@@ -61,9 +60,8 @@ export class TicketInterfaceComponent implements OnInit, OnDestroy{
     this.tasks = this.dataService.getTasks();
     this.tickets = this.dataService.getTickets();
    
-    this.dataService.setAppState(this.appState);
-
-    this.logger.log("Trial start", [101, 1, null]);
+    // this.dataService.setAppState(this.appState);
+    // this.logger.log("Trial start", [101, 1, null]);
   }
 
   ngOnInit(): void {         
@@ -120,6 +118,10 @@ export class TicketInterfaceComponent implements OnInit, OnDestroy{
 
   refreshPage(): void {
     window.location.reload();
+  }
+
+  toggleExplanations():void {
+    this.ab_test = !this.ab_test;
   }
 
   toggleModal():void {
